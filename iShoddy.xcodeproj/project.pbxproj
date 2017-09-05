@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B979644A68A29F954B25F08 /* Pods_iShoddyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0B46FC57944787FA197020 /* Pods_iShoddyTests.framework */; };
 		88B316DE1F2CB2F3009426C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B316DD1F2CB2F3009426C8 /* AppDelegate.swift */; };
 		88B316E01F2CB2F3009426C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B316DF1F2CB2F3009426C8 /* ViewController.swift */; };
 		88B316E31F2CB2F3009426C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B316E11F2CB2F3009426C8 /* Main.storyboard */; };
 		88B316E51F2CB2F3009426C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B316E41F2CB2F3009426C8 /* Assets.xcassets */; };
 		88B316E81F2CB2F3009426C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B316E61F2CB2F3009426C8 /* LaunchScreen.storyboard */; };
 		88B316F31F2CB2F3009426C8 /* iShoddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B316F21F2CB2F3009426C8 /* iShoddyTests.swift */; };
+		DA60DFB1F9DEA9C770872250 /* Pods_iShoddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A06C233B8EACE106B10D /* Pods_iShoddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31FAC1654563990A36772599 /* Pods-iShoddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy.debug.xcconfig"; sourceTree = "<group>"; };
+		4E11AA31340BE83E5303D74A /* Pods-iShoddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests.release.xcconfig"; sourceTree = "<group>"; };
 		88B316DA1F2CB2F3009426C8 /* iShoddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShoddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B316DD1F2CB2F3009426C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88B316DF1F2CB2F3009426C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		88B316EE1F2CB2F3009426C8 /* iShoddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShoddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B316F21F2CB2F3009426C8 /* iShoddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShoddyTests.swift; sourceTree = "<group>"; };
 		88B316F41F2CB2F3009426C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D61A06C233B8EACE106B10D /* Pods_iShoddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iShoddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E813170B0E4BFC960CAD46 /* Pods-iShoddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0B46FC57944787FA197020 /* Pods_iShoddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iShoddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2B35570C0EB7BA48BC8A80 /* Pods-iShoddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA60DFB1F9DEA9C770872250 /* Pods_iShoddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B979644A68A29F954B25F08 /* Pods_iShoddyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78028BD8703732723C271906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D61A06C233B8EACE106B10D /* Pods_iShoddy.framework */,
+				AE0B46FC57944787FA197020 /* Pods_iShoddyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		88B316D11F2CB2F3009426C8 = {
 			isa = PBXGroup;
 			children = (
 				88B316DC1F2CB2F3009426C8 /* iShoddy */,
 				88B316F11F2CB2F3009426C8 /* iShoddyTests */,
 				88B316DB1F2CB2F3009426C8 /* Products */,
+				C3AB2EF7A8871284FAAF1A58 /* Pods */,
+				78028BD8703732723C271906 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +117,17 @@
 			path = iShoddyTests;
 			sourceTree = "<group>";
 		};
+		C3AB2EF7A8871284FAAF1A58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31FAC1654563990A36772599 /* Pods-iShoddy.debug.xcconfig */,
+				FB2B35570C0EB7BA48BC8A80 /* Pods-iShoddy.release.xcconfig */,
+				A0E813170B0E4BFC960CAD46 /* Pods-iShoddyTests.debug.xcconfig */,
+				4E11AA31340BE83E5303D74A /* Pods-iShoddyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88B316F71F2CB2F3009426C8 /* Build configuration list for PBXNativeTarget "iShoddy" */;
 			buildPhases = (
+				406EB2F7AAEE787AF021F15C /* [CP] Check Pods Manifest.lock */,
 				88B316D61F2CB2F3009426C8 /* Sources */,
 				88B316D71F2CB2F3009426C8 /* Frameworks */,
 				88B316D81F2CB2F3009426C8 /* Resources */,
+				676A6153C6451D2845D5BA12 /* [CP] Embed Pods Frameworks */,
+				9E40D6C868CD1E147CB6BB83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88B316FA1F2CB2F3009426C8 /* Build configuration list for PBXNativeTarget "iShoddyTests" */;
 			buildPhases = (
+				85E4F542978EDB511D5E7FFD /* [CP] Check Pods Manifest.lock */,
 				88B316EA1F2CB2F3009426C8 /* Sources */,
 				88B316EB1F2CB2F3009426C8 /* Frameworks */,
 				88B316EC1F2CB2F3009426C8 /* Resources */,
+				50C3A0E9E00508411ED0B8F3 /* [CP] Embed Pods Frameworks */,
+				EBF41C87307C0DA2B59DBE5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +229,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		406EB2F7AAEE787AF021F15C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		50C3A0E9E00508411ED0B8F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		676A6153C6451D2845D5BA12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85E4F542978EDB511D5E7FFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E40D6C868CD1E147CB6BB83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF41C87307C0DA2B59DBE5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88B316D61F2CB2F3009426C8 /* Sources */ = {
@@ -349,6 +480,7 @@
 		};
 		88B316F81F2CB2F3009426C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31FAC1654563990A36772599 /* Pods-iShoddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iShoddy/Info.plist;
@@ -362,6 +494,7 @@
 		};
 		88B316F91F2CB2F3009426C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2B35570C0EB7BA48BC8A80 /* Pods-iShoddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iShoddy/Info.plist;
@@ -375,6 +508,7 @@
 		};
 		88B316FB1F2CB2F3009426C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E813170B0E4BFC960CAD46 /* Pods-iShoddyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -390,6 +524,7 @@
 		};
 		88B316FC1F2CB2F3009426C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E11AA31340BE83E5303D74A /* Pods-iShoddyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
