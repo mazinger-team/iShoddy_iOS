@@ -130,11 +130,11 @@
 		88B316D11F2CB2F3009426C8 = {
 			isa = PBXGroup;
 			children = (
+				88B316DC1F2CB2F3009426C8 /* iShoddy */,
+				88B316F11F2CB2F3009426C8 /* iShoddyTests */,
 				752A3D8B36E485733C2B5780 /* Frameworks */,
 				D5890DF1282D99FA96E1FA5B /* Pods */,
 				88B316DB1F2CB2F3009426C8 /* Products */,
-				88B316DC1F2CB2F3009426C8 /* iShoddy */,
-				88B316F11F2CB2F3009426C8 /* iShoddyTests */,
 			);
 			sourceTree = "<group>";
 		};

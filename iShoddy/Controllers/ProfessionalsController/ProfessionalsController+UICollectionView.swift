@@ -22,6 +22,21 @@ extension ProfessionalsController: UICollectionViewDelegate, UICollectionViewDat
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: constants.ProffesionalCollectionViewCell, for: indexPath) as! ProfessionalCell
         cell.professional = self.professionals[indexPath.row]
 
+        // Corner radius
+        cell.layer.masksToBounds = true;
+        cell.layer.borderColor = UIColor.gray.cgColor
+        cell.layer.borderWidth = 1.0
+        cell.layer.cornerRadius = 10.0
+        cell.layer.borderWidth = 1.0
+        
+        // Cell shadow
+        /*cell.layer.shadowColor = UIColor.lightGray.cgColor
+        cell.layer.shadowOffset = CGSize(width:0,height: 2.0)
+        cell.layer.shadowRadius = 2.0
+        cell.layer.shadowOpacity = 1.0
+        cell.layer.masksToBounds = false;
+        cell.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.contentView.layer.cornerRadius).cgPath*/
+        
         return cell
     }
     

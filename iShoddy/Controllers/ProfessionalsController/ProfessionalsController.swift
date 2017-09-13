@@ -18,7 +18,7 @@ class ProfessionalsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         let manager : GetAllProfessionalsNetworkManager  = GetAllProfessionalsNetWorkManagerImpl()
         let getAllProfessionalsInteractorImpl: GetAllProfessionalInteractorImpl = GetAllProfessionalInteractorImpl(getAllProfessionalsNetworkManager: manager)
         
