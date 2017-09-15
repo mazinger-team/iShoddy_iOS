@@ -1,5 +1,5 @@
 //
-//  GetAllProfessionalsNetworkManagerImpl.swift
+//  GetProfessionalsNetworkManagerImpl.swift
 //  iShoddy
 //
 //  Created by Jose Sanchez Rodriguez on 11/9/17.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class GetAllProfessionalsNetWorkManagerImpl:  GetAllProfessionalsNetworkManager {
+public class GetProfessionalsNetWorkManagerImpl:  GetProfessionalsNetworkManager {
     public func execute(completion: @escaping listProfessional, onError: @escaping errorBlock) {
         let dataTask = NetworkManager.sharedNetworkManager.getSession()
             .dataTask(with: NetworkManager.sharedNetworkManager.generateURLRequest(withURL: DomainUrl.listProfessionals)) { (data, response, error) in
@@ -39,7 +39,6 @@ public class GetAllProfessionalsNetWorkManagerImpl:  GetAllProfessionalsNetworkM
     }
     
     public func downloadProfessionalImage(professional: Professional, completion: @escaping (UIImage) -> Void) {
-        
         DispatchQueue.global().async {
             if let url = URL(string: professional.logo_url!) {
                 do {

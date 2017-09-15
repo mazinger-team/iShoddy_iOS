@@ -11,6 +11,6 @@ import Foundation
 public typealias listProfessional =  ( ListProfessionalsResponseType )  -> Void
 
 
-public protocol GetAllProfessionalInteractor {
+public protocol GetProfessionalInteractor {
     func execute(completion:@escaping  listProfessional, onError: @escaping errorBlock )
 }

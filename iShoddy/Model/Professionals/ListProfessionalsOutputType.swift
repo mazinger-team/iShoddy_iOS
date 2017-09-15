@@ -19,9 +19,6 @@ public class ListProfessionalsOutputType {
     init(dictionary: [String : Any]) {
         professionals = [Professional]()
         
-        //print(dictionary["categories"])
-        
-        
         if let arrayProfessional = dictionary["professionals"] as? Array<[String : Any ]>{
             for professionalDictionary in arrayProfessional as Array {
                 let professional = Professional(id: professionalDictionary["id"] as? Int,
@@ -52,7 +49,10 @@ public class ListProfessionalsOutputType {
                                                 rate_notes: professionalDictionary["rate_notes"] as? String,
                                                 rating_accumulated: professionalDictionary["rating_accumulated"] as? Int,
                                                 rating_votes: professionalDictionary["rating_votes"] as? Int,
-                                                rating: professionalDictionary["rating"] as? String)
+                                                rating: professionalDictionary["rating"] as? Double,
+                                                reviews_number: professionalDictionary["reviews_number"] as? Int,
+                                                photo_number: professionalDictionary["photo_number"] as? Int,
+                                                distance: professionalDictionary["distance"] as? Double)
                 
                 professionals.append(professional)
             }

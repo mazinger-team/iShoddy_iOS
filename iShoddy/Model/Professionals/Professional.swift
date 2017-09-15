@@ -13,35 +13,38 @@ import Foundation
 /* For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 public struct Professional {
-	public var id : Int?
-	public var user_id : Int?
-	public var user_name : String?
-	public var demands_id : Array<Int>?
-	public var category_id : Int?
-	public var subcategory_id : Int?
-	public var corp_name : String?
-	public var logo_url : String?
-	public var images_url : Array<String>?
-	public var description : String?
-	public var fiscal_id : String?
-	public var street : String?
-	public var postal_code : Int?
-	public var area : String?
-	public var city : String?
-	public var province : String?
-	public var gps_lat : Double?
-	public var gps_lon : Double?
-	public var web_url : String?
-	public var email : String?
-	public var telephone : Int?
-	public var opening_hours : String?
-	public var register_date : Int?
-	public var rate_visit : Int?
-	public var rate_hour : Int?
-	public var rate_notes : String?
-	public var rating_accumulated : Int?
-	public var rating_votes : Int?
-	public var rating : String?
+    public var id : Int?
+    public var user_id : Int?
+    public var user_name : String?
+    public var demands_id : Array<Int>?
+    public var category_id : Int?
+    public var subcategory_id : Int?
+    public var corp_name : String?
+    public var logo_url : String?
+    public var images_url : Array<String>?
+    public var description : String?
+    public var fiscal_id : String?
+    public var street : String?
+    public var postal_code : Int?
+    public var area : String?
+    public var city : String?
+    public var province : String?
+    public var gps_lat : Double?
+    public var gps_lon : Double?
+    public var web_url : String?
+    public var email : String?
+    public var telephone : Int?
+    public var opening_hours : String?
+    public var register_date : Int?
+    public var rate_visit : Int?
+    public var rate_hour : Int?
+    public var rate_notes : String?
+    public var rating_accumulated : Int?
+    public var rating_votes : Int?
+    public var rating : Double?
+    public var reviews_number : Int?
+    public var photo_number : Int?
+    public var distance : Double?
 
     /**
     Returns an array of models based on given dictionary.

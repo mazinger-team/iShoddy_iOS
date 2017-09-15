@@ -28,17 +28,25 @@ class ProfessionalCell: UICollectionViewCell {
             _professional = newValue
             
             professionalNameLabel.text = newValue.corp_name
-            professionalCategoryLabel.text = String(describing: newValue.category_id)
-            if let reviews = newValue.rating {
-                professionalReviewsLabel.text = reviews+" reviews"
-                
+            professionalCategoryLabel.text = String(describing: newValue.category_id!)
+            if let reviews = newValue.reviews_number {
+                if reviews > 0 {
+                    professionalReviewsLabel.text = String(describing: reviews)+" reviews"
+                } else {
+                    professionalReviewsLabel.text = "No reviews"
+                }
             } else {
                 professionalReviewsLabel.text = "No reviews"
-                
             }
-            professionalPhotoCountLabel.text = String(describing: newValue.rating!)
-            professionalDistanceLabel.text = newValue.city!
-            professionalRateView.rating = Double(newValue.rating!)!
+            professionalPhotoCountLabel.text = String(describing: newValue.photo_number!)
+            if let distance = newValue.distance {
+                if distance >= 1000.0 {
+                    professionalDistanceLabel.text = String(describing: Int((distance/1000).rounded(.toNearestOrAwayFromZero)))+" km"
+                } else {
+                    professionalDistanceLabel.text = String(describing: Int(distance.rounded(.toNearestOrAwayFromZero)))+" m"
+                }
+            }
+            professionalRateView.rating = Double(newValue.rating!)
             
             let defaultImageAsData = try! Data(contentsOf: Bundle.main.url(forResource: constants.ProfessionalImageDefault, withExtension: constants.PngExtension)!)
             

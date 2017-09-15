@@ -1,5 +1,5 @@
 //
-//  GetAllProfessionalsNetworkManager.swift
+//  GetProfessionalsNetworkManager.swift
 //  iShoddy
 //
 //  Created by Jose Sanchez Rodriguez on 11/9/17.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol GetAllProfessionalsNetworkManager {
+public protocol GetProfessionalsNetworkManager {
     func execute(completion: @escaping listProfessional, onError: @escaping errorBlock) -> Void
     func downloadProfessionalImage(professional: Professional, completion: @escaping (UIImage) -> Void)
 }

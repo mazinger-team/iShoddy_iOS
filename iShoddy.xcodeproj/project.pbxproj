@@ -23,9 +23,9 @@
 		DF1517451F65B25F00582D04 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05E8BF1F65A94200504A87 /* BaseModel.swift */; };
 		DF1B1E861F65F4D0001BD670 /* DomainUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E851F65F4D0001BD670 /* DomainUrl.swift */; };
 		DF1B1E881F65F600001BD670 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E871F65F600001BD670 /* NetworkManager.swift */; };
-		DF1B1E8C1F65F949001BD670 /* GetAllProfessionalInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E8B1F65F949001BD670 /* GetAllProfessionalInteractorImpl.swift */; };
-		DF1B1E8E1F65F9B3001BD670 /* GetAllProfessionalsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E8D1F65F9B3001BD670 /* GetAllProfessionalsNetworkManager.swift */; };
-		DF1B1E901F65F9E0001BD670 /* GetAllProfessionalsNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E8F1F65F9E0001BD670 /* GetAllProfessionalsNetworkManagerImpl.swift */; };
+		DF1B1E8C1F65F949001BD670 /* GetProfessionalInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E8B1F65F949001BD670 /* GetProfessionalInteractorImpl.swift */; };
+		DF1B1E8E1F65F9B3001BD670 /* GetProfessionalsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E8D1F65F9B3001BD670 /* GetProfessionalsNetworkManager.swift */; };
+		DF1B1E901F65F9E0001BD670 /* GetProfessionalsNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E8F1F65F9E0001BD670 /* GetProfessionalsNetworkManagerImpl.swift */; };
 		DF1B1E921F65FC10001BD670 /* ListProfessionalsResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E911F65FC10001BD670 /* ListProfessionalsResponseType.swift */; };
 		DF297B3F1F670EEF0063CF62 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF297B3E1F670EEF0063CF62 /* Dialog.swift */; };
 		DF297B411F67195D0063CF62 /* ProfessionalPannel.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC28B7D1F6302FA0098B184 /* ProfessionalPannel.png */; };
@@ -39,7 +39,7 @@
 		DF812B961F69DEA300140B22 /* professional-default.png in Resources */ = {isa = PBXBuildFile; fileRef = DF812B951F69DD6E00140B22 /* professional-default.png */; };
 		DF8332D11F6471CB0059651B /* ProfessionalsController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8332D01F6471CB0059651B /* ProfessionalsController+UICollectionView.swift */; };
 		DF8332D71F6472D60059651B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8332D61F6472D60059651B /* Constants.swift */; };
-		DF8332DA1F647B310059651B /* GetAllProfessionalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8332D91F647B310059651B /* GetAllProfessionalInteractor.swift */; };
+		DF8332DA1F647B310059651B /* GetProfessionalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8332D91F647B310059651B /* GetProfessionalInteractor.swift */; };
 		DFC2F6A61F69B43B005DD720 /* ProfessionalDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2F6A51F69B43B005DD720 /* ProfessionalDetailController.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,9 +77,9 @@
 		DF05E8C01F65A94200504A87 /* ListProfessionalsOutputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProfessionalsOutputType.swift; sourceTree = "<group>"; };
 		DF1B1E851F65F4D0001BD670 /* DomainUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainUrl.swift; sourceTree = "<group>"; };
 		DF1B1E871F65F600001BD670 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		DF1B1E8B1F65F949001BD670 /* GetAllProfessionalInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllProfessionalInteractorImpl.swift; sourceTree = "<group>"; };
-		DF1B1E8D1F65F9B3001BD670 /* GetAllProfessionalsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllProfessionalsNetworkManager.swift; sourceTree = "<group>"; };
-		DF1B1E8F1F65F9E0001BD670 /* GetAllProfessionalsNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllProfessionalsNetworkManagerImpl.swift; sourceTree = "<group>"; };
+		DF1B1E8B1F65F949001BD670 /* GetProfessionalInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalInteractorImpl.swift; sourceTree = "<group>"; };
+		DF1B1E8D1F65F9B3001BD670 /* GetProfessionalsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalsNetworkManager.swift; sourceTree = "<group>"; };
+		DF1B1E8F1F65F9E0001BD670 /* GetProfessionalsNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalsNetworkManagerImpl.swift; sourceTree = "<group>"; };
 		DF1B1E911F65FC10001BD670 /* ListProfessionalsResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProfessionalsResponseType.swift; sourceTree = "<group>"; };
 		DF297B3D1F670EEF0063CF62 /* Dialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Dialog.xib; sourceTree = "<group>"; };
 		DF297B3E1F670EEF0063CF62 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		DF8332CF1F64641C0059651B /* Marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Marker.png; sourceTree = "<group>"; };
 		DF8332D01F6471CB0059651B /* ProfessionalsController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfessionalsController+UICollectionView.swift"; sourceTree = "<group>"; };
 		DF8332D61F6472D60059651B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		DF8332D91F647B310059651B /* GetAllProfessionalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllProfessionalInteractor.swift; sourceTree = "<group>"; };
+		DF8332D91F647B310059651B /* GetProfessionalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalInteractor.swift; sourceTree = "<group>"; };
 		DFC28B7D1F6302FA0098B184 /* ProfessionalPannel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProfessionalPannel.png; sourceTree = "<group>"; };
 		DFC2F6A51F69B43B005DD720 /* ProfessionalDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalDetailController.swift; sourceTree = "<group>"; };
 		DFC77D5E1F6333D600D96F24 /* GoldStarFilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoldStarFilled.png; sourceTree = "<group>"; };
@@ -226,8 +226,8 @@
 		DF297B4C1F6746A30063CF62 /* ProfessionalNetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				DF1B1E8D1F65F9B3001BD670 /* GetAllProfessionalsNetworkManager.swift */,
-				DF1B1E8F1F65F9E0001BD670 /* GetAllProfessionalsNetworkManagerImpl.swift */,
+				DF1B1E8D1F65F9B3001BD670 /* GetProfessionalsNetworkManager.swift */,
+				DF1B1E8F1F65F9E0001BD670 /* GetProfessionalsNetworkManagerImpl.swift */,
 			);
 			path = ProfessionalNetworkManager;
 			sourceTree = "<group>";
@@ -235,8 +235,8 @@
 		DF297B4D1F6746B90063CF62 /* ProfessionalInteractor */ = {
 			isa = PBXGroup;
 			children = (
-				DF8332D91F647B310059651B /* GetAllProfessionalInteractor.swift */,
-				DF1B1E8B1F65F949001BD670 /* GetAllProfessionalInteractorImpl.swift */,
+				DF8332D91F647B310059651B /* GetProfessionalInteractor.swift */,
+				DF1B1E8B1F65F949001BD670 /* GetProfessionalInteractorImpl.swift */,
 			);
 			path = ProfessionalInteractor;
 			sourceTree = "<group>";
@@ -552,9 +552,9 @@
 				88B316DE1F2CB2F3009426C8 /* AppDelegate.swift in Sources */,
 				DF8332D71F6472D60059651B /* Constants.swift in Sources */,
 				DF1517451F65B25F00582D04 /* BaseModel.swift in Sources */,
-				DF1B1E8E1F65F9B3001BD670 /* GetAllProfessionalsNetworkManager.swift in Sources */,
-				DF8332DA1F647B310059651B /* GetAllProfessionalInteractor.swift in Sources */,
-				DF1B1E901F65F9E0001BD670 /* GetAllProfessionalsNetworkManagerImpl.swift in Sources */,
+				DF1B1E8E1F65F9B3001BD670 /* GetProfessionalsNetworkManager.swift in Sources */,
+				DF8332DA1F647B310059651B /* GetProfessionalInteractor.swift in Sources */,
+				DF1B1E901F65F9E0001BD670 /* GetProfessionalsNetworkManagerImpl.swift in Sources */,
 				DFC2F6A61F69B43B005DD720 /* ProfessionalDetailController.swift in Sources */,
 				DF1517421F65B25500582D04 /* Pagination.swift in Sources */,
 				DF1B1E861F65F4D0001BD670 /* DomainUrl.swift in Sources */,
@@ -563,7 +563,7 @@
 				DF1517441F65B25C00582D04 /* HeaderData.swift in Sources */,
 				DF8332D11F6471CB0059651B /* ProfessionalsController+UICollectionView.swift in Sources */,
 				DF812B941F69DCC500140B22 /* AsyncData.swift in Sources */,
-				DF1B1E8C1F65F949001BD670 /* GetAllProfessionalInteractorImpl.swift in Sources */,
+				DF1B1E8C1F65F949001BD670 /* GetProfessionalInteractorImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
