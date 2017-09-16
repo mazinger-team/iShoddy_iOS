@@ -21,6 +21,7 @@
 		DF1517431F65B25900582D04 /* ErrorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05E8BE1F65A94200504A87 /* ErrorData.swift */; };
 		DF1517441F65B25C00582D04 /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05E8BC1F65A94200504A87 /* HeaderData.swift */; };
 		DF1517451F65B25F00582D04 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05E8BF1F65A94200504A87 /* BaseModel.swift */; };
+		DF16357D1F6C6BE5006DDB34 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF16357C1F6C6BE5006DDB34 /* ActivityIndicator.swift */; };
 		DF1B1E861F65F4D0001BD670 /* DomainUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E851F65F4D0001BD670 /* DomainUrl.swift */; };
 		DF1B1E881F65F600001BD670 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E871F65F600001BD670 /* NetworkManager.swift */; };
 		DF1B1E8C1F65F949001BD670 /* GetProfessionalInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E8B1F65F949001BD670 /* GetProfessionalInteractorImpl.swift */; };
@@ -75,6 +76,7 @@
 		DF05E8BE1F65A94200504A87 /* ErrorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorData.swift; sourceTree = "<group>"; };
 		DF05E8BF1F65A94200504A87 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		DF05E8C01F65A94200504A87 /* ListProfessionalsOutputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProfessionalsOutputType.swift; sourceTree = "<group>"; };
+		DF16357C1F6C6BE5006DDB34 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		DF1B1E851F65F4D0001BD670 /* DomainUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainUrl.swift; sourceTree = "<group>"; };
 		DF1B1E871F65F600001BD670 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DF1B1E8B1F65F949001BD670 /* GetProfessionalInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalInteractorImpl.swift; sourceTree = "<group>"; };
@@ -193,6 +195,13 @@
 			path = Professionals;
 			sourceTree = "<group>";
 		};
+		DF16357E1F6CACD7006DDB34 /* CollectionFooter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionFooter;
+			sourceTree = "<group>";
+		};
 		DF1B1E841F65F46D001BD670 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,10 +310,12 @@
 		DFC28B7C1F62FFFC0098B184 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DF16357E1F6CACD7006DDB34 /* CollectionFooter */,
 				DF297B401F670EF50063CF62 /* Dialog */,
 				88B316E61F2CB2F3009426C8 /* LaunchScreen.storyboard */,
 				DF297B4E1F674D800063CF62 /* Professional.storyboard */,
 				DF0497991F65C56300A60FA9 /* ProfessionalCell.swift */,
+				DF16357C1F6C6BE5006DDB34 /* ActivityIndicator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -559,6 +570,7 @@
 				DF1517421F65B25500582D04 /* Pagination.swift in Sources */,
 				DF1B1E861F65F4D0001BD670 /* DomainUrl.swift in Sources */,
 				DF1B1E921F65FC10001BD670 /* ListProfessionalsResponseType.swift in Sources */,
+				DF16357D1F6C6BE5006DDB34 /* ActivityIndicator.swift in Sources */,
 				DF1517401F65B25000582D04 /* Professional.swift in Sources */,
 				DF1517441F65B25C00582D04 /* HeaderData.swift in Sources */,
 				DF8332D11F6471CB0059651B /* ProfessionalsController+UICollectionView.swift in Sources */,

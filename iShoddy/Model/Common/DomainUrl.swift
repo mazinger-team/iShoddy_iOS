@@ -24,7 +24,7 @@ public class DomainUrl{
     
     public static var listProfessionals: String {
         //return DomainUrl.BASE + "/apiv1/getProfessionals"
-        return DomainUrl.BASE + "/v2/59bae86a0f0000e404622a3b"
+        return DomainUrl.BASE + "/v2/59bc19d60f00003a05ff8837"
         
     }
 }

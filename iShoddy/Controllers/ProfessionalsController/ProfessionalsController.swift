@@ -11,38 +11,59 @@ import UIKit
 class ProfessionalsController: UIViewController {
     
     @IBOutlet weak var ProfessionalCollectionView: UICollectionView!
+    @IBOutlet weak var professionalActivityIndicator: UIActivityIndicatorView!
+    
+    var lastContentOffset: CGFloat = 0.0
     
     var popViewController : Dialog!
     
     var professionals : [Professional] =  [Professional]()
     
+    var loadingStatus = false
+    
+    let filter: String? = ""
+    let order: String? = ""
+    let fields: String? = ""
+    var page: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let manager : GetProfessionalsNetworkManager  = GetProfessionalsNetWorkManagerImpl()
-
-        let getProfessionalsInteractorImpl: GetProfessionalInteractorImpl = GetProfessionalInteractorImpl(getProfessionalsNetworkManager: manager)
         
-        getProfessionalsInteractorImpl.execute(completion: { (listProfessionalsResponseType: ListProfessionalsResponseType)  in
-            
-            self.professionals = listProfessionalsResponseType.listProfessionalsOutputType.professionals
-            
-            DispatchQueue.main.async {
-                self.ProfessionalCollectionView.reloadData()
-            }
-        }, onError: { (errorData : ErrorData) in
-            let bundle = Bundle(for: Dialog.self)
-            DispatchQueue.main.async {
-                self.popViewController = Dialog(nibName: "Dialog", bundle: bundle)
-                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"),withTitle: "Oppssss¡¡¡", withMessage: errorData.errorText, animated: true)
-            }
-        })
+        getProfessionals(filter: filter, order: order, fields: fields, page: page)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    public func getProfessionals(filter: String?, order: String?, fields: String?, page: Int) {
+        if !loadingStatus{
+            loadingStatus = true
+            
+            let manager : GetProfessionalsNetworkManager  = GetProfessionalsNetWorkManagerImpl()
+            
+            let getProfessionalsInteractorImpl: GetProfessionalInteractorImpl = GetProfessionalInteractorImpl(getProfessionalsNetworkManager: manager)
+            
+            getProfessionalsInteractorImpl.execute(filter: filter, order: order, fields: fields, page: page, completion: { (listProfessionalsResponseType: ListProfessionalsResponseType)  in
+                
+                    self.professionals.append(contentsOf: listProfessionalsResponseType.listProfessionalsOutputType.professionals)
+   
+                //self.professionals = listProfessionalsResponseType.listProfessionalsOutputType.professionals
+                DispatchQueue.main.async {
+                    self.professionalActivityIndicator.isHidden = true
+                    self.professionalActivityIndicator.stopAnimating()
+                    self.ProfessionalCollectionView.reloadData()
+                }
+            }, onError: { (errorData : ErrorData) in
+                let bundle = Bundle(for: Dialog.self)
+                DispatchQueue.main.async {
+                    self.popViewController = Dialog(nibName: "Dialog", bundle: bundle)
+                    self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"),withTitle: "Oppssss¡¡¡", withMessage: errorData.errorText, animated: true)
+                }
+            })
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -55,53 +76,24 @@ class ProfessionalsController: UIViewController {
         }
     }
     
-    var indexOfPageRequest = 1
-    var loadingStatus = false
-    
-    func loadData(){
-        if !loadingStatus{
-            loadingStatus = true
-            //viewModel.getData(pageIndex: indexOfPageRequest)
-            
-            let getAllProfessionalsInteractorImpl: GetProfessionalInteractorImpl = GetProfessionalInteractorImpl(getAllProfessionalsNetworkManager: manager)
-
-            
-            getAllProfessionalsInteractorImpl.execute(completion: { (listProfessionalsResponseType: ListProfessionalsResponseType)  in
-                
-                self.professionals = listProfessionalsResponseType.listProfessionalsOutputType.professionals
-                
-                DispatchQueue.main.async {
-                    self.ProfessionalCollectionView.reloadData()
-                }
-            }, onError: { (errorData : ErrorData) in
-                let bundle = Bundle(for: Dialog.self)
-                DispatchQueue.main.async {
-                    self.popViewController = Dialog(nibName: "Dialog", bundle: bundle)
-                    self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"),withTitle: "Oppssss¡¡¡", withMessage: errorData.errorText, animated: true)
-                }
-            })
-            
-            
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row + 1 == professionals.count {
+            professionalActivityIndicator.isHidden = false
+            professionalActivityIndicator.startAnimating()
+            loadingStatus = false
+            page += 1
+            getProfessionals(filter: filter, order: order, fields: fields, page: page)
+        } else if indexPath.row + 1 == professionals.count-8  {
+            loadingStatus = false
+            page += 1
+            getProfessionals(filter: filter, order: order, fields: fields, page: page)
         }
     }
     
- func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        // calculates where the user is in the y-axis
-        let offsetY = scrollView.contentOffset.y
-        let contentHeight = scrollView.contentSize.height
-        
-        if offsetY > contentHeight - scrollView.frame.size.height {
-            
-            // increments the number of the page to request
-            indexOfPageRequest += 1
-            
-            // call your API for more data
-            loadData()
-            
-            // tell the table view to reload with the new data
-            self.ProfessionalCollectionView.reloadData()
-        }
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let width = (self.view.frame.size.width - 12 * 3) / 3 //some width
+        let height = width * 1.5 //ratio
+        return CGSize(width: width, height: height);
     }
 }
 

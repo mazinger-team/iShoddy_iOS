@@ -16,8 +16,8 @@ public class GetProfessionalInteractorImpl: GetProfessionalInteractor {
         self.getProfessionalNetworkManager = getProfessionalsNetworkManager
     }
     
-    public func execute(completion:@escaping  listProfessional, onError: @escaping errorBlock ) {
-        getProfessionalNetworkManager.execute(completion: { (listProfessionalsResponseType : ListProfessionalsResponseType)  in
+    public func execute(filter: String?, order: String?, fields: String?, page: Int, completion: @escaping  listProfessional, onError: @escaping errorBlock ) {
+        getProfessionalNetworkManager.execute(filter: filter, order: order, fields: fields, page: page, completion: { (listProfessionalsResponseType : ListProfessionalsResponseType)  in
             completion(listProfessionalsResponseType)
         }) { (errorData:ErrorData) in
             onError(errorData)

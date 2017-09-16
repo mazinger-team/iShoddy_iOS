@@ -12,5 +12,5 @@ public typealias listProfessional =  ( ListProfessionalsResponseType )  -> Void
 
 
 public protocol GetProfessionalInteractor {
-    func execute(completion:@escaping  listProfessional, onError: @escaping errorBlock )
+    func execute(filter: String?, order: String?, fields: String?, page: Int, completion:@escaping  listProfessional, onError: @escaping errorBlock )
 }

@@ -10,9 +10,53 @@ import Foundation
 import UIKit
 
 public class GetProfessionalsNetWorkManagerImpl:  GetProfessionalsNetworkManager {
-    public func execute(completion: @escaping listProfessional, onError: @escaping errorBlock) {
+    public func execute(filter: String?, order: String?, fields: String?, page: Int, completion: @escaping listProfessional, onError: @escaping errorBlock) {
+        var urlProfessionals: String = DomainUrl.listProfessionals
+        var indParameters: Bool = false
+        
+        if let filter = filter {
+            if filter != "" {
+                urlProfessionals = urlProfessionals+"?"+filter
+                indParameters = true
+            }
+        }
+        
+        if let order = order {
+            if order != "" {
+                if !indParameters {
+                    urlProfessionals = urlProfessionals+"?"
+                    indParameters = true
+                } else {
+                    urlProfessionals = urlProfessionals+"&"
+                }
+                urlProfessionals = urlProfessionals+"order="+order
+            }
+        }
+        
+        if let fields = fields {
+            if fields != "" {
+                if !indParameters {
+                    urlProfessionals = urlProfessionals+"?"
+                    indParameters = true
+                } else {
+                    urlProfessionals = urlProfessionals+"&"
+                }
+                urlProfessionals = urlProfessionals+"fields="+fields
+            }
+        }
+        
+        if page != 0 {
+            if !indParameters {
+                urlProfessionals = urlProfessionals+"?"
+                indParameters = true
+            } else {
+                urlProfessionals = urlProfessionals+"&"
+            }
+            urlProfessionals = urlProfessionals+"page="+String(describing: page)
+        }
+        
         let dataTask = NetworkManager.sharedNetworkManager.getSession()
-            .dataTask(with: NetworkManager.sharedNetworkManager.generateURLRequest(withURL: DomainUrl.listProfessionals)) { (data, response, error) in
+            .dataTask(with: NetworkManager.sharedNetworkManager.generateURLRequest(withURL: urlProfessionals)) { (data, response, error) in
                 if error != nil {
                     onError(ErrorData(errorText: error?.localizedDescription, errorFlag: true, errorType: "T"))
                 } else {
@@ -27,6 +71,7 @@ public class GetProfessionalsNetWorkManagerImpl:  GetProfessionalsNetworkManager
                             onError(ErrorData(errorText: "Error en respuesta del servicio:" + httpResponse.statusCode.description , errorFlag: true, errorType: "T"))
                             return
                         }
+sleep(2)
                         let listProfessionalsResponseType = ListProfessionalsResponseType(dictionary: jsonResponse!)
                         completion(listProfessionalsResponseType)
                     } else {

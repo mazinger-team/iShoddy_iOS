@@ -39,28 +39,4 @@ extension ProfessionalsController: UICollectionViewDelegate, UICollectionViewDat
         
         return cell
     }
-    
-    /*func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = ProfessionalCollectionView.frame.size.width / 2;
-        
-        return CGSize(width: width, height: ProfessionalCollectionView.frame.size.height)
-    }*/
-    
-    func viewWillTransitionToSize(size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.orientation.isLandscape {
-            if let layout = ProfessionalCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-                let itemWidth = (view.bounds.width / 3.0)
-                let itemHeight = layout.itemSize.height
-                layout.itemSize = CGSize(width: itemWidth, height: itemHeight)
-                layout.invalidateLayout()
-            }
-        } else {
-            if let layout = ProfessionalCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-                let itemWidth = (view.bounds.width / 2.0)-30
-                let itemHeight = layout.itemSize.height
-                layout.itemSize = CGSize(width: itemWidth, height: itemHeight)
-                layout.invalidateLayout()
-            }
-        }
-    }
 }

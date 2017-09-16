@@ -176,13 +176,21 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Td4-7Z-5jh"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jNG-DY-lA1" userLabel="Professional Activity Indicator">
+                                <rect key="frame" x="177" y="642" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jNG-DY-lA1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ftt-Od-ovc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jNG-DY-lA1" secondAttribute="bottom" constant="5" id="vPz-Pq-aC8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profesionales" id="VRE-0H-lG3"/>
                     <connections>
                         <outlet property="ProfessionalCollectionView" destination="0Z7-i9-ton" id="AJp-H3-Oml"/>
+                        <outlet property="professionalActivityIndicator" destination="jNG-DY-lA1" id="oGg-aX-GmF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

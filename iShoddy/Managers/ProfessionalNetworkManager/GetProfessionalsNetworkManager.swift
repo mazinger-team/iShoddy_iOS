@@ -10,6 +10,6 @@ import Foundation
 import UIKit
 
 public protocol GetProfessionalsNetworkManager {
-    func execute(completion: @escaping listProfessional, onError: @escaping errorBlock) -> Void
+    func execute(filter: String?, order: String?, fields: String?, page: Int, completion: @escaping listProfessional, onError: @escaping errorBlock) -> Void
     func downloadProfessionalImage(professional: Professional, completion: @escaping (UIImage) -> Void)
 }
