@@ -9,6 +9,6 @@
 import Foundation
 
 
-public protocol GetAllCategoriesNetworkManager {
+public protocol GetAllCategoriesManager {
      func execute(completion: @escaping listCategory, onError: @escaping errorBlock) -> Void
 }

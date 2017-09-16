@@ -6,4 +6,22 @@
 //  Copyright © 2017 ESoft. All rights reserved.
 //
 
-import Foundation
+import CoreData
+
+extension NSManagedObjectContext{
+    
+   
+    public func insertIntoObject<A: NSManagedObject & ManagedObjectType> () -> A{
+        guard let obj = NSEntityDescription.insertNewObject(forEntityName: A.entityName, into: self) as? A
+            else {
+                 fatalError("La cagamos compadre")
+                
+        }
+        
+        
+        return obj
+        
+    }
+}
+
+

@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+public typealias listCategory =  ( ListCategoriesResponseType )  -> Void
+
+public protocol GetAllCategoriesInteractor{
+    func execute(completion:@escaping  listCategory, onError: @escaping errorBlock )
+}
+

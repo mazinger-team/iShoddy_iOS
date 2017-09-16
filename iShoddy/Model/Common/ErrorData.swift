@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+public struct ErrorData{
+    let errorCode: String?
+    let errorTitle: String?
+    let errorText: String?
+    let errorFlag: Bool?
+    let errorType: String?
+    
+    
+    
+}

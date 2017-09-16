@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13233.4" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="CategoryData" representedClassName="CategoryData" syncable="YES" codeGenerationType="class">
+        <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlLogo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subcategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SubcategoryData" inverseName="idCategory" inverseEntity="SubcategoryData" syncable="YES"/>
+    </entity>
+    <entity name="SubcategoryData" representedClassName="SubcategoryData" syncable="YES" codeGenerationType="class">
+        <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="modificationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="idCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryData" inverseName="subcategories" inverseEntity="CategoryData" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CategoryData" positionX="-623" positionY="-180" width="128" height="118"/>
+        <element name="SubcategoryData" positionX="-54" positionY="18" width="128" height="118"/>
+    </elements>
 </model>

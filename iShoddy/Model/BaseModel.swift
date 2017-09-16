@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+public class BaseModel{
+    public var headerData : HeaderData?
+    
+    init() {
+        
+    }
+    
+      init(headerData:HeaderData) {
+        self.headerData = headerData
+    }
+}

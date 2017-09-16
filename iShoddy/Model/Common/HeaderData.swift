@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+public struct HeaderData{
+    let pagination : Pagination?
+    let errorData : ErrorData?
+    
+    
+}

@@ -7,12 +7,26 @@
 //
 
 import Foundation
+import CoreData
 
-
-public class CheckCacheInteractorImpl: CheckCacheInteractor{
+public class CheckCacheFakeInteractorImpl: CheckCacheInteractor{
+    let context:NSManagedObjectContext
+    
+    init(context: NSManagedObjectContext) {
+        self.context = context
+    }
     
     func refresh() -> Bool{
-        return true
+         let categoriesFetchRequest: NSFetchRequest<CategoryData> = CategoryData.fetchRequest()
+        do {
+            let result: [CategoryData] = try context.fetch(categoriesFetchRequest)
+            if( result.count > 0){
+                return false
+            }
+             return true
+        } catch  {
+             return true
+        }
     }
     
 }

@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+public protocol PersistCategoriesCoreData{
+   func execute(categoriesToSave: [Category], completion: @escaping (Int) -> Void, onError: @escaping errorBlock)
+}

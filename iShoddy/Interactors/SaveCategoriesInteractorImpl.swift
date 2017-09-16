@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+
+
+
+public class SaveCategoriesInteractorImpl : SaveCategoriesInteractor{
+    
+    let persistCategoriesCoreData: PersistCategoriesCoreData
+    
+    init(persistCategoriesCoreData: PersistCategoriesCoreData ) {
+        self.persistCategoriesCoreData = persistCategoriesCoreData
+    }
+    
+
+    public func execute(categoriesToSave: [Category], completion: @escaping (Int) -> Void, onError: @escaping errorBlock ) {
+        persistCategoriesCoreData.execute(categoriesToSave: categoriesToSave, completion: completion, onError: onError)
+    }
+    
+}

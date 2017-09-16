@@ -7,3 +7,23 @@
 //
 
 import Foundation
+
+
+public class ListCategoriesResponseType : BaseModel{
+    
+    let listCategoriesOutputType : ListCategoriesOutputType
+    
+
+    override init() {
+        listCategoriesOutputType = ListCategoriesOutputType()
+        super.init()
+    }
+    
+    init(dictionary:[String : Any]) {
+        self.listCategoriesOutputType = ListCategoriesOutputType(dictionary: dictionary["listCategoriesOutputType"] as! Dictionary<String, Any> )
+        super.init()
+       
+    }
+    
+    
+}

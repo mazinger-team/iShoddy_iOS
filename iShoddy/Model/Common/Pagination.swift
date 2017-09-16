@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+public struct Pagination{
+    let paginationFlag : Bool
+    let paginationKey: String?
+    
+    
+}

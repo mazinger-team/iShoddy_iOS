@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+
+extension CategoryData :ManagedObjectType{
+    public static var entityName: String {
+        return "CategoryData"
+    }
+    
+}
