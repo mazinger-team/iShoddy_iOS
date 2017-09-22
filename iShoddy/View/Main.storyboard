@@ -91,10 +91,10 @@
                                                     <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                                 <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCx-Kz-PNx">
-                                                    <rect key="frame" x="0.0" y="-0.33333333333333215" width="414" height="42"/>
+                                                    <rect key="frame" x="0.0" y="-0.66666666666666785" width="414" height="42.333333333333329"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6q-M9-s3X" userLabel="Name">
-                                                            <rect key="frame" x="9.9999999999999964" y="7.6666666666666643" width="46.666666666666657" height="21"/>
+                                                            <rect key="frame" x="9.9999999999999964" y="8.3333333333333357" width="46.666666666666657" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="UAF-bV-73e"/>
                                                             </constraints>
@@ -103,7 +103,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disponemos de Fontaneros, Electricistas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs1-hA-MbL" userLabel="SubCategory">
-                                                            <rect key="frame" x="10" y="26" width="372.66666666666669" height="14"/>
+                                                            <rect key="frame" x="10" y="26.333333333333336" width="372.66666666666669" height="13.999999999999993"/>
                                                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="10"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>

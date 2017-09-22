@@ -7,4 +7,3 @@
 
 #import "MSViewControllerSlidingPanel.h"
 #import "MSSlidingPanelController.h"
-

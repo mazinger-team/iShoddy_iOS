@@ -13,8 +13,8 @@ import Foundation
 /* For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 public struct Professional {
-    public var id : Int?
-    public var user_id : Int?
+    public var id : Int = 0
+    public var user_id : Int = 0
     public var user_name : String?
     public var demands_id : Array<String>?
     public var category_id : String?
@@ -46,6 +46,45 @@ public struct Professional {
     public var photo_number : Int?
     public var distance : Double?
 
+    init(id: Int, user_id: Int, user_name: String?, demands_id: Array<String>?, category_id: String?, subcategory_id : String?, corp_name : String?,
+         logo_url : String?, images_url : Array<String>?, description : String?, fiscal_id : String?, street : String?, postal_code : String?, area : String?,
+         city : String?, province : String?, gps_lat : Double?, gps_lon : Double?, web_url : String?, email : String?, telephone : String?, opening_hours : String?,
+         register_date : Date?, rate_visit : Int?, rate_hour : Int?, rate_notes : String?, rating_accumulated : Int?, rating_votes : Int?, rating : Double?,
+         reviews_number : Int?, photo_number : Int?, distance : Double?) {
+        self.id = id
+        self.user_id = user_id
+        self.user_name = user_name
+        self.demands_id = demands_id
+        self.category_id = category_id
+        self.subcategory_id = subcategory_id
+        self.corp_name = corp_name
+        self.logo_url = logo_url
+        self.images_url = images_url
+        self.description = description
+        self.fiscal_id = fiscal_id
+        self.street = street
+        self.postal_code = postal_code
+        self.area = area
+        self.city = city
+        self.province = province
+        self.gps_lat = gps_lat
+        self.gps_lon = gps_lon
+        self.web_url = web_url
+        self.email = email
+        self.telephone = telephone
+        self.opening_hours = opening_hours
+        self.register_date = register_date
+        self.rate_visit = rate_visit
+        self.rate_hour = rate_hour
+        self.rate_notes = rate_notes
+        self.rating_accumulated = rating_accumulated
+        self.rating_votes = rating_votes
+        self.rating = rating
+        self.reviews_number = reviews_number
+        self.photo_number = photo_number
+        self.distance = distance
+    }
+    
     /**
     Returns an array of models based on given dictionary.
     

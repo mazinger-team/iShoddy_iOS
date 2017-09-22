@@ -55,34 +55,19 @@ public class GetProfessionalsNetWorkManagerImpl:  GetProfessionalsNetworkManager
             urlProfessionals = urlProfessionals+"page="+String(describing: page)
         }
         
-        let dataTask = NetworkManager.sharedNetworkManager.getSession()
-            .dataTask(with: NetworkManager.sharedNetworkManager.generateURLRequest(withURL: urlProfessionals)) { (data, response, error) in
-                if error != nil {
-                    onError(ErrorData(errorText: error?.localizedDescription, errorFlag: true, errorType: "T"))
-                } else {
-                    guard let httpResponse = response as? HTTPURLResponse else {
-                        onError(ErrorData(errorText: "Unsupported protocol", errorFlag: true, errorType: "T"))
-                        return
-                    }
-                    
-                    if 200 ..< 300 ~= httpResponse.statusCode {
-                        guard let jsonResponse = try? JSONSerialization.jsonObject(with: data!) as? [String: Any] else {
-                            //Error en el parseo
-                            onError(ErrorData(errorText: "Error en respuesta del servicio:" + httpResponse.statusCode.description , errorFlag: true, errorType: "T"))
-                            return
-                        }
-sleep(2)
-                        let listProfessionalsResponseType = ListProfessionalsResponseType(dictionary: jsonResponse!)
-                        completion(listProfessionalsResponseType)
-                    } else {
-                        //Error http
-                        onError(ErrorData(errorText: "Error en respuesta del servicio:" + httpResponse.statusCode.description , errorFlag: true, errorType: "T"))
-                    }
-                }
+        NetworkManager.sharedNetworkManager.execute(withURL: DomainUrl.listProfessionals, completion: {(data:Data) in
+            guard let jsonResponse = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+                //Error en el parseo
+                onError(ErrorData(errorCode: nil, errorTitle: "Error en el parser", errorText: "Error en respuesta del servicio" , errorFlag: true, errorType: "T"))
+                return
+            }
+            let listProfessionalsResponseType = ListProfessionalsResponseType(dictionary: jsonResponse!)
+            completion(listProfessionalsResponseType)
+        }) { (errorData) in
+            onError(ErrorData(errorCode: nil, errorTitle: nil, errorText: "Error en respuesta del servicio:", errorFlag: true, errorType: "T"))
         }
-        dataTask.resume();
     }
-    
+
     public func downloadProfessionalImage(professional: Professional, completion: @escaping (UIImage) -> Void) {
         DispatchQueue.global().async {
             if let url = URL(string: professional.logo_url!) {

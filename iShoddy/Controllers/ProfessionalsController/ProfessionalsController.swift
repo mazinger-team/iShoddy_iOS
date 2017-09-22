@@ -29,6 +29,8 @@ class ProfessionalsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        automaticallyAdjustsScrollViewInsets = false
+        
         getProfessionals(filter: filter, order: order, fields: fields, page: page)
     }
 

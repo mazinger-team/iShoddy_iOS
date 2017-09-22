@@ -43,7 +43,7 @@ final class NetworkManager{
     
     public func execute(withURL: String, completion: @escaping clousureCompletionNM, onError: @escaping errorBlock) {
         let dataTask = sharedSession
-            .dataTask(with: NetworkManager.sharedNetworkManager.generateURLRequest(withURL: DomainUrl.oneCategories ))
+            .dataTask(with: NetworkManager.sharedNetworkManager.generateURLRequest(withURL: withURL ))
             { (data, response, error) in
                 
                 if error != nil {

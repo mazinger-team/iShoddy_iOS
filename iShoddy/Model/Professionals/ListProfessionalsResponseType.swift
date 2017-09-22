@@ -11,9 +11,15 @@ import Foundation
 public class ListProfessionalsResponseType : BaseModel {
     let listProfessionalsOutputType : ListProfessionalsOutputType
     
-    init(dictionary:[String : Any]) {
-        print(type(of:dictionary["professionals"]))
-        self.listProfessionalsOutputType = ListProfessionalsOutputType(dictionary: dictionary["listProfessionalsOutputType"] as! Dictionary<String, Any>)
+    
+    override init() {
+        listProfessionalsOutputType = ListProfessionalsOutputType()
         super.init()
+    }
+    
+    init(dictionary:[String : Any]) {
+        self.listProfessionalsOutputType = ListProfessionalsOutputType(dictionary: dictionary["listProfessionalsOutputType"] as! Dictionary<String, Any> )
+        super.init()
+        
     }
 }

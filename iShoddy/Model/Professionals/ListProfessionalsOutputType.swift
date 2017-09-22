@@ -15,14 +15,17 @@ import Foundation
 public class ListProfessionalsOutputType {
     public var professionals : [Professional]
     
+    init() {
+        professionals = [Professional] ()
+    }
     
     init(dictionary: [String : Any]) {
         professionals = [Professional]()
         
         if let arrayProfessional = dictionary["professionals"] as? Array<[String : Any ]>{
             for professionalDictionary in arrayProfessional as Array {
-                let professional = Professional(id: professionalDictionary["id"] as? Int,
-                                                user_id: professionalDictionary["user_id"] as? Int,
+                let professional = Professional(id: (professionalDictionary["id"] as? Int)!,
+                                                user_id: (professionalDictionary["user_id"] as? Int)!,
                                                 user_name: professionalDictionary["user_name"] as? String,
                                                 demands_id: professionalDictionary["demands_id"] as? Array<String>,
                                                 category_id: professionalDictionary["category_id"] as? String,

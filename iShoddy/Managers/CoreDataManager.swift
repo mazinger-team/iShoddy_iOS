@@ -39,7 +39,7 @@ public func saveContext(context: NSManagedObjectContext, onError: errorBlock? = 
         do {
             try context.save()
         } catch {
-            if let errorClosure = onError {
+            if onError != nil {
                // errorClosure(error)
             }
         }

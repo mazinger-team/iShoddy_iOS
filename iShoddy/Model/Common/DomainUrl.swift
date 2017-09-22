@@ -18,6 +18,7 @@ public class DomainUrl{
     
     public static var listCategories : String {
         return DomainUrl.BASE + "/v2/59b2d63b120000de05892490"
+    }
     
     public static var oneCategories : String {
         return DomainUrl.BASE + "/v2/59badac50f00005104622a16"
