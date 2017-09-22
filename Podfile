@@ -6,7 +6,8 @@ target 'iShoddy' do
   use_frameworks!
 
   # Pods for iShoddy
-
+  pod 'Cosmos', :git => 'https://github.com/evgenyneu/Cosmos.git', :branch => 'swift-4.0'
+  
   target 'iShoddyTests' do
     inherit! :search_paths
     # Pods for testing

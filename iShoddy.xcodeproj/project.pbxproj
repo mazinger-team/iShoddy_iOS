@@ -7,14 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B979644A68A29F954B25F08 /* Pods_iShoddyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0B46FC57944787FA197020 /* Pods_iShoddyTests.framework */; };
+		30239B63022279499C9129C1 /* Pods_iShoddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CD05B79CAFD461D3F9FDFF /* Pods_iShoddy.framework */; };
+		54FE71803A729A3138CAD88C /* Pods_iShoddyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E9E25B6F9EB362F1CD72A5 /* Pods_iShoddyTests.framework */; };
 		88B316DE1F2CB2F3009426C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B316DD1F2CB2F3009426C8 /* AppDelegate.swift */; };
-		88B316E01F2CB2F3009426C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B316DF1F2CB2F3009426C8 /* ViewController.swift */; };
-		88B316E31F2CB2F3009426C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B316E11F2CB2F3009426C8 /* Main.storyboard */; };
+		88B316E01F2CB2F3009426C8 /* ProfessionalsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B316DF1F2CB2F3009426C8 /* ProfessionalsController.swift */; };
 		88B316E51F2CB2F3009426C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B316E41F2CB2F3009426C8 /* Assets.xcassets */; };
 		88B316E81F2CB2F3009426C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B316E61F2CB2F3009426C8 /* LaunchScreen.storyboard */; };
 		88B316F31F2CB2F3009426C8 /* iShoddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B316F21F2CB2F3009426C8 /* iShoddyTests.swift */; };
-		DA60DFB1F9DEA9C770872250 /* Pods_iShoddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A06C233B8EACE106B10D /* Pods_iShoddy.framework */; };
+		DF04979A1F65C56300A60FA9 /* ProfessionalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0497991F65C56300A60FA9 /* ProfessionalCell.swift */; };
+		DF1517401F65B25000582D04 /* Professional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05E8BD1F65A94200504A87 /* Professional.swift */; };
+		DF1517411F65B25300582D04 /* ListProfessionalsOutputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05E8C01F65A94200504A87 /* ListProfessionalsOutputType.swift */; };
+		DF1517421F65B25500582D04 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05E8BB1F65A94200504A87 /* Pagination.swift */; };
+		DF1517431F65B25900582D04 /* ErrorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05E8BE1F65A94200504A87 /* ErrorData.swift */; };
+		DF1517441F65B25C00582D04 /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05E8BC1F65A94200504A87 /* HeaderData.swift */; };
+		DF1517451F65B25F00582D04 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05E8BF1F65A94200504A87 /* BaseModel.swift */; };
+		DF16357D1F6C6BE5006DDB34 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF16357C1F6C6BE5006DDB34 /* ActivityIndicator.swift */; };
+		DF1B1E861F65F4D0001BD670 /* DomainUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E851F65F4D0001BD670 /* DomainUrl.swift */; };
+		DF1B1E881F65F600001BD670 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E871F65F600001BD670 /* NetworkManager.swift */; };
+		DF1B1E8C1F65F949001BD670 /* GetProfessionalInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E8B1F65F949001BD670 /* GetProfessionalInteractorImpl.swift */; };
+		DF1B1E8E1F65F9B3001BD670 /* GetProfessionalsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E8D1F65F9B3001BD670 /* GetProfessionalsNetworkManager.swift */; };
+		DF1B1E901F65F9E0001BD670 /* GetProfessionalsNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E8F1F65F9E0001BD670 /* GetProfessionalsNetworkManagerImpl.swift */; };
+		DF1B1E921F65FC10001BD670 /* ListProfessionalsResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1E911F65FC10001BD670 /* ListProfessionalsResponseType.swift */; };
+		DF297B3F1F670EEF0063CF62 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF297B3E1F670EEF0063CF62 /* Dialog.swift */; };
+		DF297B411F67195D0063CF62 /* ProfessionalPannel.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC28B7D1F6302FA0098B184 /* ProfessionalPannel.png */; };
+		DF297B431F6719640063CF62 /* Marker.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8332CF1F64641C0059651B /* Marker.png */; };
+		DF297B441F6719640063CF62 /* CameraPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC77D621F63367700D96F24 /* CameraPhoto.png */; };
+		DF297B451F67196B0063CF62 /* GoldStarEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC77D611F6333D700D96F24 /* GoldStarEmpty.png */; };
+		DF297B461F67196B0063CF62 /* GoldStarFilled.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC77D5E1F6333D600D96F24 /* GoldStarFilled.png */; };
+		DF297B491F6719C60063CF62 /* Dialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF297B3D1F670EEF0063CF62 /* Dialog.xib */; };
+		DF297B501F674DA30063CF62 /* Professional.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF297B4E1F674D800063CF62 /* Professional.storyboard */; };
+		DF812B941F69DCC500140B22 /* AsyncData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF812B931F69DCC500140B22 /* AsyncData.swift */; };
+		DF812B961F69DEA300140B22 /* professional-default.png in Resources */ = {isa = PBXBuildFile; fileRef = DF812B951F69DD6E00140B22 /* professional-default.png */; };
+		DF8332D11F6471CB0059651B /* ProfessionalsController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8332D01F6471CB0059651B /* ProfessionalsController+UICollectionView.swift */; };
+		DF8332D71F6472D60059651B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8332D61F6472D60059651B /* Constants.swift */; };
+		DF8332DA1F647B310059651B /* GetProfessionalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8332D91F647B310059651B /* GetProfessionalInteractor.swift */; };
+		DFC2F6A61F69B43B005DD720 /* ProfessionalDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2F6A51F69B43B005DD720 /* ProfessionalDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,22 +55,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		31FAC1654563990A36772599 /* Pods-iShoddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy.debug.xcconfig"; sourceTree = "<group>"; };
-		4E11AA31340BE83E5303D74A /* Pods-iShoddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests.release.xcconfig"; sourceTree = "<group>"; };
+		30CD05B79CAFD461D3F9FDFF /* Pods_iShoddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iShoddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B316DA1F2CB2F3009426C8 /* iShoddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShoddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B316DD1F2CB2F3009426C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88B316DF1F2CB2F3009426C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		88B316E21F2CB2F3009426C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88B316DF1F2CB2F3009426C8 /* ProfessionalsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalsController.swift; sourceTree = "<group>"; };
 		88B316E41F2CB2F3009426C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88B316E71F2CB2F3009426C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88B316E91F2CB2F3009426C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88B316EE1F2CB2F3009426C8 /* iShoddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShoddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B316F21F2CB2F3009426C8 /* iShoddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShoddyTests.swift; sourceTree = "<group>"; };
 		88B316F41F2CB2F3009426C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D61A06C233B8EACE106B10D /* Pods_iShoddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iShoddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0E813170B0E4BFC960CAD46 /* Pods-iShoddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AE0B46FC57944787FA197020 /* Pods_iShoddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iShoddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB2B35570C0EB7BA48BC8A80 /* Pods-iShoddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy.release.xcconfig"; sourceTree = "<group>"; };
+		8D7EA74476BFC40188E2CBCA /* Pods-iShoddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy.release.xcconfig"; sourceTree = "<group>"; };
+		9918001DABBF2A7DA88A499C /* Pods-iShoddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE77D7951957EAC196FF8488 /* Pods-iShoddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy.debug.xcconfig"; sourceTree = "<group>"; };
+		D1E9E25B6F9EB362F1CD72A5 /* Pods_iShoddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iShoddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0497991F65C56300A60FA9 /* ProfessionalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalCell.swift; sourceTree = "<group>"; };
+		DF05E8BB1F65A94200504A87 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		DF05E8BC1F65A94200504A87 /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
+		DF05E8BD1F65A94200504A87 /* Professional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professional.swift; sourceTree = "<group>"; };
+		DF05E8BE1F65A94200504A87 /* ErrorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorData.swift; sourceTree = "<group>"; };
+		DF05E8BF1F65A94200504A87 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		DF05E8C01F65A94200504A87 /* ListProfessionalsOutputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProfessionalsOutputType.swift; sourceTree = "<group>"; };
+		DF16357C1F6C6BE5006DDB34 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		DF1B1E851F65F4D0001BD670 /* DomainUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainUrl.swift; sourceTree = "<group>"; };
+		DF1B1E871F65F600001BD670 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DF1B1E8B1F65F949001BD670 /* GetProfessionalInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalInteractorImpl.swift; sourceTree = "<group>"; };
+		DF1B1E8D1F65F9B3001BD670 /* GetProfessionalsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalsNetworkManager.swift; sourceTree = "<group>"; };
+		DF1B1E8F1F65F9E0001BD670 /* GetProfessionalsNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalsNetworkManagerImpl.swift; sourceTree = "<group>"; };
+		DF1B1E911F65FC10001BD670 /* ListProfessionalsResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProfessionalsResponseType.swift; sourceTree = "<group>"; };
+		DF297B3D1F670EEF0063CF62 /* Dialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Dialog.xib; sourceTree = "<group>"; };
+		DF297B3E1F670EEF0063CF62 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
+		DF297B4F1F674D800063CF62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Professional.storyboard; sourceTree = "<group>"; };
+		DF812B931F69DCC500140B22 /* AsyncData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncData.swift; sourceTree = "<group>"; };
+		DF812B951F69DD6E00140B22 /* professional-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "professional-default.png"; sourceTree = "<group>"; };
+		DF8332CF1F64641C0059651B /* Marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Marker.png; sourceTree = "<group>"; };
+		DF8332D01F6471CB0059651B /* ProfessionalsController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfessionalsController+UICollectionView.swift"; sourceTree = "<group>"; };
+		DF8332D61F6472D60059651B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DF8332D91F647B310059651B /* GetProfessionalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalInteractor.swift; sourceTree = "<group>"; };
+		DFC28B7D1F6302FA0098B184 /* ProfessionalPannel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProfessionalPannel.png; sourceTree = "<group>"; };
+		DFC2F6A51F69B43B005DD720 /* ProfessionalDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalDetailController.swift; sourceTree = "<group>"; };
+		DFC77D5E1F6333D600D96F24 /* GoldStarFilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoldStarFilled.png; sourceTree = "<group>"; };
+		DFC77D611F6333D700D96F24 /* GoldStarEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoldStarEmpty.png; sourceTree = "<group>"; };
+		DFC77D621F63367700D96F24 /* CameraPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraPhoto.png; sourceTree = "<group>"; };
+		F74722B6548603A4F5BAD8A9 /* Pods-iShoddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA60DFB1F9DEA9C770872250 /* Pods_iShoddy.framework in Frameworks */,
+				30239B63022279499C9129C1 /* Pods_iShoddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,18 +113,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B979644A68A29F954B25F08 /* Pods_iShoddyTests.framework in Frameworks */,
+				54FE71803A729A3138CAD88C /* Pods_iShoddyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		78028BD8703732723C271906 /* Frameworks */ = {
+		752A3D8B36E485733C2B5780 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9D61A06C233B8EACE106B10D /* Pods_iShoddy.framework */,
-				AE0B46FC57944787FA197020 /* Pods_iShoddyTests.framework */,
+				30CD05B79CAFD461D3F9FDFF /* Pods_iShoddy.framework */,
+				D1E9E25B6F9EB362F1CD72A5 /* Pods_iShoddyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,9 +134,9 @@
 			children = (
 				88B316DC1F2CB2F3009426C8 /* iShoddy */,
 				88B316F11F2CB2F3009426C8 /* iShoddyTests */,
+				752A3D8B36E485733C2B5780 /* Frameworks */,
+				D5890DF1282D99FA96E1FA5B /* Pods */,
 				88B316DB1F2CB2F3009426C8 /* Products */,
-				C3AB2EF7A8871284FAAF1A58 /* Pods */,
-				78028BD8703732723C271906 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +152,14 @@
 		88B316DC1F2CB2F3009426C8 /* iShoddy */ = {
 			isa = PBXGroup;
 			children = (
+				DFC28B7A1F62FEAE0098B184 /* Controllers */,
+				DF8332D51F6472C70059651B /* Helpers */,
+				DFC28B771F62FE8F0098B184 /* Interactors */,
+				DFC28B781F62FE9E0098B184 /* Managers */,
+				DFC28B761F62FE800098B184 /* Model */,
+				DFC28B7B1F62FEB60098B184 /* Resources */,
+				DFC28B7C1F62FFFC0098B184 /* View */,
 				88B316DD1F2CB2F3009426C8 /* AppDelegate.swift */,
-				88B316DF1F2CB2F3009426C8 /* ViewController.swift */,
-				88B316E11F2CB2F3009426C8 /* Main.storyboard */,
-				88B316E41F2CB2F3009426C8 /* Assets.xcassets */,
-				88B316E61F2CB2F3009426C8 /* LaunchScreen.storyboard */,
 				88B316E91F2CB2F3009426C8 /* Info.plist */,
 			);
 			path = iShoddy;
@@ -111,21 +168,173 @@
 		88B316F11F2CB2F3009426C8 /* iShoddyTests */ = {
 			isa = PBXGroup;
 			children = (
-				88B316F21F2CB2F3009426C8 /* iShoddyTests.swift */,
 				88B316F41F2CB2F3009426C8 /* Info.plist */,
+				88B316F21F2CB2F3009426C8 /* iShoddyTests.swift */,
 			);
 			path = iShoddyTests;
 			sourceTree = "<group>";
 		};
-		C3AB2EF7A8871284FAAF1A58 /* Pods */ = {
+		D5890DF1282D99FA96E1FA5B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				31FAC1654563990A36772599 /* Pods-iShoddy.debug.xcconfig */,
-				FB2B35570C0EB7BA48BC8A80 /* Pods-iShoddy.release.xcconfig */,
-				A0E813170B0E4BFC960CAD46 /* Pods-iShoddyTests.debug.xcconfig */,
-				4E11AA31340BE83E5303D74A /* Pods-iShoddyTests.release.xcconfig */,
+				CE77D7951957EAC196FF8488 /* Pods-iShoddy.debug.xcconfig */,
+				8D7EA74476BFC40188E2CBCA /* Pods-iShoddy.release.xcconfig */,
+				9918001DABBF2A7DA88A499C /* Pods-iShoddyTests.debug.xcconfig */,
+				F74722B6548603A4F5BAD8A9 /* Pods-iShoddyTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DF0F9E2C1F653C240081A7D0 /* Professionals */ = {
+			isa = PBXGroup;
+			children = (
+				DF05E8C01F65A94200504A87 /* ListProfessionalsOutputType.swift */,
+				DF1B1E911F65FC10001BD670 /* ListProfessionalsResponseType.swift */,
+				DF05E8BD1F65A94200504A87 /* Professional.swift */,
+			);
+			path = Professionals;
+			sourceTree = "<group>";
+		};
+		DF16357E1F6CACD7006DDB34 /* CollectionFooter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionFooter;
+			sourceTree = "<group>";
+		};
+		DF1B1E841F65F46D001BD670 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DF05E8BF1F65A94200504A87 /* BaseModel.swift */,
+				DF1B1E851F65F4D0001BD670 /* DomainUrl.swift */,
+				DF05E8BE1F65A94200504A87 /* ErrorData.swift */,
+				DF05E8BC1F65A94200504A87 /* HeaderData.swift */,
+				DF05E8BB1F65A94200504A87 /* Pagination.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DF297B401F670EF50063CF62 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				DF297B3E1F670EEF0063CF62 /* Dialog.swift */,
+				DF297B3D1F670EEF0063CF62 /* Dialog.xib */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		DF297B4B1F67463A0063CF62 /* ProfessionalsController */ = {
+			isa = PBXGroup;
+			children = (
+				DF8332D01F6471CB0059651B /* ProfessionalsController+UICollectionView.swift */,
+				88B316DF1F2CB2F3009426C8 /* ProfessionalsController.swift */,
+			);
+			path = ProfessionalsController;
+			sourceTree = "<group>";
+		};
+		DF297B4C1F6746A30063CF62 /* ProfessionalNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B1E8D1F65F9B3001BD670 /* GetProfessionalsNetworkManager.swift */,
+				DF1B1E8F1F65F9E0001BD670 /* GetProfessionalsNetworkManagerImpl.swift */,
+			);
+			path = ProfessionalNetworkManager;
+			sourceTree = "<group>";
+		};
+		DF297B4D1F6746B90063CF62 /* ProfessionalInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				DF8332D91F647B310059651B /* GetProfessionalInteractor.swift */,
+				DF1B1E8B1F65F949001BD670 /* GetProfessionalInteractorImpl.swift */,
+			);
+			path = ProfessionalInteractor;
+			sourceTree = "<group>";
+		};
+		DF8332D51F6472C70059651B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DF8332D61F6472D60059651B /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DFC28B761F62FE800098B184 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B1E841F65F46D001BD670 /* Common */,
+				DF0F9E2C1F653C240081A7D0 /* Professionals */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFC28B771F62FE8F0098B184 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				DF297B4D1F6746B90063CF62 /* ProfessionalInteractor */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		DFC28B781F62FE9E0098B184 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DF297B4C1F6746A30063CF62 /* ProfessionalNetworkManager */,
+				DF812B931F69DCC500140B22 /* AsyncData.swift */,
+				DF1B1E871F65F600001BD670 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DFC28B7A1F62FEAE0098B184 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFC2F6A41F69B426005DD720 /* ProfessionalDetailController */,
+				DF297B4B1F67463A0063CF62 /* ProfessionalsController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DFC28B7B1F62FEB60098B184 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFC77D5B1F63330500D96F24 /* GoldStarRating */,
+				88B316E41F2CB2F3009426C8 /* Assets.xcassets */,
+				DFC77D621F63367700D96F24 /* CameraPhoto.png */,
+				DF8332CF1F64641C0059651B /* Marker.png */,
+				DFC28B7D1F6302FA0098B184 /* ProfessionalPannel.png */,
+				DF812B951F69DD6E00140B22 /* professional-default.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DFC28B7C1F62FFFC0098B184 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF16357E1F6CACD7006DDB34 /* CollectionFooter */,
+				DF297B401F670EF50063CF62 /* Dialog */,
+				88B316E61F2CB2F3009426C8 /* LaunchScreen.storyboard */,
+				DF297B4E1F674D800063CF62 /* Professional.storyboard */,
+				DF0497991F65C56300A60FA9 /* ProfessionalCell.swift */,
+				DF16357C1F6C6BE5006DDB34 /* ActivityIndicator.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFC2F6A41F69B426005DD720 /* ProfessionalDetailController */ = {
+			isa = PBXGroup;
+			children = (
+				DFC2F6A51F69B43B005DD720 /* ProfessionalDetailController.swift */,
+			);
+			path = ProfessionalDetailController;
+			sourceTree = "<group>";
+		};
+		DFC77D5B1F63330500D96F24 /* GoldStarRating */ = {
+			isa = PBXGroup;
+			children = (
+				DFC77D611F6333D700D96F24 /* GoldStarEmpty.png */,
+				DFC77D5E1F6333D600D96F24 /* GoldStarFilled.png */,
+			);
+			path = GoldStarRating;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,12 +344,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88B316F71F2CB2F3009426C8 /* Build configuration list for PBXNativeTarget "iShoddy" */;
 			buildPhases = (
-				406EB2F7AAEE787AF021F15C /* [CP] Check Pods Manifest.lock */,
+				AE0BDC1A5ED50A13A3DD0517 /* [CP] Check Pods Manifest.lock */,
 				88B316D61F2CB2F3009426C8 /* Sources */,
 				88B316D71F2CB2F3009426C8 /* Frameworks */,
 				88B316D81F2CB2F3009426C8 /* Resources */,
-				676A6153C6451D2845D5BA12 /* [CP] Embed Pods Frameworks */,
-				9E40D6C868CD1E147CB6BB83 /* [CP] Copy Pods Resources */,
+				91F2B96269AB6F93C701C8F8 /* [CP] Embed Pods Frameworks */,
+				CE433D4CF1848A0749F28EC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,12 +364,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88B316FA1F2CB2F3009426C8 /* Build configuration list for PBXNativeTarget "iShoddyTests" */;
 			buildPhases = (
-				85E4F542978EDB511D5E7FFD /* [CP] Check Pods Manifest.lock */,
+				1FC03639E7309D48F43A03FC /* [CP] Check Pods Manifest.lock */,
 				88B316EA1F2CB2F3009426C8 /* Sources */,
 				88B316EB1F2CB2F3009426C8 /* Frameworks */,
 				88B316EC1F2CB2F3009426C8 /* Resources */,
-				50C3A0E9E00508411ED0B8F3 /* [CP] Embed Pods Frameworks */,
-				EBF41C87307C0DA2B59DBE5C /* [CP] Copy Pods Resources */,
+				0CC60593D3CE5143A46AC31C /* [CP] Embed Pods Frameworks */,
+				1E32E8E89782EF66D879AC25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +393,7 @@
 				TargetAttributes = {
 					88B316D91F2CB2F3009426C8 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 					88B316ED1F2CB2F3009426C8 = {
 						CreatedOnToolsVersion = 9.0;
@@ -215,9 +425,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF297B501F674DA30063CF62 /* Professional.storyboard in Resources */,
+				DF297B411F67195D0063CF62 /* ProfessionalPannel.png in Resources */,
 				88B316E81F2CB2F3009426C8 /* LaunchScreen.storyboard in Resources */,
+				DF297B451F67196B0063CF62 /* GoldStarEmpty.png in Resources */,
+				DF812B961F69DEA300140B22 /* professional-default.png in Resources */,
 				88B316E51F2CB2F3009426C8 /* Assets.xcassets in Resources */,
-				88B316E31F2CB2F3009426C8 /* Main.storyboard in Resources */,
+				DF297B441F6719640063CF62 /* CameraPhoto.png in Resources */,
+				DF297B491F6719C60063CF62 /* Dialog.xib in Resources */,
+				DF297B461F67196B0063CF62 /* GoldStarFilled.png in Resources */,
+				DF297B431F6719640063CF62 /* Marker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,22 +448,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		406EB2F7AAEE787AF021F15C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		50C3A0E9E00508411ED0B8F3 /* [CP] Embed Pods Frameworks */ = {
+		0CC60593D3CE5143A46AC31C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,52 +463,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		676A6153C6451D2845D5BA12 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85E4F542978EDB511D5E7FFD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9E40D6C868CD1E147CB6BB83 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EBF41C87307C0DA2B59DBE5C /* [CP] Copy Pods Resources */ = {
+		1E32E8E89782EF66D879AC25 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,6 +478,75 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1FC03639E7309D48F43A03FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iShoddyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91F2B96269AB6F93C701C8F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE0BDC1A5ED50A13A3DD0517 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iShoddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE433D4CF1848A0749F28EC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -328,8 +554,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88B316E01F2CB2F3009426C8 /* ViewController.swift in Sources */,
+				DF297B3F1F670EEF0063CF62 /* Dialog.swift in Sources */,
+				DF04979A1F65C56300A60FA9 /* ProfessionalCell.swift in Sources */,
+				DF1517411F65B25300582D04 /* ListProfessionalsOutputType.swift in Sources */,
+				DF1517431F65B25900582D04 /* ErrorData.swift in Sources */,
+				DF1B1E881F65F600001BD670 /* NetworkManager.swift in Sources */,
+				88B316E01F2CB2F3009426C8 /* ProfessionalsController.swift in Sources */,
 				88B316DE1F2CB2F3009426C8 /* AppDelegate.swift in Sources */,
+				DF8332D71F6472D60059651B /* Constants.swift in Sources */,
+				DF1517451F65B25F00582D04 /* BaseModel.swift in Sources */,
+				DF1B1E8E1F65F9B3001BD670 /* GetProfessionalsNetworkManager.swift in Sources */,
+				DF8332DA1F647B310059651B /* GetProfessionalInteractor.swift in Sources */,
+				DF1B1E901F65F9E0001BD670 /* GetProfessionalsNetworkManagerImpl.swift in Sources */,
+				DFC2F6A61F69B43B005DD720 /* ProfessionalDetailController.swift in Sources */,
+				DF1517421F65B25500582D04 /* Pagination.swift in Sources */,
+				DF1B1E861F65F4D0001BD670 /* DomainUrl.swift in Sources */,
+				DF1B1E921F65FC10001BD670 /* ListProfessionalsResponseType.swift in Sources */,
+				DF16357D1F6C6BE5006DDB34 /* ActivityIndicator.swift in Sources */,
+				DF1517401F65B25000582D04 /* Professional.swift in Sources */,
+				DF1517441F65B25C00582D04 /* HeaderData.swift in Sources */,
+				DF8332D11F6471CB0059651B /* ProfessionalsController+UICollectionView.swift in Sources */,
+				DF812B941F69DCC500140B22 /* AsyncData.swift in Sources */,
+				DF1B1E8C1F65F949001BD670 /* GetProfessionalInteractorImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,20 +598,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		88B316E11F2CB2F3009426C8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88B316E21F2CB2F3009426C8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		88B316E61F2CB2F3009426C8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				88B316E71F2CB2F3009426C8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		DF297B4E1F674D800063CF62 /* Professional.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF297B4F1F674D800063CF62 /* Base */,
+			);
+			name = Professional.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -480,13 +728,15 @@
 		};
 		88B316F81F2CB2F3009426C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31FAC1654563990A36772599 /* Pods-iShoddy.debug.xcconfig */;
+			baseConfigurationReference = CE77D7951957EAC196FF8488 /* Pods-iShoddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6RPGGVZM93;
 				INFOPLIST_FILE = iShoddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mazinger.iShoddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,13 +744,15 @@
 		};
 		88B316F91F2CB2F3009426C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB2B35570C0EB7BA48BC8A80 /* Pods-iShoddy.release.xcconfig */;
+			baseConfigurationReference = 8D7EA74476BFC40188E2CBCA /* Pods-iShoddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6RPGGVZM93;
 				INFOPLIST_FILE = iShoddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mazinger.iShoddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -508,7 +760,7 @@
 		};
 		88B316FB1F2CB2F3009426C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0E813170B0E4BFC960CAD46 /* Pods-iShoddyTests.debug.xcconfig */;
+			baseConfigurationReference = 9918001DABBF2A7DA88A499C /* Pods-iShoddyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,7 +776,7 @@
 		};
 		88B316FC1F2CB2F3009426C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E11AA31340BE83E5303D74A /* Pods-iShoddyTests.release.xcconfig */;
+			baseConfigurationReference = F74722B6548603A4F5BAD8A9 /* Pods-iShoddyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -557,6 +809,7 @@
 				88B316F91F2CB2F3009426C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88B316FA1F2CB2F3009426C8 /* Build configuration list for PBXNativeTarget "iShoddyTests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +818,7 @@
 				88B316FC1F2CB2F3009426C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

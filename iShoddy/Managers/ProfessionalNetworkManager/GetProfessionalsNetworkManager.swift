@@ -1,0 +1,15 @@
+//
+//  GetProfessionalsNetworkManager.swift
+//  iShoddy
+//
+//  Created by Jose Sanchez Rodriguez on 11/9/17.
+//  Copyright © 2017 ESoft. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+public protocol GetProfessionalsNetworkManager {
+    func execute(filter: String?, order: String?, fields: String?, page: Int, completion: @escaping listProfessional, onError: @escaping errorBlock) -> Void
+    func downloadProfessionalImage(professional: Professional, completion: @escaping (UIImage) -> Void)
+}
