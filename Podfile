@@ -4,9 +4,11 @@
 target 'iShoddy' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+  #use_frameworks!
 
   # Pods for iShoddy
   pod 'Cosmos', :git => 'https://github.com/evgenyneu/Cosmos.git', :branch => 'swift-4.0'
+  pod 'MSSlidingPanelController'
   
   target 'iShoddyTests' do
     inherit! :search_paths

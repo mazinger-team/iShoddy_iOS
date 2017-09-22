@@ -57,8 +57,12 @@
                                                             <rect key="frame" x="0.0" y="12" width="68" height="25"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="RPN-bz-s4U" userLabel="Rate Start" customClass="CosmosView" customModule="Cosmos">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="12"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="15"/>
                                                                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="15" id="K6g-02-7c1"/>
+                                                                        <constraint firstAttribute="width" constant="68" id="bL9-Zd-Coj"/>
+                                                                    </constraints>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="rating">
                                                                             <real key="value" value="3.5"/>
@@ -177,7 +181,7 @@
                                 </connections>
                             </collectionView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jNG-DY-lA1" userLabel="Professional Activity Indicator">
-                                <rect key="frame" x="177" y="642" width="20" height="20"/>
+                                <rect key="frame" x="177.5" y="642" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

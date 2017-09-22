@@ -1,8 +1,10 @@
 PODS:
   - Cosmos (11.0.3)
+  - MSSlidingPanelController (1.3.6)
 
 DEPENDENCIES:
   - Cosmos (from `https://github.com/evgenyneu/Cosmos.git`, branch `swift-4.0`)
+  - MSSlidingPanelController
 
 EXTERNAL SOURCES:
   Cosmos:
@@ -16,7 +18,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Cosmos: c7f103e2ddbd32d2959c00a39a97c696e688d00e
+  MSSlidingPanelController: a0515f4e0724fbe4de0970b2fac23ef16366f75c
 
-PODFILE CHECKSUM: 177ea5fc93990115be4d53858a8079d6d02fb7d6
+PODFILE CHECKSUM: 6587999728ad8fc93a9c8bccabf1740975d5adb0
 
 COCOAPODS: 1.3.1
