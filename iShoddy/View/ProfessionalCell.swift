@@ -28,7 +28,7 @@ class ProfessionalCell: UICollectionViewCell {
             _professional = newValue
             
             professionalNameLabel.text = newValue.corp_name
-            professionalCategoryLabel.text = String(describing: newValue.category_id!)
+            professionalCategoryLabel.text = String(describing: newValue.category_id)
             if let reviews = newValue.reviews_number {
                 if reviews > 0 {
                     professionalReviewsLabel.text = String(describing: reviews)+" reviews"

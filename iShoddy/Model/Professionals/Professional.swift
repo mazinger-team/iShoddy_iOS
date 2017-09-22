@@ -16,16 +16,16 @@ public struct Professional {
     public var id : Int?
     public var user_id : Int?
     public var user_name : String?
-    public var demands_id : Array<Int>?
-    public var category_id : Int?
-    public var subcategory_id : Int?
+    public var demands_id : Array<String>?
+    public var category_id : String?
+    public var subcategory_id : String?
     public var corp_name : String?
     public var logo_url : String?
     public var images_url : Array<String>?
     public var description : String?
     public var fiscal_id : String?
     public var street : String?
-    public var postal_code : Int?
+    public var postal_code : String?
     public var area : String?
     public var city : String?
     public var province : String?
@@ -33,9 +33,9 @@ public struct Professional {
     public var gps_lon : Double?
     public var web_url : String?
     public var email : String?
-    public var telephone : Int?
+    public var telephone : String?
     public var opening_hours : String?
-    public var register_date : Int?
+    public var register_date : Date?
     public var rate_visit : Int?
     public var rate_hour : Int?
     public var rate_notes : String?
