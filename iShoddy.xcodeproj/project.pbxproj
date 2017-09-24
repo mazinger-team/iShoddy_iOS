@@ -65,7 +65,6 @@
 		DF2B08011F757460001EA47D /* ProfessionalPannel.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C1D1F7565F3009DA768 /* ProfessionalPannel.png */; };
 		DF2B08021F757656001EA47D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2B08041F757656001EA47D /* LaunchScreen.storyboard */; };
 		DF2B08061F7576BD001EA47D /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B08051F7576BD001EA47D /* UIViewController+Utils.swift */; };
-		DF2B08081F7578CF001EA47D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B08071F7578CF001EA47D /* ViewController.swift */; };
 		DF5C7C0A1F7564E3009DA768 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5C7BFE1F7564E3009DA768 /* BaseModel.swift */; };
 		DF5C7C291F756713009DA768 /* AsyncData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5C7C281F756713009DA768 /* AsyncData.swift */; };
 		DFAB52581F756ACC00487699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C371F756745009DA768 /* Assets.xcassets */; };
@@ -79,7 +78,6 @@
 		DFAB526D1F756BBD00487699 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB52691F756BBC00487699 /* ActivityIndicator.swift */; };
 		DFAB526E1F756BBD00487699 /* ProfessionalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB526B1F756BBD00487699 /* ProfessionalCell.swift */; };
 		DFAB52711F756BD600487699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAB526C1F756BBD00487699 /* Main.storyboard */; };
-		DFAB52721F756BD900487699 /* Professional.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAB526A1F756BBD00487699 /* Professional.storyboard */; };
 		DFAB52741F756BDE00487699 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB52731F756BDE00487699 /* Constants.swift */; };
 		DFAB52791F756C1000487699 /* Professional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB52761F756C1000487699 /* Professional.swift */; };
 		DFAB527A1F756C1000487699 /* ListProfessionalsResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB52771F756C1000487699 /* ListProfessionalsResponseType.swift */; };
@@ -149,7 +147,6 @@
 		B3B18309C1D09F05A9189E59 /* Pods-iShoddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF2B08031F757656001EA47D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF2B08051F7576BD001EA47D /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
-		DF2B08071F7578CF001EA47D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF2B08091F757B6D001EA47D /* MSViewControllerSlidingPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MSViewControllerSlidingPanel.h; path = Pods/MSSlidingPanelController/MSSlidingPanelController/MSViewControllerSlidingPanel.h; sourceTree = "<group>"; };
 		DF2B080B1F757B98001EA47D /* MSSlidingPanelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MSSlidingPanelController.h; path = Pods/MSSlidingPanelController/MSSlidingPanelController/MSSlidingPanelController.h; sourceTree = "<group>"; };
 		DF5C7BFE1F7564E3009DA768 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
@@ -180,7 +177,6 @@
 		DFAB52631F756B9700487699 /* GetProfessionalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalInteractor.swift; sourceTree = "<group>"; };
 		DFAB52641F756B9700487699 /* GetProfessionalInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalInteractorImpl.swift; sourceTree = "<group>"; };
 		DFAB52691F756BBC00487699 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
-		DFAB526A1F756BBD00487699 /* Professional.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Professional.storyboard; sourceTree = "<group>"; };
 		DFAB526B1F756BBD00487699 /* ProfessionalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalCell.swift; sourceTree = "<group>"; };
 		DFAB526C1F756BBD00487699 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DFAB52731F756BDE00487699 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -294,7 +290,6 @@
 		5BB031AC1F6062DF0006257B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DF2B08071F7578CF001EA47D /* ViewController.swift */,
 				DF5C7C261F7566D5009DA768 /* ProfessionalDetailController */,
 				DF5C7C231F7566D5009DA768 /* ProfessionalsController */,
 				DF0C20E01F75899A004E0A38 /* CategoriesController */,
@@ -497,7 +492,6 @@
 			children = (
 				DF2B08041F757656001EA47D /* LaunchScreen.storyboard */,
 				DFAB526C1F756BBD00487699 /* Main.storyboard */,
-				DFAB526A1F756BBD00487699 /* Professional.storyboard */,
 				DFAB52691F756BBC00487699 /* ActivityIndicator.swift */,
 			);
 			path = View;
@@ -632,7 +626,6 @@
 				DFAB52711F756BD600487699 /* Main.storyboard in Resources */,
 				DF2B07F21F757425001EA47D /* menu_button@3x.png in Resources */,
 				5B2767931F65AD8100429DE3 /* Dialog.xib in Resources */,
-				DFAB52721F756BD900487699 /* Professional.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,7 +684,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C43AA108628F886E21DD93B2 /* [CP] Embed Pods Frameworks */ = {
@@ -724,7 +717,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D503F2E35AD48B6584EE6252 /* [CP] Copy Pods Resources */ = {
@@ -783,7 +776,6 @@
 				DFAB526D1F756BBD00487699 /* ActivityIndicator.swift in Sources */,
 				5B350AA51F6546FC00B4DBEE /* NetworkManager.swift in Sources */,
 				5B85EF5A1F6D3AA10044AE89 /* GetAllCategoriesCoreDataManagerImpl.swift in Sources */,
-				DF2B08081F7578CF001EA47D /* ViewController.swift in Sources */,
 				DFAB525B1F756B0100487699 /* ProfessionalsController+UICollectionView.swift in Sources */,
 				5B4FB3C71F63F857007EE813 /* SubCategory.swift in Sources */,
 				5B4FB3CC1F640889007EE813 /* HeaderData.swift in Sources */,
@@ -947,7 +939,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 6RPGGVZM93;
+				DEVELOPMENT_TEAM = 69A85A3TC3;
 				INFOPLIST_FILE = iShoddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -956,7 +948,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "iShoddy/Controls/iShoddy-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -966,7 +958,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 6RPGGVZM93;
+				DEVELOPMENT_TEAM = 69A85A3TC3;
 				INFOPLIST_FILE = iShoddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -974,7 +966,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iShoddy/Controls/iShoddy-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

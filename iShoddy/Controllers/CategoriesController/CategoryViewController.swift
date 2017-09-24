@@ -11,9 +11,8 @@ import UIKit
 
 class CategoryViewController: UIViewController {
     
-    
     @IBOutlet weak var CategoryTableView: UITableView!
-    
+    @IBOutlet weak var btnShowAll: UIBarButtonItem!
     
     var popViewController : Dialog!
     
@@ -128,6 +127,21 @@ class CategoryViewController: UIViewController {
         
     }
     
+    // MARK: Navigation
+    
+    @IBAction func showAllProfessionalsVC(_ sender: Any) {
+        
+        performSegue(withIdentifier: "showAllProfesionals", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if segue.identifier == "showAllProfesionals"
+        {
+            // ...
+        }
+    }
 }
 
 
