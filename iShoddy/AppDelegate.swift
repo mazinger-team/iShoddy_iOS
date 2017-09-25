@@ -13,14 +13,38 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     let nameStore: String = "ISHOODYSTORE"
     public var mContext : NSManagedObjectContext?
     
+    fileprivate func createMenuView() {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let categoryViewController = storyboard.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
+        let leftViewController = storyboard.instantiateViewController(withIdentifier: "LeftViewController") as! LeftViewController
+        
+        let nvc: UINavigationController = UINavigationController(rootViewController: categoryViewController)
+        
+        // TODO: Poner colores como constantes globales
+        UINavigationBar.appearance().tintColor = UIColor(red: 0.416, green: 0.196, blue: 0.506, alpha: 1.00)
+        
+        leftViewController.categories = nvc
+        
+        let slideMenuController = ExSlideMenuController(mainViewController:nvc, leftMenuViewController: leftViewController, rightMenuViewController: leftViewController)
+        slideMenuController.automaticallyAdjustsScrollViewInsets = true
+        slideMenuController.delegate = categoryViewController
+        
+        self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
+        self.window?.rootViewController = slideMenuController
+        self.window?.makeKeyAndVisible()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
         mContext =  setupCoreDataStack(storeURL:  (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first as URL!).appendingPathComponent(nameStore) )
+        
+        self.createMenuView()
         
         return true
     }

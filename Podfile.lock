@@ -1,25 +1,31 @@
 PODS:
   - Cosmos (11.0.3)
-  - MSSlidingPanelController (1.3.6)
+  - SlideMenuControllerSwift (3.0.2)
 
 DEPENDENCIES:
   - Cosmos (from `https://github.com/evgenyneu/Cosmos.git`, branch `swift-4.0`)
-  - MSSlidingPanelController
+  - SlideMenuControllerSwift (from `https://github.com/dekatotoro/SlideMenuControllerSwift.git`, branch `swift4`)
 
 EXTERNAL SOURCES:
   Cosmos:
     :branch: swift-4.0
     :git: https://github.com/evgenyneu/Cosmos.git
+  SlideMenuControllerSwift:
+    :branch: swift4
+    :git: https://github.com/dekatotoro/SlideMenuControllerSwift.git
 
 CHECKOUT OPTIONS:
   Cosmos:
     :commit: a2d864e02f94fa439387eaeb648cc17a7e5452c4
     :git: https://github.com/evgenyneu/Cosmos.git
+  SlideMenuControllerSwift:
+    :commit: 88ed3c28b17fdbb194dfa8b2c8e37c742c0b78a7
+    :git: https://github.com/dekatotoro/SlideMenuControllerSwift.git
 
 SPEC CHECKSUMS:
   Cosmos: c7f103e2ddbd32d2959c00a39a97c696e688d00e
-  MSSlidingPanelController: a0515f4e0724fbe4de0970b2fac23ef16366f75c
+  SlideMenuControllerSwift: 9e8d2bba8ea9201c6207acb76e95a2841453ec9c
 
-PODFILE CHECKSUM: 2af705ab92127bedecd411f1015689d7cd5cef37
+PODFILE CHECKSUM: 50cbc0945448be120f2e86afe49bab9aa5dd44c3
 
 COCOAPODS: 1.2.1

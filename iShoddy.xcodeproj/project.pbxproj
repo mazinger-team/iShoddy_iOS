@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03175C510394773AF0C6F5B9 /* Pods_iShoddyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693936163F513A8A6595018A /* Pods_iShoddyTests.framework */; };
+		53B98430C9FBA2148C51F1FA /* Pods_iShoddyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0C009362E4C4261A0465F3 /* Pods_iShoddyTests.framework */; };
+		546F1DB24150A061402C5B8D /* Pods_iShoddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A643B76E21C3A3A368C596 /* Pods_iShoddy.framework */; };
 		5B16BAD81F684E50004ACB7F /* GetImageFilesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16BAD71F684E50004ACB7F /* GetImageFilesInteractor.swift */; };
 		5B2767931F65AD8100429DE3 /* Dialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B2767921F65AD8100429DE3 /* Dialog.xib */; };
 		5B2767951F65ADCC00429DE3 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2767941F65ADCC00429DE3 /* Dialog.swift */; };
@@ -43,8 +44,19 @@
 		5BFE52631F6D1A2000AD706F /* PersistCategoriesCoreDataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE52621F6D1A2000AD706F /* PersistCategoriesCoreDataImpl.swift */; };
 		5BFE52651F6D1C6500AD706F /* PersistCategoriesCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE52641F6D1C6500AD706F /* PersistCategoriesCoreData.swift */; };
 		5BFE52671F6D1CDA00AD706F /* SaveCategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE52661F6D1CDA00AD706F /* SaveCategoriesInteractor.swift */; };
+		883960671F81B3EA00E56266 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883960651F81B3E900E56266 /* UIApplication.swift */; };
+		883960681F81B3EA00E56266 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883960661F81B3E900E56266 /* UIViewController.swift */; };
+		8839606A1F81CE0600E56266 /* ImageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883960691F81CE0600E56266 /* ImageHeaderView.xib */; };
+		883FD7501F7D150C004F259C /* ExSlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD74F1F7D150C004F259C /* ExSlideMenuController.swift */; };
+		8898FABB1F7C6CCF00E92F16 /* RegisterAsClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898FABA1F7C6CCF00E92F16 /* RegisterAsClientViewController.swift */; };
+		8898FABE1F7C71C200E92F16 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898FABD1F7C71C200E92F16 /* BaseTableViewCell.swift */; };
+		8898FAC11F7C727C00E92F16 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898FAC01F7C727C00E92F16 /* StringExtension.swift */; };
+		8898FAC31F7C7BF900E92F16 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898FAC21F7C7BF900E92F16 /* TableViewExtension.swift */; };
+		8898FAC51F7C7D4200E92F16 /* ImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898FAC41F7C7D4200E92F16 /* ImageHeaderView.swift */; };
+		8898FAC71F7C8AD600E92F16 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898FAC61F7C8AD600E92F16 /* UIView.swift */; };
 		88B316DE1F2CB2F3009426C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B316DD1F2CB2F3009426C8 /* AppDelegate.swift */; };
 		88B316F31F2CB2F3009426C8 /* iShoddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B316F21F2CB2F3009426C8 /* iShoddyTests.swift */; };
+		88F48C3F1F7A7DF30098D342 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F48C3E1F7A7DF30098D342 /* LeftViewController.swift */; };
 		DF2B07F01F75740B001EA47D /* menu_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C2E1F756744009DA768 /* menu_button@2x.png */; };
 		DF2B07F11F757415001EA47D /* background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C321F756745009DA768 /* background@3x.png */; };
 		DF2B07F21F757425001EA47D /* menu_button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C311F756744009DA768 /* menu_button@3x.png */; };
@@ -55,7 +67,6 @@
 		DF2B07F71F757460001EA47D /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C2B1F756743009DA768 /* background@2x.png */; };
 		DF2B07F81F757460001EA47D /* CameraPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C331F756745009DA768 /* CameraPhoto.png */; };
 		DF2B07F91F757460001EA47D /* electrician.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C2C1F756744009DA768 /* electrician.png */; };
-		DF2B07FA1F757460001EA47D /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B756A7B1F6C51D50039ABA2 /* empty.png */; };
 		DF2B07FB1F757460001EA47D /* Marker.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C351F756745009DA768 /* Marker.png */; };
 		DF2B07FC1F757460001EA47D /* menu_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C381F756746009DA768 /* menu_button.png */; };
 		DF2B07FD1F757460001EA47D /* photo_item1.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C361F756745009DA768 /* photo_item1.png */; };
@@ -82,7 +93,6 @@
 		DFAB52791F756C1000487699 /* Professional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB52761F756C1000487699 /* Professional.swift */; };
 		DFAB527A1F756C1000487699 /* ListProfessionalsResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB52771F756C1000487699 /* ListProfessionalsResponseType.swift */; };
 		DFAB527B1F756C1000487699 /* ListProfessionalsOutputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB52781F756C1000487699 /* ListProfessionalsOutputType.swift */; };
-		FF3BCB1A2DC2795A2D197743 /* Pods_iShoddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDB7B721745CC8571DAD51F /* Pods_iShoddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,8 +106,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		40E0704ACABFE2EB79477FCE /* Pods-iShoddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4EB2FF1E6ABF45F7A4ED1A36 /* Pods-iShoddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy.release.xcconfig"; sourceTree = "<group>"; };
+		21A643B76E21C3A3A368C596 /* Pods_iShoddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iShoddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D841D5C38C3ACBED3C3FD0A /* Pods-iShoddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy.debug.xcconfig"; sourceTree = "<group>"; };
+		2E0C009362E4C4261A0465F3 /* Pods_iShoddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iShoddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36562B88D89BB6EF09027EFA /* Pods-iShoddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests.release.xcconfig"; sourceTree = "<group>"; };
+		4682DB1658ADD481290B5D53 /* Pods-iShoddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy.release.xcconfig"; sourceTree = "<group>"; };
 		5B16BAD71F684E50004ACB7F /* GetImageFilesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageFilesInteractor.swift; sourceTree = "<group>"; };
 		5B2767921F65AD8100429DE3 /* Dialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Dialog.xib; sourceTree = "<group>"; };
 		5B2767941F65ADCC00429DE3 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
@@ -136,19 +149,27 @@
 		5BFE52621F6D1A2000AD706F /* PersistCategoriesCoreDataImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistCategoriesCoreDataImpl.swift; sourceTree = "<group>"; };
 		5BFE52641F6D1C6500AD706F /* PersistCategoriesCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistCategoriesCoreData.swift; sourceTree = "<group>"; };
 		5BFE52661F6D1CDA00AD706F /* SaveCategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCategoriesInteractor.swift; sourceTree = "<group>"; };
-		693936163F513A8A6595018A /* Pods_iShoddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iShoddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		883960651F81B3E900E56266 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		883960661F81B3E900E56266 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		883960691F81CE0600E56266 /* ImageHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageHeaderView.xib; sourceTree = "<group>"; };
+		883FD74F1F7D150C004F259C /* ExSlideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExSlideMenuController.swift; sourceTree = "<group>"; };
+		883FD7521F7D222D004F259C /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8898FABA1F7C6CCF00E92F16 /* RegisterAsClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAsClientViewController.swift; sourceTree = "<group>"; };
+		8898FABD1F7C71C200E92F16 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		8898FAC01F7C727C00E92F16 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		8898FAC21F7C7BF900E92F16 /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		8898FAC41F7C7D4200E92F16 /* ImageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHeaderView.swift; sourceTree = "<group>"; };
+		8898FAC61F7C8AD600E92F16 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		88B316DA1F2CB2F3009426C8 /* iShoddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShoddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B316DD1F2CB2F3009426C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88B316E91F2CB2F3009426C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88B316EE1F2CB2F3009426C8 /* iShoddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShoddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B316F21F2CB2F3009426C8 /* iShoddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShoddyTests.swift; sourceTree = "<group>"; };
 		88B316F41F2CB2F3009426C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABDB7B721745CC8571DAD51F /* Pods_iShoddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iShoddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3B18309C1D09F05A9189E59 /* Pods-iShoddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests.release.xcconfig"; sourceTree = "<group>"; };
+		88F48C3E1F7A7DF30098D342 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		A2B4AFAFDE5869AEE36E22FE /* Pods-iShoddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF2B08031F757656001EA47D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF2B08051F7576BD001EA47D /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
-		DF2B08091F757B6D001EA47D /* MSViewControllerSlidingPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MSViewControllerSlidingPanel.h; path = Pods/MSSlidingPanelController/MSSlidingPanelController/MSViewControllerSlidingPanel.h; sourceTree = "<group>"; };
-		DF2B080B1F757B98001EA47D /* MSSlidingPanelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MSSlidingPanelController.h; path = Pods/MSSlidingPanelController/MSSlidingPanelController/MSSlidingPanelController.h; sourceTree = "<group>"; };
 		DF5C7BFE1F7564E3009DA768 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		DF5C7C141F7565F3009DA768 /* GoldStarFilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoldStarFilled.png; sourceTree = "<group>"; };
 		DF5C7C151F7565F3009DA768 /* GoldStarEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoldStarEmpty.png; sourceTree = "<group>"; };
@@ -183,7 +204,6 @@
 		DFAB52761F756C1000487699 /* Professional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professional.swift; sourceTree = "<group>"; };
 		DFAB52771F756C1000487699 /* ListProfessionalsResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProfessionalsResponseType.swift; sourceTree = "<group>"; };
 		DFAB52781F756C1000487699 /* ListProfessionalsOutputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProfessionalsOutputType.swift; sourceTree = "<group>"; };
-		DFEFA93D76B0830B815A3E7F /* Pods-iShoddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShoddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF3BCB1A2DC2795A2D197743 /* Pods_iShoddy.framework in Frameworks */,
+				546F1DB24150A061402C5B8D /* Pods_iShoddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,13 +219,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03175C510394773AF0C6F5B9 /* Pods_iShoddyTests.framework in Frameworks */,
+				53B98430C9FBA2148C51F1FA /* Pods_iShoddyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		338B186746F8044D96363AD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D841D5C38C3ACBED3C3FD0A /* Pods-iShoddy.debug.xcconfig */,
+				4682DB1658ADD481290B5D53 /* Pods-iShoddy.release.xcconfig */,
+				A2B4AFAFDE5869AEE36E22FE /* Pods-iShoddyTests.debug.xcconfig */,
+				36562B88D89BB6EF09027EFA /* Pods-iShoddyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5B4FB3CA1F64087B007EE813 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +321,9 @@
 		5BB031AC1F6062DF0006257B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				883FD74E1F7D1384004F259C /* ExSlideMenuController */,
+				8898FAB91F7C6C9500E92F16 /* RegisterAsClientController */,
+				88F48C3D1F7A782B0098D342 /* LeftViewController */,
 				DF5C7C261F7566D5009DA768 /* ProfessionalDetailController */,
 				DF5C7C231F7566D5009DA768 /* ProfessionalsController */,
 				DF0C20E01F75899A004E0A38 /* CategoriesController */,
@@ -324,14 +358,50 @@
 			path = "Core Data Stack";
 			sourceTree = "<group>";
 		};
+		883FD74E1F7D1384004F259C /* ExSlideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				883FD74F1F7D150C004F259C /* ExSlideMenuController.swift */,
+			);
+			path = ExSlideMenuController;
+			sourceTree = "<group>";
+		};
+		8898FAB91F7C6C9500E92F16 /* RegisterAsClientController */ = {
+			isa = PBXGroup;
+			children = (
+				8898FABA1F7C6CCF00E92F16 /* RegisterAsClientViewController.swift */,
+			);
+			path = RegisterAsClientController;
+			sourceTree = "<group>";
+		};
+		8898FABC1F7C712100E92F16 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8898FABD1F7C71C200E92F16 /* BaseTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		8898FABF1F7C725A00E92F16 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				883960651F81B3E900E56266 /* UIApplication.swift */,
+				883960661F81B3E900E56266 /* UIViewController.swift */,
+				8898FAC01F7C727C00E92F16 /* StringExtension.swift */,
+				8898FAC21F7C7BF900E92F16 /* TableViewExtension.swift */,
+				8898FAC61F7C8AD600E92F16 /* UIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		88B316D11F2CB2F3009426C8 = {
 			isa = PBXGroup;
 			children = (
 				88B316DC1F2CB2F3009426C8 /* iShoddy */,
 				88B316F11F2CB2F3009426C8 /* iShoddyTests */,
-				C4060E37B6CED3B10A737860 /* Pods */,
 				88B316DB1F2CB2F3009426C8 /* Products */,
 				AAF533CD608FC839A0E51491 /* Frameworks */,
+				338B186746F8044D96363AD6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -347,6 +417,7 @@
 		88B316DC1F2CB2F3009426C8 /* iShoddy */ = {
 			isa = PBXGroup;
 			children = (
+				8898FABF1F7C725A00E92F16 /* Extension */,
 				5BB031AC1F6062DF0006257B /* Controllers */,
 				5BA56AE21F61B4B200F837EB /* Interactors */,
 				5BA56AE11F61B4AB00F837EB /* Managers */,
@@ -370,26 +441,22 @@
 			path = iShoddyTests;
 			sourceTree = "<group>";
 		};
+		88F48C3D1F7A782B0098D342 /* LeftViewController */ = {
+			isa = PBXGroup;
+			children = (
+				88F48C3E1F7A7DF30098D342 /* LeftViewController.swift */,
+			);
+			path = LeftViewController;
+			sourceTree = "<group>";
+		};
 		AAF533CD608FC839A0E51491 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF2B080B1F757B98001EA47D /* MSSlidingPanelController.h */,
-				DF2B08091F757B6D001EA47D /* MSViewControllerSlidingPanel.h */,
-				ABDB7B721745CC8571DAD51F /* Pods_iShoddy.framework */,
-				693936163F513A8A6595018A /* Pods_iShoddyTests.framework */,
+				883FD7521F7D222D004F259C /* SlideMenuControllerSwift.framework */,
+				21A643B76E21C3A3A368C596 /* Pods_iShoddy.framework */,
+				2E0C009362E4C4261A0465F3 /* Pods_iShoddyTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C4060E37B6CED3B10A737860 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DFEFA93D76B0830B815A3E7F /* Pods-iShoddy.debug.xcconfig */,
-				4EB2FF1E6ABF45F7A4ED1A36 /* Pods-iShoddy.release.xcconfig */,
-				40E0704ACABFE2EB79477FCE /* Pods-iShoddyTests.debug.xcconfig */,
-				B3B18309C1D09F05A9189E59 /* Pods-iShoddyTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		DF0C20E01F75899A004E0A38 /* CategoriesController */ = {
@@ -490,9 +557,12 @@
 		DFAB526F1F756BC800487699 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				883960691F81CE0600E56266 /* ImageHeaderView.xib */,
+				8898FABC1F7C712100E92F16 /* TableViewCell */,
 				DF2B08041F757656001EA47D /* LaunchScreen.storyboard */,
 				DFAB526C1F756BBD00487699 /* Main.storyboard */,
 				DFAB52691F756BBC00487699 /* ActivityIndicator.swift */,
+				8898FAC41F7C7D4200E92F16 /* ImageHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,12 +593,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88B316F71F2CB2F3009426C8 /* Build configuration list for PBXNativeTarget "iShoddy" */;
 			buildPhases = (
-				D2428C519A80E347399779D1 /* [CP] Check Pods Manifest.lock */,
+				2A62116025A5B65709D7D4A0 /* [CP] Check Pods Manifest.lock */,
 				88B316D61F2CB2F3009426C8 /* Sources */,
 				88B316D71F2CB2F3009426C8 /* Frameworks */,
 				88B316D81F2CB2F3009426C8 /* Resources */,
-				3ADACC96B1BF7A7A3030CBF7 /* [CP] Embed Pods Frameworks */,
-				836B67317852649AC052543E /* [CP] Copy Pods Resources */,
+				D3D321B30D807A617EBB30B8 /* [CP] Embed Pods Frameworks */,
+				EF517D7A268B9690CF033D7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -543,12 +613,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88B316FA1F2CB2F3009426C8 /* Build configuration list for PBXNativeTarget "iShoddyTests" */;
 			buildPhases = (
-				8E8E9E84C88AEBF57756406A /* [CP] Check Pods Manifest.lock */,
+				FDE9E12E963FB0AC6E3E9781 /* [CP] Check Pods Manifest.lock */,
 				88B316EA1F2CB2F3009426C8 /* Sources */,
 				88B316EB1F2CB2F3009426C8 /* Frameworks */,
 				88B316EC1F2CB2F3009426C8 /* Resources */,
-				C43AA108628F886E21DD93B2 /* [CP] Embed Pods Frameworks */,
-				D503F2E35AD48B6584EE6252 /* [CP] Copy Pods Resources */,
+				767F249CC3643FF35E7B960C /* [CP] Embed Pods Frameworks */,
+				6CF01664A57D04DF16E3C1D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -607,11 +677,11 @@
 				DF2B07F31F757460001EA47D /* GoldStarFilled.png in Resources */,
 				DF2B07F41F757460001EA47D /* GoldStarEmpty.png in Resources */,
 				DF2B07F51F757460001EA47D /* empty.png in Resources */,
+				8839606A1F81CE0600E56266 /* ImageHeaderView.xib in Resources */,
 				DF2B07F61F757460001EA47D /* Default-568h@2x.png in Resources */,
 				DF2B07F71F757460001EA47D /* background@2x.png in Resources */,
 				DF2B07F81F757460001EA47D /* CameraPhoto.png in Resources */,
 				DF2B07F91F757460001EA47D /* electrician.png in Resources */,
-				DF2B07FA1F757460001EA47D /* empty.png in Resources */,
 				DF2B07FB1F757460001EA47D /* Marker.png in Resources */,
 				DF2B07FC1F757460001EA47D /* menu_button.png in Resources */,
 				DF2B07FD1F757460001EA47D /* photo_item1.png in Resources */,
@@ -639,88 +709,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3ADACC96B1BF7A7A3030CBF7 /* [CP] Embed Pods Frameworks */ = {
+		2A62116025A5B65709D7D4A0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		836B67317852649AC052543E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E8E9E84C88AEBF57756406A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iShoddyTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C43AA108628F886E21DD93B2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D2428C519A80E347399779D1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iShoddy-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D503F2E35AD48B6584EE6252 /* [CP] Copy Pods Resources */ = {
+		6CF01664A57D04DF16E3C1D6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -735,6 +739,66 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		767F249CC3643FF35E7B960C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddyTests/Pods-iShoddyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3D321B30D807A617EBB30B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF517D7A268B9690CF033D7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDE9E12E963FB0AC6E3E9781 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -745,7 +809,10 @@
 				DFAB526E1F756BBD00487699 /* ProfessionalCell.swift in Sources */,
 				5B2767951F65ADCC00429DE3 /* Dialog.swift in Sources */,
 				DF2B08061F7576BD001EA47D /* UIViewController+Utils.swift in Sources */,
+				8898FAC31F7C7BF900E92F16 /* TableViewExtension.swift in Sources */,
+				8898FAC71F7C8AD600E92F16 /* UIView.swift in Sources */,
 				5BFE52631F6D1A2000AD706F /* PersistCategoriesCoreDataImpl.swift in Sources */,
+				8898FABE1F7C71C200E92F16 /* BaseTableViewCell.swift in Sources */,
 				DFAB525A1F756AFE00487699 /* ProfessionalsController.swift in Sources */,
 				DF5C7C291F756713009DA768 /* AsyncData.swift in Sources */,
 				5B85EF581F6D39B10044AE89 /* GetAllCategoriesInteractorCoreDataImpl.swift in Sources */,
@@ -759,6 +826,7 @@
 				DFAB52791F756C1000487699 /* Professional.swift in Sources */,
 				5B4FB3CE1F640896007EE813 /* Pagination.swift in Sources */,
 				5BB031AE1F606BCE0006257B /* CategoryViewController.swift in Sources */,
+				88F48C3F1F7A7DF30098D342 /* LeftViewController.swift in Sources */,
 				5BFE52611F6D1A0400AD706F /* SaveCategoriesInteractorImpl.swift in Sources */,
 				DFAB52651F756B9700487699 /* GetProfessionalInteractor.swift in Sources */,
 				5BA56AEC1F61C61400F837EB /* GetAllCategoriesNetworkManagerImpl.swift in Sources */,
@@ -771,17 +839,23 @@
 				DFAB52741F756BDE00487699 /* Constants.swift in Sources */,
 				5BFE525D1F6D174100AD706F /* CategoryData+ManagedObjectType.swift in Sources */,
 				5BA56AEE1F61CE5B00F837EB /* GetAllCategoriesManager.swift in Sources */,
+				883960681F81B3EA00E56266 /* UIViewController.swift in Sources */,
 				5B3DE2CA1F67163C002CFFF3 /* EmptySegue.m in Sources */,
+				8898FAC51F7C7D4200E92F16 /* ImageHeaderView.swift in Sources */,
 				DFAB527A1F756C1000487699 /* ListProfessionalsResponseType.swift in Sources */,
 				DFAB526D1F756BBD00487699 /* ActivityIndicator.swift in Sources */,
+				883FD7501F7D150C004F259C /* ExSlideMenuController.swift in Sources */,
 				5B350AA51F6546FC00B4DBEE /* NetworkManager.swift in Sources */,
 				5B85EF5A1F6D3AA10044AE89 /* GetAllCategoriesCoreDataManagerImpl.swift in Sources */,
+				8898FABB1F7C6CCF00E92F16 /* RegisterAsClientViewController.swift in Sources */,
 				DFAB525B1F756B0100487699 /* ProfessionalsController+UICollectionView.swift in Sources */,
 				5B4FB3C71F63F857007EE813 /* SubCategory.swift in Sources */,
 				5B4FB3CC1F640889007EE813 /* HeaderData.swift in Sources */,
 				5B350AA71F654D0C00B4DBEE /* DomainUrl.swift in Sources */,
 				5B756A821F6D07BB0039ABA2 /* CoreDataManager.swift in Sources */,
+				8898FAC11F7C727C00E92F16 /* StringExtension.swift in Sources */,
 				5B4FB3D21F640A6A007EE813 /* ListCategoriesResponseType.swift in Sources */,
+				883960671F81B3EA00E56266 /* UIApplication.swift in Sources */,
 				5B6775A31F6D939B007A411E /* iShoddyModel.xcdatamodeld in Sources */,
 				5BFE525B1F6D104400AD706F /* ManagedObjectType.swift in Sources */,
 				5B85EF5C1F6D8B2C0044AE89 /* CheckCacheInteractor.swift in Sources */,
@@ -935,7 +1009,7 @@
 		};
 		88B316F81F2CB2F3009426C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFEFA93D76B0830B815A3E7F /* Pods-iShoddy.debug.xcconfig */;
+			baseConfigurationReference = 2D841D5C38C3ACBED3C3FD0A /* Pods-iShoddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -954,7 +1028,7 @@
 		};
 		88B316F91F2CB2F3009426C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4EB2FF1E6ABF45F7A4ED1A36 /* Pods-iShoddy.release.xcconfig */;
+			baseConfigurationReference = 4682DB1658ADD481290B5D53 /* Pods-iShoddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -972,7 +1046,7 @@
 		};
 		88B316FB1F2CB2F3009426C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40E0704ACABFE2EB79477FCE /* Pods-iShoddyTests.debug.xcconfig */;
+			baseConfigurationReference = A2B4AFAFDE5869AEE36E22FE /* Pods-iShoddyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -988,7 +1062,7 @@
 		};
 		88B316FC1F2CB2F3009426C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3B18309C1D09F05A9189E59 /* Pods-iShoddyTests.release.xcconfig */;
+			baseConfigurationReference = 36562B88D89BB6EF09027EFA /* Pods-iShoddyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

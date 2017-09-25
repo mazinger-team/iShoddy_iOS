@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SlideMenuControllerSwift
 
 class CategoryViewController: UIViewController {
     
@@ -18,13 +18,17 @@ class CategoryViewController: UIViewController {
     
     var listCategoriesResponseType : ListCategoriesResponseType?
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        self.setNavigationBarItem()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configurationSearchBar()
         automaticallyAdjustsScrollViewInsets = false
-        
-        
         
         let manager : GetAllCategoriesManager  = GetAllCategorisNetWorkManagerImpl()
         let getAllCategoriesInteractorImpl : GetAllCategoriesInteractorImpl = GetAllCategoriesInteractorImpl(getAllCategoriesManager: manager)
@@ -83,34 +87,21 @@ class CategoryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @objc func onMenu(_ sender: AnyObject) {
-        if slidingPanelController.sideDisplayed == MSSPSideDisplayed.left {
-            slidingPanelController.closePanel()
-        } else {
-            slidingPanelController.openLeftPanel()
-        }
-    }
-    
+        
     @objc func allOnMenu(_ sender: AnyObject) {
         //Felicidades...te toca a ti...
     }
     
-    private func configurationSearchBar(){
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu_button")!.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(CategoryViewController.onMenu(_:)))
-        //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Todos", style: .plain, target: self, action:  #selector(CategoryViewController.allOnMenu(_:)))
-        
-        //navigationItem.rightBarButtonItem?.tintColor = UIColor(red: 106, green: 48, blue: 129, alpha: 1.0)
+    private func configurationSearchBar()
+    {
+        // TODO: Corregir
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu_button")!.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(CategoryViewController.onMenu(_:)))
         
         let searchBar = UISearchBar()
         searchBar.tintColor = UIColor.gray
         searchBar.placeholder = "Search";
         
         let _: CGFloat = 50.0 //Calcualte a suitable width based on search bar width, screen size, etc..
-        
-        
-        
-        
         
         self.navigationItem.titleView = searchBar;
         
@@ -124,7 +115,6 @@ class CategoryViewController: UIViewController {
                 }
             }
         }
-        
     }
     
     // MARK: Navigation
@@ -144,10 +134,7 @@ class CategoryViewController: UIViewController {
     }
 }
 
-
-
-
-extension CategoryViewController: UITableViewDataSource{
+extension CategoryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let count = self.listCategoriesResponseType?.listCategoriesOutputType.categories.count else{
@@ -167,23 +154,67 @@ extension CategoryViewController: UITableViewDataSource{
         return cell
         
     }
-    
-    
 }
 
-/*extension CategoryViewController: UITableViewDelegate{
- 
- func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
- 
- 
- return 170;
- 
- 
- }
- 
- 
- 
- }*/
+extension CategoryViewController : SlideMenuControllerDelegate {
+    
+    func leftWillOpen() {
+        print("SlideMenuControllerDelegate: leftWillOpen")
+    }
+    
+    func leftDidOpen() {
+        print("SlideMenuControllerDelegate: leftDidOpen")
+    }
+    
+    func leftWillClose() {
+        print("SlideMenuControllerDelegate: leftWillClose")
+    }
+    
+    func leftDidClose() {
+        print("SlideMenuControllerDelegate: leftDidClose")
+    }
+    
+    func rightWillOpen() {
+        print("SlideMenuControllerDelegate: rightWillOpen")
+    }
+    
+    func rightDidOpen() {
+        print("SlideMenuControllerDelegate: rightDidOpen")
+    }
+    
+    func rightWillClose() {
+        print("SlideMenuControllerDelegate: rightWillClose")
+    }
+    
+    func rightDidClose() {
+        print("SlideMenuControllerDelegate: rightDidClose")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
