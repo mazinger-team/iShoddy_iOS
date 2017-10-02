@@ -15,7 +15,7 @@ public extension UITableView {
         self.register(cellClass, forCellReuseIdentifier: identifier)
     }
     
-    // TODO: Revisar si son necesarias
+    // TODO: 3 Revisar si son necesarias
 //    func registerCellNib(_ cellClass: AnyClass) {
 //        let identifier = String.className(cellClass)
 //        let nib = UINib(nibName: identifier, bundle: nil)

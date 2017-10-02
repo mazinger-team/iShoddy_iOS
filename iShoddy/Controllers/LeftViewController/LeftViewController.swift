@@ -37,11 +37,11 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
         super.viewDidAppear(animated)
     }
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
-        // TODO: Poner colores como constantes globales
-        self.tableView.separatorColor = UIColor(red: 0.416, green: 0.196, blue: 0.506, alpha: 1.00)
+        self.tableView.separatorColor = constants.appPrimaryColor
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -50,6 +50,7 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
         
         let registerAsClientController = storyboard.instantiateViewController(withIdentifier: "RegisterAsClientViewController") as! RegisterAsClientViewController
         self.registerAsClient = UINavigationController(rootViewController: registerAsClientController)
+        registerAsClientController.delegate = self
         
         self.tableView.registerCellClass(BaseTableViewCell.self)
         
@@ -74,6 +75,9 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
         switch menu
         {
         case .categories:
+            //--newcode now --
+            print("ir a categories")
+            //--
             self.slideMenuController()?.changeMainViewController(self.categories, close: true)
         case .registerAsClient:
             self.slideMenuController()?.changeMainViewController(self.registerAsClient, close: true)

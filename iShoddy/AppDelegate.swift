@@ -25,9 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let leftViewController = storyboard.instantiateViewController(withIdentifier: "LeftViewController") as! LeftViewController
         
         let nvc: UINavigationController = UINavigationController(rootViewController: categoryViewController)
-        
-        // TODO: Poner colores como constantes globales
-        UINavigationBar.appearance().tintColor = UIColor(red: 0.416, green: 0.196, blue: 0.506, alpha: 1.00)
+        //-- App Appearance --
+        UINavigationBar.appearance().tintColor = constants.appPrimaryColor
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: constants.appPrimaryColor]
+        //--
         
         leftViewController.categories = nvc
         
@@ -35,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         slideMenuController.automaticallyAdjustsScrollViewInsets = true
         slideMenuController.delegate = categoryViewController
         
-        self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
+        self.window?.backgroundColor = constants.backgroundColor
         self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
     }
@@ -43,6 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         mContext =  setupCoreDataStack(storeURL:  (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first as URL!).appendingPathComponent(nameStore) )
+        
         
         self.createMenuView()
         
