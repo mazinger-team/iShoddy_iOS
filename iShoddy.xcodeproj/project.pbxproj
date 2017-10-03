@@ -18,8 +18,6 @@
 		5B4FB3C51F63F7D2007EE813 /* ListCategoriesOutputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FB3C41F63F7D2007EE813 /* ListCategoriesOutputType.swift */; };
 		5B4FB3C71F63F857007EE813 /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FB3C61F63F857007EE813 /* SubCategory.swift */; };
 		5B4FB3CC1F640889007EE813 /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FB3CB1F640889007EE813 /* HeaderData.swift */; };
-		5B4FB3CE1F640896007EE813 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FB3CD1F640896007EE813 /* Pagination.swift */; };
-		5B4FB3D01F6408C3007EE813 /* ErrorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FB3CF1F6408C3007EE813 /* ErrorData.swift */; };
 		5B4FB3D21F640A6A007EE813 /* ListCategoriesResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FB3D11F640A6A007EE813 /* ListCategoriesResponseType.swift */; };
 		5B6775A31F6D939B007A411E /* iShoddyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B6775A11F6D939B007A411E /* iShoddyModel.xcdatamodeld */; };
 		5B756A821F6D07BB0039ABA2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B756A811F6D07BB0039ABA2 /* CoreDataManager.swift */; };
@@ -78,6 +76,14 @@
 		DF2B08061F7576BD001EA47D /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B08051F7576BD001EA47D /* UIViewController+Utils.swift */; };
 		DF5C7C0A1F7564E3009DA768 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5C7BFE1F7564E3009DA768 /* BaseModel.swift */; };
 		DF5C7C291F756713009DA768 /* AsyncData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5C7C281F756713009DA768 /* AsyncData.swift */; };
+		DF72FAC21F840B9300715DCB /* ProfessionalsController-CLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72FAC11F840B9300715DCB /* ProfessionalsController-CLLocationManager.swift */; };
+		DF72FAC41F840C2900715DCB /* CategoryProfessionalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72FAC31F840C2900715DCB /* CategoryProfessionalList.swift */; };
+		DF72FAC91F840C5700715DCB /* ErrorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72FAC81F840C5700715DCB /* ErrorData.swift */; };
+		DF72FACD1F840C8800715DCB /* ErrorDataResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72FACC1F840C8800715DCB /* ErrorDataResponseType.swift */; };
+		DF72FACF1F840C9C00715DCB /* ErrorDataOutputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72FACE1F840C9C00715DCB /* ErrorDataOutputType.swift */; };
+		DF72FAD21F840CB900715DCB /* PaginationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72FAD11F840CB900715DCB /* PaginationData.swift */; };
+		DF72FAD41F840CCB00715DCB /* PaginationDataResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72FAD31F840CCB00715DCB /* PaginationDataResponseType.swift */; };
+		DF72FAD71F840CEC00715DCB /* PaginationDataOutputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72FAD61F840CEC00715DCB /* PaginationDataOutputType.swift */; };
 		DFAB52581F756ACC00487699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5C7C371F756745009DA768 /* Assets.xcassets */; };
 		DFAB52591F756AFA00487699 /* ProfessionalDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5C7C271F7566D5009DA768 /* ProfessionalDetailController.swift */; };
 		DFAB525A1F756AFE00487699 /* ProfessionalsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5C7C241F7566D5009DA768 /* ProfessionalsController.swift */; };
@@ -122,8 +128,6 @@
 		5B4FB3C41F63F7D2007EE813 /* ListCategoriesOutputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategoriesOutputType.swift; sourceTree = "<group>"; };
 		5B4FB3C61F63F857007EE813 /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
 		5B4FB3CB1F640889007EE813 /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
-		5B4FB3CD1F640896007EE813 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
-		5B4FB3CF1F6408C3007EE813 /* ErrorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorData.swift; sourceTree = "<group>"; };
 		5B4FB3D11F640A6A007EE813 /* ListCategoriesResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategoriesResponseType.swift; sourceTree = "<group>"; };
 		5B6775A21F6D939B007A411E /* iShoddyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iShoddyModel.xcdatamodel; sourceTree = "<group>"; };
 		5B756A7B1F6C51D50039ABA2 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
@@ -193,6 +197,14 @@
 		DF5C7C381F756746009DA768 /* menu_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_button.png; sourceTree = "<group>"; };
 		DF5C7C391F756746009DA768 /* professional-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "professional-default.png"; sourceTree = "<group>"; };
 		DF5C7C3A1F7568D8009DA768 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DF72FAC11F840B9300715DCB /* ProfessionalsController-CLLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfessionalsController-CLLocationManager.swift"; sourceTree = "<group>"; };
+		DF72FAC31F840C2900715DCB /* CategoryProfessionalList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryProfessionalList.swift; sourceTree = "<group>"; };
+		DF72FAC81F840C5700715DCB /* ErrorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorData.swift; sourceTree = "<group>"; };
+		DF72FACC1F840C8800715DCB /* ErrorDataResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDataResponseType.swift; sourceTree = "<group>"; };
+		DF72FACE1F840C9C00715DCB /* ErrorDataOutputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDataOutputType.swift; sourceTree = "<group>"; };
+		DF72FAD11F840CB900715DCB /* PaginationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationData.swift; sourceTree = "<group>"; };
+		DF72FAD31F840CCB00715DCB /* PaginationDataResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationDataResponseType.swift; sourceTree = "<group>"; };
+		DF72FAD61F840CEC00715DCB /* PaginationDataOutputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationDataOutputType.swift; sourceTree = "<group>"; };
 		DFAB525E1F756B7800487699 /* GetProfessionalsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalsNetworkManager.swift; sourceTree = "<group>"; };
 		DFAB52601F756B7A00487699 /* GetProfessionalsNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalsNetworkManagerImpl.swift; sourceTree = "<group>"; };
 		DFAB52631F756B9700487699 /* GetProfessionalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfessionalInteractor.swift; sourceTree = "<group>"; };
@@ -240,11 +252,11 @@
 		5B4FB3CA1F64087B007EE813 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DF72FAD01F840CA200715DCB /* PaginationData */,
+				DF72FAC71F840C4300715DCB /* ErrorData */,
 				DF5C7BFE1F7564E3009DA768 /* BaseModel.swift */,
 				5B350AA61F654D0C00B4DBEE /* DomainUrl.swift */,
-				5B4FB3CF1F6408C3007EE813 /* ErrorData.swift */,
 				5B4FB3CB1F640889007EE813 /* HeaderData.swift */,
-				5B4FB3CD1F640896007EE813 /* Pagination.swift */,
 				DF2B08051F7576BD001EA47D /* UIViewController+Utils.swift */,
 			);
 			path = Common;
@@ -524,6 +536,7 @@
 			children = (
 				DF5C7C241F7566D5009DA768 /* ProfessionalsController.swift */,
 				DF5C7C251F7566D5009DA768 /* ProfessionalsController+UICollectionView.swift */,
+				DF72FAC11F840B9300715DCB /* ProfessionalsController-CLLocationManager.swift */,
 			);
 			path = ProfessionalsController;
 			sourceTree = "<group>";
@@ -534,6 +547,26 @@
 				DF5C7C271F7566D5009DA768 /* ProfessionalDetailController.swift */,
 			);
 			path = ProfessionalDetailController;
+			sourceTree = "<group>";
+		};
+		DF72FAC71F840C4300715DCB /* ErrorData */ = {
+			isa = PBXGroup;
+			children = (
+				DF72FAC81F840C5700715DCB /* ErrorData.swift */,
+				DF72FACC1F840C8800715DCB /* ErrorDataResponseType.swift */,
+				DF72FACE1F840C9C00715DCB /* ErrorDataOutputType.swift */,
+			);
+			path = ErrorData;
+			sourceTree = "<group>";
+		};
+		DF72FAD01F840CA200715DCB /* PaginationData */ = {
+			isa = PBXGroup;
+			children = (
+				DF72FAD11F840CB900715DCB /* PaginationData.swift */,
+				DF72FAD31F840CCB00715DCB /* PaginationDataResponseType.swift */,
+				DF72FAD61F840CEC00715DCB /* PaginationDataOutputType.swift */,
+			);
+			path = PaginationData;
 			sourceTree = "<group>";
 		};
 		DFAB52621F756B9000487699 /* ProfessionalManager */ = {
@@ -582,6 +615,7 @@
 				DFAB52781F756C1000487699 /* ListProfessionalsOutputType.swift */,
 				DFAB52771F756C1000487699 /* ListProfessionalsResponseType.swift */,
 				DFAB52761F756C1000487699 /* Professional.swift */,
+				DF72FAC31F840C2900715DCB /* CategoryProfessionalList.swift */,
 			);
 			path = Professionals;
 			sourceTree = "<group>";
@@ -715,13 +749,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iShoddy-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6CF01664A57D04DF16E3C1D6 /* [CP] Copy Pods Resources */ = {
@@ -760,9 +797,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iShoddy/Pods-iShoddy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -790,13 +832,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iShoddyTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -813,6 +858,7 @@
 				8898FAC71F7C8AD600E92F16 /* UIView.swift in Sources */,
 				5BFE52631F6D1A2000AD706F /* PersistCategoriesCoreDataImpl.swift in Sources */,
 				8898FABE1F7C71C200E92F16 /* BaseTableViewCell.swift in Sources */,
+				DF72FACD1F840C8800715DCB /* ErrorDataResponseType.swift in Sources */,
 				DFAB525A1F756AFE00487699 /* ProfessionalsController.swift in Sources */,
 				DF5C7C291F756713009DA768 /* AsyncData.swift in Sources */,
 				5B85EF581F6D39B10044AE89 /* GetAllCategoriesInteractorCoreDataImpl.swift in Sources */,
@@ -821,10 +867,8 @@
 				5BFE00D71F686FBE00551609 /* GetFileFromServerManager.swift in Sources */,
 				DFAB52611F756B7A00487699 /* GetProfessionalsNetworkManagerImpl.swift in Sources */,
 				5B4FB3C51F63F7D2007EE813 /* ListCategoriesOutputType.swift in Sources */,
-				5B4FB3D01F6408C3007EE813 /* ErrorData.swift in Sources */,
 				5BFE525F1F6D175000AD706F /* SubCategoryData+ManagedObjectType.swift in Sources */,
 				DFAB52791F756C1000487699 /* Professional.swift in Sources */,
-				5B4FB3CE1F640896007EE813 /* Pagination.swift in Sources */,
 				5BB031AE1F606BCE0006257B /* CategoryViewController.swift in Sources */,
 				88F48C3F1F7A7DF30098D342 /* LeftViewController.swift in Sources */,
 				5BFE52611F6D1A0400AD706F /* SaveCategoriesInteractorImpl.swift in Sources */,
@@ -836,6 +880,7 @@
 				5BFE52651F6D1C6500AD706F /* PersistCategoriesCoreData.swift in Sources */,
 				DFAB525F1F756B7800487699 /* GetProfessionalsNetworkManager.swift in Sources */,
 				5BA56AE71F61C17300F837EB /* GetAllCategoriesInteractorImpl.swift in Sources */,
+				DF72FACF1F840C9C00715DCB /* ErrorDataOutputType.swift in Sources */,
 				DFAB52741F756BDE00487699 /* Constants.swift in Sources */,
 				5BFE525D1F6D174100AD706F /* CategoryData+ManagedObjectType.swift in Sources */,
 				5BA56AEE1F61CE5B00F837EB /* GetAllCategoriesManager.swift in Sources */,
@@ -844,13 +889,18 @@
 				8898FAC51F7C7D4200E92F16 /* ImageHeaderView.swift in Sources */,
 				DFAB527A1F756C1000487699 /* ListProfessionalsResponseType.swift in Sources */,
 				DFAB526D1F756BBD00487699 /* ActivityIndicator.swift in Sources */,
+				DF72FAD21F840CB900715DCB /* PaginationData.swift in Sources */,
 				883FD7501F7D150C004F259C /* ExSlideMenuController.swift in Sources */,
 				5B350AA51F6546FC00B4DBEE /* NetworkManager.swift in Sources */,
 				5B85EF5A1F6D3AA10044AE89 /* GetAllCategoriesCoreDataManagerImpl.swift in Sources */,
+				DF72FAD41F840CCB00715DCB /* PaginationDataResponseType.swift in Sources */,
 				8898FABB1F7C6CCF00E92F16 /* RegisterAsClientViewController.swift in Sources */,
 				DFAB525B1F756B0100487699 /* ProfessionalsController+UICollectionView.swift in Sources */,
+				DF72FAC41F840C2900715DCB /* CategoryProfessionalList.swift in Sources */,
 				5B4FB3C71F63F857007EE813 /* SubCategory.swift in Sources */,
+				DF72FAD71F840CEC00715DCB /* PaginationDataOutputType.swift in Sources */,
 				5B4FB3CC1F640889007EE813 /* HeaderData.swift in Sources */,
+				DF72FAC91F840C5700715DCB /* ErrorData.swift in Sources */,
 				5B350AA71F654D0C00B4DBEE /* DomainUrl.swift in Sources */,
 				5B756A821F6D07BB0039ABA2 /* CoreDataManager.swift in Sources */,
 				8898FAC11F7C727C00E92F16 /* StringExtension.swift in Sources */,
@@ -866,6 +916,7 @@
 				5B16BAD81F684E50004ACB7F /* GetImageFilesInteractor.swift in Sources */,
 				DFAB52661F756B9700487699 /* GetProfessionalInteractorImpl.swift in Sources */,
 				5B85EF5E1F6D8B5B0044AE89 /* CheckCacheFakeInteractorImpl.swift in Sources */,
+				DF72FAC21F840B9300715DCB /* ProfessionalsController-CLLocationManager.swift in Sources */,
 				5BA56AEA1F61C27000F837EB /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1013,7 +1064,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 69A85A3TC3;
+				DEVELOPMENT_TEAM = 6RPGGVZM93;
 				INFOPLIST_FILE = iShoddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1032,7 +1083,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 69A85A3TC3;
+				DEVELOPMENT_TEAM = 6RPGGVZM93;
 				INFOPLIST_FILE = iShoddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

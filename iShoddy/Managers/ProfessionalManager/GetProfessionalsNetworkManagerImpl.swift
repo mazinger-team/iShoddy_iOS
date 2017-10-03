@@ -55,19 +55,20 @@ public class GetProfessionalsNetWorkManagerImpl:  GetProfessionalsNetworkManager
             urlProfessionals = urlProfessionals+"page="+String(describing: page)
         }
         
-        NetworkManager.sharedNetworkManager.execute(withURL: DomainUrl.listProfessionals, completion: {(data:Data) in
+        NetworkManager.sharedNetworkManager.execute(withURL: urlProfessionals, completion: {(data:Data) in
             guard let jsonResponse = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
                 //Error en el parseo
                 onError(ErrorData(errorCode: nil, errorTitle: "Error en el parser", errorText: "Error en respuesta del servicio" , errorFlag: true, errorType: "T"))
                 return
             }
             let listProfessionalsResponseType = ListProfessionalsResponseType(dictionary: jsonResponse!)
-            completion(listProfessionalsResponseType)
+            let paginationDataResponseType = PaginationDataResponseType(dictionary: jsonResponse!)
+            completion(listProfessionalsResponseType, paginationDataResponseType)
         }) { (errorData) in
             onError(ErrorData(errorCode: nil, errorTitle: nil, errorText: "Error en respuesta del servicio:", errorFlag: true, errorType: "T"))
         }
     }
-
+    
     public func downloadProfessionalImage(professional: Professional, completion: @escaping (UIImage) -> Void) {
         DispatchQueue.global().async {
             if let url = URL(string: professional.logo_url!) {
@@ -85,3 +86,5 @@ public class GetProfessionalsNetWorkManagerImpl:  GetProfessionalsNetworkManager
         }
     }
 }
+
+

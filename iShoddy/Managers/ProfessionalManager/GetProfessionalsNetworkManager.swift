@@ -13,3 +13,4 @@ public protocol GetProfessionalsNetworkManager {
     func execute(filter: String?, order: String?, fields: String?, page: Int, completion: @escaping listProfessional, onError: @escaping errorBlock) -> Void
     func downloadProfessionalImage(professional: Professional, completion: @escaping (UIImage) -> Void)
 }
+

@@ -9,6 +9,7 @@
 import Foundation
 
 public struct HeaderData{
-    let pagination : Pagination?
+    let paginationData : PaginationData?
     let errorData : ErrorData?
 }
+

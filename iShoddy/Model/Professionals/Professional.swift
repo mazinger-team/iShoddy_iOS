@@ -1,84 +1,33 @@
-/* 
-Copyright (c) 2017 Swift Models Generated from JSON powered by http://www.json4swift.com
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
+//
+//  Professional.swift
+//  iShoddy
+//
+//  Created by Jose Sanchez Rodriguez on 11/9/17.
+//  Copyright © 2017 ESoft. All rights reserved.
+//
 
 import Foundation
- 
+
 /* For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 public struct Professional {
-    public var id : Int = 0
-    public var user_id : Int = 0
+    public var _id : String?
     public var user_name : String?
-    public var demands_id : Array<String>?
-    public var category_id : String?
-    public var subcategory_id : String?
     public var corp_name : String?
+    public var category : CategoryProfessionalList?
     public var logo_url : String?
-    public var images_url : Array<String>?
-    public var description : String?
-    public var fiscal_id : String?
-    public var street : String?
-    public var postal_code : String?
-    public var area : String?
-    public var city : String?
-    public var province : String?
-    public var gps_lat : Double?
-    public var gps_lon : Double?
-    public var web_url : String?
-    public var email : String?
-    public var telephone : String?
-    public var opening_hours : String?
-    public var register_date : Date?
-    public var rate_visit : Int?
-    public var rate_hour : Int?
-    public var rate_notes : String?
-    public var rating_accumulated : Int?
-    public var rating_votes : Int?
     public var rating : Double?
     public var reviews_number : Int?
     public var photo_number : Int?
     public var distance : Double?
-
-    init(id: Int, user_id: Int, user_name: String?, demands_id: Array<String>?, category_id: String?, subcategory_id : String?, corp_name : String?,
-         logo_url : String?, images_url : Array<String>?, description : String?, fiscal_id : String?, street : String?, postal_code : String?, area : String?,
-         city : String?, province : String?, gps_lat : Double?, gps_lon : Double?, web_url : String?, email : String?, telephone : String?, opening_hours : String?,
-         register_date : Date?, rate_visit : Int?, rate_hour : Int?, rate_notes : String?, rating_accumulated : Int?, rating_votes : Int?, rating : Double?,
-         reviews_number : Int?, photo_number : Int?, distance : Double?) {
-        self.id = id
-        self.user_id = user_id
+    
+    init(id: String?, user_name: String?, corp_name: String?, category: CategoryProfessionalList?, logo_url: String?, rating : Double?, reviews_number : Int?,
+         photo_number: Int?, distance: Double?) {
+        self._id = id
         self.user_name = user_name
-        self.demands_id = demands_id
-        self.category_id = category_id
-        self.subcategory_id = subcategory_id
         self.corp_name = corp_name
+        self.category = category
         self.logo_url = logo_url
-        self.images_url = images_url
-        self.description = description
-        self.fiscal_id = fiscal_id
-        self.street = street
-        self.postal_code = postal_code
-        self.area = area
-        self.city = city
-        self.province = province
-        self.gps_lat = gps_lat
-        self.gps_lon = gps_lon
-        self.web_url = web_url
-        self.email = email
-        self.telephone = telephone
-        self.opening_hours = opening_hours
-        self.register_date = register_date
-        self.rate_visit = rate_visit
-        self.rate_hour = rate_hour
-        self.rate_notes = rate_notes
-        self.rating_accumulated = rating_accumulated
-        self.rating_votes = rating_votes
         self.rating = rating
         self.reviews_number = reviews_number
         self.photo_number = photo_number
@@ -86,106 +35,68 @@ public struct Professional {
     }
     
     /**
-    Returns an array of models based on given dictionary.
+     Returns an array of models based on given dictionary.
+     
+     Sample usage:
+     let professionals_list = Professionals.modelsFromDictionaryArray(someDictionaryArrayFromJSON)
+     
+     - parameter array:  NSArray from JSON dictionary.
+     
+     - returns: Array of Professionals Instances.
+     */
+    /* public class func modelsFromDictionaryArray(array:NSArray) -> [Professionals]
+     {
+     var models:[Professionals] = []
+     for item in array
+     {
+     models.append(Professionals(dictionary: item as! NSDictionary)!)
+     }
+     return models
+     }*/
     
-    Sample usage:
-    let professionals_list = Professionals.modelsFromDictionaryArray(someDictionaryArrayFromJSON)
-
-    - parameter array:  NSArray from JSON dictionary.
-    - returns: Array of Professionals Instances.
-     */
-    /*
-     public class func modelsFromDictionaryArray(array:NSArray) -> [Professionals] {
-        var models:[Professionals] = []
-        for item in array {
-            models.append(Professionals(dictionary: item as! NSDictionary)!)
-        }
-        return models
-    }
-     */
-
     /**
-    Constructs the object based on the given dictionary.
-    
-    Sample usage:
-    let professionals = Professionals(someDictionaryFromJSON)
-
-    - parameter dictionary:  NSDictionary from JSON.
-    - returns: Professionals Instance.
+     Constructs the object based on the given dictionary.
+     
+     Sample usage:
+     let professionals = Professionals(someDictionaryFromJSON)
+     
+     - parameter dictionary:  NSDictionary from JSON.
+     
+     - returns: Professionals Instance.
      */
-    /*
-	required public init?(dictionary: NSDictionary) {
-		id = dictionary["id"] as? Int
-		user_id = dictionary["user_id"] as? Int
-		user_name = dictionary["user_name"] as? String
-        demands_id = dictionary["demands_id"] as! NSArray as? Array<Int>
-		category_id = dictionary["category_id"] as? Int
-		subcategory_id = dictionary["subcategory_id"] as? Int
-		corp_name = dictionary["corp_name"] as? String
-		logo_url = dictionary["logo_url"] as? String
-        images_url = dictionary["images_url"] as! NSArray as? Array<String>
-		description = dictionary["description"] as? String
-		fiscal_id = dictionary["fiscal_id"] as? String
-		street = dictionary["street"] as? String
-		postal_code = dictionary["postal_code"] as? Int
-		area = dictionary["area"] as? String
-		city = dictionary["city"] as? String
-		province = dictionary["province"] as? String
-		gps_lat = dictionary["gps_lat"] as? Double
-		gps_lon = dictionary["gps_lon"] as? Double
-		web_url = dictionary["web_url"] as? String
-		email = dictionary["email"] as? String
-		telephone = dictionary["telephone"] as? Int
-		opening_hours = dictionary["opening_hours"] as? String
-		register_date = dictionary["register_date"] as? Int
-		rate_visit = dictionary["rate_visit"] as? Int
-		rate_hour = dictionary["rate_hour"] as? Int
-		rate_notes = dictionary["rate_notes"] as? String
-		rating_accumulated = dictionary["rating_accumulated"] as? Int
-		rating_votes = dictionary["rating_votes"] as? Int
-		rating = dictionary["rating"] as? Int
-	}
-    */
+    /*required public init?(dictionary: NSDictionary) {
+     
+     _id = dictionary["_id"] as? String
+     user_name = dictionary["user_name"] as? String
+     if (dictionary["category"] != nil) { category = Category(dictionary: dictionary["category"] as! NSDictionary) }
+     logo_url = dictionary["logo_url"] as? String
+     rating = dictionary["rating"] as? Double
+     reviews_number = dictionary["reviews_number"] as? Int
+     photo_number = dictionary["photo_number"] as? Int
+     distance = dictionary["distance"] as? Double
+     }*/
+    
+    
     /**
-    Returns the dictionary representation for the current instance.
-    
-    - returns: NSDictionary.
+     Returns the dictionary representation for the current instance.
+     
+     - returns: NSDictionary.
      */
-    /*
-	public func dictionaryRepresentation() -> NSDictionary {
-		let dictionary = NSMutableDictionary()
-
-		dictionary.setValue(self.id, forKey: "id")
-		dictionary.setValue(self.user_id, forKey: "user_id")
-		dictionary.setValue(self.user_name, forKey: "user_name")
-		dictionary.setValue(self.category_id, forKey: "category_id")
-		dictionary.setValue(self.subcategory_id, forKey: "subcategory_id")
-		dictionary.setValue(self.corp_name, forKey: "corp_name")
-		dictionary.setValue(self.logo_url, forKey: "logo_url")
-		dictionary.setValue(self.description, forKey: "description")
-		dictionary.setValue(self.fiscal_id, forKey: "fiscal_id")
-		dictionary.setValue(self.street, forKey: "street")
-		dictionary.setValue(self.postal_code, forKey: "postal_code")
-		dictionary.setValue(self.area, forKey: "area")
-		dictionary.setValue(self.city, forKey: "city")
-		dictionary.setValue(self.province, forKey: "province")
-		dictionary.setValue(self.gps_lat, forKey: "gps_lat")
-		dictionary.setValue(self.gps_lon, forKey: "gps_lon")
-		dictionary.setValue(self.web_url, forKey: "web_url")
-		dictionary.setValue(self.email, forKey: "email")
-		dictionary.setValue(self.telephone, forKey: "telephone")
-		dictionary.setValue(self.opening_hours, forKey: "opening_hours")
-		dictionary.setValue(self.register_date, forKey: "register_date")
-		dictionary.setValue(self.rate_visit, forKey: "rate_visit")
-		dictionary.setValue(self.rate_hour, forKey: "rate_hour")
-		dictionary.setValue(self.rate_notes, forKey: "rate_notes")
-		dictionary.setValue(self.rating_accumulated, forKey: "rating_accumulated")
-		dictionary.setValue(self.rating_votes, forKey: "rating_votes")
-		dictionary.setValue(self.rating, forKey: "rating")
-        dictionary.setValue(self.demands_id, forKey: "demands_id")
-        dictionary.setValue(self.images_url, forKey: "images_url")
-
-		return dictionary
-	}
-     */
+    /*public func dictionaryRepresentation() -> NSDictionary {
+     
+     let dictionary = NSMutableDictionary()
+     
+     dictionary.setValue(self._id, forKey: "_id")
+     dictionary.setValue(self.user_name, forKey: "user_name")
+     dictionary.setValue(self.category?.dictionaryRepresentation(), forKey: "category")
+     dictionary.setValue(self.logo_url, forKey: "logo_url")
+     dictionary.setValue(self.rating, forKey: "rating")
+     dictionary.setValue(self.reviews_number, forKey: "reviews_number")
+     dictionary.setValue(self.photo_number, forKey: "photo_number")
+     dictionary.setValue(self.distance, forKey: "distance")
+     
+     return dictionary
+     }*/
 }
+
+

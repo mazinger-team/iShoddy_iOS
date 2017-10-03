@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ProfessionalsController: UIViewController {
     
     @IBOutlet weak var ProfessionalCollectionView: UICollectionView!
     @IBOutlet weak var professionalActivityIndicator: UIActivityIndicatorView!
+    
+    var listProfessionalsResponseType : ListProfessionalsResponseType?
     
     var lastContentOffset: CGFloat = 0.0
     
@@ -19,21 +22,50 @@ class ProfessionalsController: UIViewController {
     
     var professionals : [Professional] =  [Professional]()
     
+    public var paginationDataProfessional : PaginationData = PaginationData(paginationFlag: false, paginationKey: 0, paginationElements: 0)
+    
     var loadingStatus = false
     
-    let filter: String? = ""
+    var filter: String? = ""
     let order: String? = ""
-    let fields: String? = ""
-    var page: Int = 0
+    var fields: String? = ""
+    
+    var gps_lat: Double? = 0
+    var gps_lon: Double? = 0
+    
+    var locationManager : CLLocationManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // If location services is enabled get the users location
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager = CLLocationManager()
+            locationManager?.requestWhenInUseAuthorization()
+            locationManager?.delegate = self
+            locationManager?.desiredAccuracy = kCLLocationAccuracyBest // You can change the locaiton accuary here.
+            locationManager?.startUpdatingLocation()
+            locationManager?.requestLocation()
+            if let location = locationManager?.location?.coordinate {
+                gps_lat = location.latitude
+                gps_lon = location.longitude
+            }
+        }
+        
         automaticallyAdjustsScrollViewInsets = false
         
-        getProfessionals(filter: filter, order: order, fields: fields, page: page)
+        if (gps_lat != 0 && gps_lon != 0) {
+            filter = "gps_lat=" + String(describing: gps_lat!)
+            filter = filter! + "&gps_lon=" + String(describing: gps_lon!)
+        }
+        
+        getProfessionals(filter: filter, order: order, fields: fields, page: paginationDataProfessional.paginationKey)
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager?.stopUpdatingLocation()
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -47,10 +79,12 @@ class ProfessionalsController: UIViewController {
             
             let getProfessionalsInteractorImpl: GetProfessionalInteractorImpl = GetProfessionalInteractorImpl(getProfessionalsNetworkManager: manager)
             
-            getProfessionalsInteractorImpl.execute(filter: filter, order: order, fields: fields, page: page, completion: { (listProfessionalsResponseType: ListProfessionalsResponseType)  in
+            getProfessionalsInteractorImpl.execute(filter: filter, order: order, fields: fields, page: page, completion: { (listProfessionalsResponseType: ListProfessionalsResponseType, paginationDataResponseType: PaginationDataResponseType)  in
+                //self.listProfessionalsResponseType = listProfessionalsResponseType
                 
-                    self.professionals.append(contentsOf: listProfessionalsResponseType.listProfessionalsOutputType.professionals)
-   
+                self.professionals.append(contentsOf: listProfessionalsResponseType.listProfessionalsOutputType.professionals)
+                self.paginationDataProfessional = paginationDataResponseType.paginationDataOutputType.paginationData
+                
                 //self.professionals = listProfessionalsResponseType.listProfessionalsOutputType.professionals
                 DispatchQueue.main.async {
                     self.professionalActivityIndicator.isHidden = true
@@ -70,7 +104,7 @@ class ProfessionalsController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
-            if identifier == "DetailProfessionalSegue" {
+            if identifier == constants.professionalDetailSegue {
                 let indexPath = ProfessionalCollectionView.indexPathsForSelectedItems?.first
                 let vc = segue.destination as! ProfessionalDetailController
                 vc.professional = self.professionals[(indexPath?.row)!]
@@ -79,16 +113,28 @@ class ProfessionalsController: UIViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.row + 1 == professionals.count {
-            professionalActivityIndicator.isHidden = false
-            professionalActivityIndicator.startAnimating()
-            loadingStatus = false
-            page += 1
-            getProfessionals(filter: filter, order: order, fields: fields, page: page)
-        } else if indexPath.row + 1 == professionals.count-8  {
-            loadingStatus = false
-            page += 1
-            getProfessionals(filter: filter, order: order, fields: fields, page: page)
+        if (paginationDataProfessional.paginationFlag) {
+            if indexPath.row + 1 == professionals.count {
+                professionalActivityIndicator.isHidden = false
+                professionalActivityIndicator.startAnimating()
+                loadingStatus = false
+                
+                if (paginationDataProfessional.paginationKey == 0) {
+                    paginationDataProfessional.paginationKey = 2
+                } else {
+                    paginationDataProfessional.paginationKey += 1
+                }
+                
+                getProfessionals(filter: filter, order: order, fields: fields, page: paginationDataProfessional.paginationKey)
+            } else if indexPath.row + 1 == professionals.count-8  {
+                loadingStatus = false
+                if (paginationDataProfessional.paginationKey == 0) {
+                    paginationDataProfessional.paginationKey = 2
+                } else {
+                    paginationDataProfessional.paginationKey += 1
+                }
+                getProfessionals(filter: filter, order: order, fields: fields, page: paginationDataProfessional.paginationKey)
+            }
         }
     }
     

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kcK-8W-Hw1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kcK-8W-Hw1">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -94,14 +93,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HzH-16-6nv" userLabel="BackGround">
-                                                    <rect key="frame" x="0.0" y="-0.6666666666666714" width="414" height="145.33333333333331"/>
+                                                    <rect key="frame" x="0.0" y="-0.6666666666666714" width="414" height="145.33333333333337"/>
                                                     <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                                 <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCx-Kz-PNx">
-                                                    <rect key="frame" x="0.0" y="102.33333333333334" width="414" height="42.333333333333343"/>
+                                                    <rect key="frame" x="0.0" y="102.33333333333333" width="414" height="42.333333333333329"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6q-M9-s3X" userLabel="Name">
-                                                            <rect key="frame" x="9.9999999999999964" y="8.3333333333333428" width="46.666666666666657" height="20.999999999999986"/>
+                                                            <rect key="frame" x="9.9999999999999964" y="8.3333333333333428" width="46.666666666666657" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="UAF-bV-73e"/>
                                                             </constraints>
@@ -314,7 +313,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="10 Reseñas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzp-dX-bAF" userLabel="Prefessional Review Count">
-                                                                    <rect key="frame" x="11.666666666666664" y="15.333333333333343" width="45" height="9.6666666666666572"/>
+                                                                    <rect key="frame" x="11.666666666666664" y="15.333333333333343" width="45" height="9.6666666666666643"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                                                     <color key="textColor" red="0.30192413930000001" green="0.30198186640000002" blue="0.30192047360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -335,7 +334,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6j-A2-SHf" userLabel="Prefessional Review Count">
-                                                                    <rect key="frame" x="10" y="25" width="5.3333333333333286" height="7"/>
+                                                                    <rect key="frame" x="10" y="25" width="5.3333333333333321" height="7"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="7" id="jJf-ax-BEr"/>
                                                                     </constraints>
@@ -356,7 +355,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzS-8w-hgO" userLabel="Prefessional Review Count">
-                                                                    <rect key="frame" x="2.3333333333333428" y="23" width="20.333333333333314" height="7"/>
+                                                                    <rect key="frame" x="2.3333333333333428" y="23" width="20.333333333333332" height="7"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="7" id="4fN-4x-wNH"/>
                                                                     </constraints>

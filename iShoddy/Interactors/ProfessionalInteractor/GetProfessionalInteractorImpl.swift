@@ -17,10 +17,11 @@ public class GetProfessionalInteractorImpl: GetProfessionalInteractor {
     }
     
     public func execute(filter: String?, order: String?, fields: String?, page: Int, completion: @escaping  listProfessional, onError: @escaping errorBlock ) {
-        getProfessionalNetworkManager.execute(filter: filter, order: order, fields: fields, page: page, completion: { (listProfessionalsResponseType : ListProfessionalsResponseType)  in
-            completion(listProfessionalsResponseType)
+        getProfessionalNetworkManager.execute(filter: filter, order: order, fields: fields, page: page, completion: { (listProfessionalsResponseType : ListProfessionalsResponseType, paginationDataResponseType: PaginationDataResponseType)  in
+            completion(listProfessionalsResponseType, paginationDataResponseType)
         }) { (errorData:ErrorData) in
             onError(errorData)
         }
     }
 }
+
