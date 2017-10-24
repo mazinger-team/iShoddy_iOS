@@ -111,10 +111,7 @@ class RegisterAsClientViewController: UIViewController {
     
     @objc func closeViewController()
     {
-        //--newcode now --
-        print("Cancelar button tapped")
         delegate?.changeViewController(LeftMenu.categories)
-        //--
     }
 }
 

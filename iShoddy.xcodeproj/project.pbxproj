@@ -42,6 +42,7 @@
 		5BFE52631F6D1A2000AD706F /* PersistCategoriesCoreDataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE52621F6D1A2000AD706F /* PersistCategoriesCoreDataImpl.swift */; };
 		5BFE52651F6D1C6500AD706F /* PersistCategoriesCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE52641F6D1C6500AD706F /* PersistCategoriesCoreData.swift */; };
 		5BFE52671F6D1CDA00AD706F /* SaveCategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE52661F6D1CDA00AD706F /* SaveCategoriesInteractor.swift */; };
+		882C33521F9EC68E00A154D3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C33511F9EC68E00A154D3 /* CircleImage.swift */; };
 		883960671F81B3EA00E56266 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883960651F81B3E900E56266 /* UIApplication.swift */; };
 		883960681F81B3EA00E56266 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883960661F81B3E900E56266 /* UIViewController.swift */; };
 		8839606A1F81CE0600E56266 /* ImageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883960691F81CE0600E56266 /* ImageHeaderView.xib */; };
@@ -155,6 +156,7 @@
 		5BFE52621F6D1A2000AD706F /* PersistCategoriesCoreDataImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistCategoriesCoreDataImpl.swift; sourceTree = "<group>"; };
 		5BFE52641F6D1C6500AD706F /* PersistCategoriesCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistCategoriesCoreData.swift; sourceTree = "<group>"; };
 		5BFE52661F6D1CDA00AD706F /* SaveCategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCategoriesInteractor.swift; sourceTree = "<group>"; };
+		882C33511F9EC68E00A154D3 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		883960651F81B3E900E56266 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		883960661F81B3E900E56266 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		883960691F81CE0600E56266 /* ImageHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageHeaderView.xib; sourceTree = "<group>"; };
@@ -596,6 +598,7 @@
 		DFAB526F1F756BC800487699 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				882C33511F9EC68E00A154D3 /* CircleImage.swift */,
 				883960691F81CE0600E56266 /* ImageHeaderView.xib */,
 				8898FABC1F7C712100E92F16 /* TableViewCell */,
 				DF2B08041F757656001EA47D /* LaunchScreen.storyboard */,
@@ -918,6 +921,7 @@
 				883960671F81B3EA00E56266 /* UIApplication.swift in Sources */,
 				5B6775A31F6D939B007A411E /* iShoddyModel.xcdatamodeld in Sources */,
 				5BFE525B1F6D104400AD706F /* ManagedObjectType.swift in Sources */,
+				882C33521F9EC68E00A154D3 /* CircleImage.swift in Sources */,
 				5B85EF5C1F6D8B2C0044AE89 /* CheckCacheInteractor.swift in Sources */,
 				88B316DE1F2CB2F3009426C8 /* AppDelegate.swift in Sources */,
 				5BB031B11F606F090006257B /* CategoryCell.swift in Sources */,

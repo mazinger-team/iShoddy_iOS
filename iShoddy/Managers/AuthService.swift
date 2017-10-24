@@ -9,7 +9,6 @@
 import Foundation
 import Alamofire
 
-//--newcode now --
 typealias CompletionHandler = (_ Success: Bool) -> ()
 
 // MARK: User Defaults

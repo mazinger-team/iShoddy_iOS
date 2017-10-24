@@ -35,13 +35,34 @@
                                     <outlet property="delegate" destination="kcK-8W-Hw1" id="r01-Mx-hqo"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ioh-83-Noj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="3YU-ab-ngw" customClass="CircleImage" customModule="iShoddy" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="43.666666666666657" width="85" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="2pG-O2-kdS"/>
+                                            <constraint firstAttribute="height" constant="85" id="u70-cr-LfX"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.41568627450000001" green="0.1960784314" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3YU-ab-ngw" firstAttribute="leading" secondItem="ioh-83-Noj" secondAttribute="leading" constant="20" id="3kU-1B-3uJ"/>
+                                    <constraint firstItem="3YU-ab-ngw" firstAttribute="centerY" secondItem="ioh-83-Noj" secondAttribute="centerY" id="UeK-Zr-P8h"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="674-oS-Gdo" firstAttribute="top" secondItem="1F2-eg-aLd" secondAttribute="bottom" id="2dr-Uv-wlm"/>
+                            <constraint firstAttribute="trailing" secondItem="ioh-83-Noj" secondAttribute="trailing" id="3Cx-OP-k1Q"/>
                             <constraint firstItem="1F2-eg-aLd" firstAttribute="leading" secondItem="TmY-Cj-rtR" secondAttribute="leading" id="I2s-A9-Grw"/>
                             <constraint firstItem="1F2-eg-aLd" firstAttribute="top" secondItem="fra-Tl-zGH" secondAttribute="bottom" constant="160" id="URR-ec-bYt"/>
+                            <constraint firstItem="1F2-eg-aLd" firstAttribute="top" secondItem="ioh-83-Noj" secondAttribute="bottom" constant="8" id="eYS-Qy-N9d"/>
+                            <constraint firstItem="ioh-83-Noj" firstAttribute="leading" secondItem="TmY-Cj-rtR" secondAttribute="leading" id="iit-0d-DyF"/>
                             <constraint firstAttribute="trailing" secondItem="1F2-eg-aLd" secondAttribute="trailing" id="jHd-h7-2td"/>
+                            <constraint firstItem="ioh-83-Noj" firstAttribute="top" secondItem="TmY-Cj-rtR" secondAttribute="top" id="uVy-ij-DSu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -50,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ywS-4w-Rlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-91" y="-704"/>
+            <point key="canvasLocation" x="-91.304347826086968" y="-704.34782608695662"/>
         </scene>
         <!--Category View Controller-->
         <scene sceneID="bh0-oc-kVs">
@@ -560,5 +581,6 @@
         <image name="GoldStarFilled.png" width="1590" height="1530"/>
         <image name="Marker.png" width="96" height="96"/>
         <image name="professional-default.png" width="756" height="720"/>
+        <image name="profileDefault" width="192" height="192"/>
     </resources>
 </document>

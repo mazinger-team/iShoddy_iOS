@@ -17,7 +17,7 @@ class ImageHeaderView: UIView {
         super.awakeFromNib()
         
         // TODO: Hacer pruebas con esto
-        self.backgroundColor = UIColor.blue
+        self.backgroundColor = constants.appPrimaryColor
         self.profileImage.layoutIfNeeded()
         self.profileImage.layer.cornerRadius = self.profileImage.bounds.size.height / 2
         self.profileImage.clipsToBounds = true

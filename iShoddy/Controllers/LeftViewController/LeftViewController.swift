@@ -27,7 +27,9 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
     var menus = ["Categories", "Registration"]
     var categories: UIViewController!
     var registerAsClient: UIViewController!
-    var imageHeaderView: ImageHeaderView!
+    
+    // TODO: temporal
+//    var imageHeaderView: ImageHeaderView!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -54,8 +56,13 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
         
         self.tableView.registerCellClass(BaseTableViewCell.self)
         
-        self.imageHeaderView = ImageHeaderView.loadNib()
-        self.view.addSubview(self.imageHeaderView)
+        // TODO: temporal
+//        self.imageHeaderView = ImageHeaderView.loadNib()
+//        self.view.addSubview(self.imageHeaderView)
+        
+        //--newcode now --
+//        imageHeaderView.profileImage.image = UIImage(named: "profileDefault")
+        //--
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,8 +73,9 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        self.imageHeaderView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 160)
-        self.view.layoutIfNeeded()
+        // TODO: temporal
+//        self.imageHeaderView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 160)
+//        self.view.layoutIfNeeded()
     }
     
     func changeViewController(_ menu: LeftMenu)
@@ -75,9 +83,6 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
         switch menu
         {
         case .categories:
-            //--newcode now --
-            print("ir a categories")
-            //--
             self.slideMenuController()?.changeMainViewController(self.categories, close: true)
         case .registerAsClient:
             self.slideMenuController()?.changeMainViewController(self.registerAsClient, close: true)
