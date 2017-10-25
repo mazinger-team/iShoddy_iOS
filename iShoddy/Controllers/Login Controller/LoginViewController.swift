@@ -22,6 +22,9 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        txtEmail.text = ""
+        txtPassword.text = ""
+        
         self.removeNavigationBarItem()
         txtEmail.becomeFirstResponder()
     }
@@ -81,7 +84,7 @@ class LoginViewController: UIViewController {
     
     @objc func closeViewController()
     {
-        delegate?.changeViewController(LeftMenu.categories)
+        delegate?.showViewController(InvisibleMenu.categories)
     }
     
     @objc func handleTap() {
@@ -104,29 +107,48 @@ class LoginViewController: UIViewController {
             return
         }
         
-        spinner.isHidden = false
-        // TODO 3: igual no es necesario:
         spinner.startAnimating()
         
         AuthService.instance.loginUser(email: email, password: password) { (success) in
             
             if success {
+                
+                NotificationCenter.default.post(name: constants.NOTIF_USER_DATA_DID_CHANGE, object: nil)
                 self.closeViewController()
-                // TODO: 1 notification user logged
+                
             } else {
-                // TODO: 1 error handler
+                
+                // TODO: 1 mejorar error handler
+                DispatchQueue.main.async
+                {
+                    self.showAlertWith(title: "Error", message: "Email y/o contraseña incorrectos. Por favor verifique e intente de nuevo.", style: .alert)
+                }
             }
-            
-            self.spinner.isHidden = true
+    
             self.spinner.stopAnimating()
         }
-
     }
         
     @IBAction func btnRegisterTapped(_ sender: Any) {
         
-        delegate?.changeViewController(LeftMenu.registerAsClient)
+        delegate?.showViewController(InvisibleMenu.registerAsClient)
     }
+    
+    // TODO 2: mover a ubicacion global
+    //--DOING now --
+    func showAlertWith(title: String, message: String, style: UIAlertControllerStyle = .alert)
+    {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
+        
+        let action = UIAlertAction(title: "OK", style: .default) { (action) in
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        alertController.addAction(action)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    //--
 }
 
 extension LoginViewController: UITextFieldDelegate {

@@ -35,6 +35,10 @@ struct constants {
     // MARK: Colors
     static let appPrimaryColor = UIColor(hue: 283/360, saturation: 0.61, brightness: 0.72, alpha: 1.0)
     static let backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
+    static let separatorColor = UIColor.gray
+    
+    // MARK: Notifications
+    static let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
 }
 
 // Notes:

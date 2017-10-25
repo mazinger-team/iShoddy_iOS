@@ -35,23 +35,22 @@ class BaseTableViewCell: UITableViewCell {
     
     open class func height() -> CGFloat
     {
-        return 48.0
+        return 45.0
     }
     
     open func setData(_ data: Any)
     {
-        // TODO: Hacer pruebas con esto
-        self.backgroundColor = UIColor.blue
-        self.textLabel?.font = UIFont.italicSystemFont(ofSize: 18)
-        self.textLabel?.textColor = UIColor.green
+        self.backgroundColor = UIColor.clear
+        self.textLabel?.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        self.textLabel?.textColor = UIColor.white
         
         if let menuText = data as? String {
             self.textLabel?.text = menuText
         }
     }
     
-    override open func setHighlighted(_ highlighted: Bool, animated: Bool) {
-        // TODO: Hacer pruebas con esto
+    override open func setHighlighted(_ highlighted: Bool, animated: Bool)
+    {
         if highlighted {
             self.alpha = 0.4
         } else {

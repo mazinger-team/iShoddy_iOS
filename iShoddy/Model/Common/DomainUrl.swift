@@ -20,7 +20,8 @@ public class DomainUrl {
     //    fileprivate static let BASE = "http://localhost:3000"
     
     public static var listCategories : String {
-        return DomainUrl.BASE + "/v2/59b2d63b120000de05892490"
+//        return DomainUrl.BASE + "/v2/59b2d63b120000de05892490"
+        return DomainUrl.BASE + "/api/v1/categories"
     }
     
     public static var oneCategories : String {
@@ -37,6 +38,10 @@ public class DomainUrl {
     
     public static var clientUserLoginURL: String {
         return DomainUrl.BASE + "/api/v1/user/login"
+    }
+    
+    public static var clientUserLogoutURL: String {
+        return DomainUrl.BASE + "/api/v1/user/logout"
     }
     
     public static var HEADER = [

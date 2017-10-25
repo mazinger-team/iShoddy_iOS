@@ -21,6 +21,9 @@ class RegisterAsClientViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        txtEmail.text = ""
+        txtPassword.text = ""
+        
         self.removeNavigationBarItem()
         txtEmail.becomeFirstResponder()
     }
@@ -95,31 +98,51 @@ class RegisterAsClientViewController: UIViewController {
             return
         }
         
-        spinner.isHidden = false
         spinner.startAnimating()
         
         AuthService.instance.registerUser(email: email, password: password) { (success) in
             
             if success {
                 self.closeViewController()
-                // TODO: 1 notification user logged
+                
+                NotificationCenter.default.post(name: constants.NOTIF_USER_DATA_DID_CHANGE, object: nil)
             } else {
-                // TODO: 1 error handler
+
+                // TODO: 1 mejorar error handler
+                DispatchQueue.main.async
+                {
+                    self.showAlertWith(title: "Error", message: "Email y/o contraseña no válidos. Por favor verifique e intente de nuevo.", style: .alert)
+                }
             }
-            
-            self.spinner.isHidden = true
+        
             self.spinner.stopAnimating()
         }
     }
     
     @objc func closeViewController()
     {
-        delegate?.changeViewController(LeftMenu.categories)
+        delegate?.showViewController(InvisibleMenu.categories)
     }
     
     @objc func handleTap() {
         view.endEditing(true)
     }
+    
+    // TODO 2: mover a ubicacion global
+    func showAlertWith(title: String, message: String, style: UIAlertControllerStyle = .alert)
+    {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
+        
+        let action = UIAlertAction(title: "OK", style: .default) { (action) in
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        alertController.addAction(action)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    //--
+
 }
 
 extension RegisterAsClientViewController: UITextFieldDelegate {

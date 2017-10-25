@@ -9,14 +9,25 @@
 import UIKit
 
 enum LeftMenu: Int {
+    case clientProfile = 0
+    case demands
+    case chats
+    case help
+    case separator
+    case professional
+    case registerAsProfessional
+}
+
+enum InvisibleMenu: Int {
     case categories = 0
     case registerAsClient
-    case login
+    case loginAsClient
 }
 
 protocol LeftMenuProtocol: class
 {
     func changeViewController(_ menu: LeftMenu);
+    func showViewController(_ menu: InvisibleMenu)
 }
 
 class LeftViewController: UIViewController, LeftMenuProtocol {
@@ -25,11 +36,13 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var ivProfile: CircleImage!
+    @IBOutlet weak var lblDemands: UILabel!
     
-    var menus = ["Categories", "Registration"]
+    var menus = ["    Mi perfil","    Demandas", "    Chats", "    Ayuda", "", "PROFESIONAL", "    Alta como profesional"]
     var categories: UIViewController!
     var registerAsClient: UIViewController!
-    var login: UIViewController!
+    var loginAsClient: UIViewController!
+    var clientProfile: UIViewController!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -43,8 +56,6 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
     {
         super.viewDidLoad()
         
-        self.tableView.separatorColor = constants.backgroundColor
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let categoriesViewController = storyboard.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
@@ -55,10 +66,38 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
         registerAsClientController.delegate = self
         
         let loginController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        self.login = UINavigationController(rootViewController: loginController)
+        self.loginAsClient = UINavigationController(rootViewController: loginController)
         loginController.delegate = self
         
+        let clientProfileController = storyboard.instantiateViewController(withIdentifier: "CientProfileViewController") as! CientProfileViewController
+        self.clientProfile = UINavigationController(rootViewController: clientProfileController)
+        clientProfileController.delegate = self
+        
+        self.tableView.separatorColor = constants.separatorColor
         self.tableView.registerCellClass(BaseTableViewCell.self)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(LeftViewController.userDataDidChange(_:)), name: constants.NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        setupUserInfo()
+    }
+    
+    @objc func userDataDidChange(_ notif: Notification)
+    {
+        setupUserInfo()
+    }
+    
+    func setupUserInfo()
+    {
+        if AuthService.instance.isLoogedIn {
+            btnLogin.setTitle(UserDataService.instance.email, for: .normal)
+            btnLogin.isEnabled = false
+            ivProfile.image = UIImage(named: "userLoggedIn")
+            lblDemands.text = "1 Demanda solicitada"
+        } else {
+            btnLogin.setTitle("Inicia sesión", for: .normal)
+            btnLogin.isEnabled = true
+            ivProfile.image = UIImage(named: "profileDefault")
+            lblDemands.text = ""
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,7 +108,7 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
         super.viewDidLayoutSubviews()
     }
     
-    func changeViewController(_ menu: LeftMenu)
+    func showViewController(_ menu: InvisibleMenu)
     {
         switch menu
         {
@@ -77,14 +116,45 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
             self.slideMenuController()?.changeMainViewController(self.categories, close: true)
         case .registerAsClient:
             self.slideMenuController()?.changeMainViewController(self.registerAsClient, close: true)
-        case .login:
-            self.slideMenuController()?.changeMainViewController(self.login, close: true)
+        case .loginAsClient:
+            self.slideMenuController()?.changeMainViewController(self.loginAsClient, close: true)
+        }
+    }
+    
+    func changeViewController(_ menu: LeftMenu)
+    {
+        switch menu
+        {
+        case .clientProfile:
+            
+            if AuthService.instance.isLoogedIn {
+                self.slideMenuController()?.changeMainViewController(self.clientProfile, close: true)
+            } else {
+                self.slideMenuController()?.changeMainViewController(self.loginAsClient, close: true)
+            }
+            
+        case .demands:
+            print("Demandas cell tapped")
+        case .chats:
+            print("Chats cell tapped")
+        case .help:
+            print("Ayuda cell tapped")
+        case .separator:
+            print("Separator cell tapped")
+        case .professional:
+            //--
+            UserDataService.instance.logoutClientUser()
+            setupUserInfo()
+            print("Profesional cell tapped")
+            //--
+        case .registerAsProfessional:
+            print("Alta como profesional cell tapped")
         }
     }
     
     // MARK: Actions
     @IBAction func btnLoginTapped(_ sender: Any) {
-        self.changeViewController(.login)
+        self.showViewController(.loginAsClient)
     }
 }
 
@@ -95,7 +165,7 @@ extension LeftViewController: UITableViewDelegate {
         if let menu = LeftMenu(rawValue: indexPath.row) {
             switch menu
             {
-            case .categories, .registerAsClient, .login:
+            case .clientProfile, .demands, .chats, .help, .separator, .professional, .registerAsProfessional:
                 return BaseTableViewCell.height()
             }
         }
@@ -128,7 +198,7 @@ extension LeftViewController: UITableViewDataSource
         if let menu = LeftMenu(rawValue: indexPath.row) {
             switch menu
             {
-            case .categories, .registerAsClient, .login:
+            case .clientProfile, .demands, .chats, .help, .separator, .professional, .registerAsProfessional:
                 let cell = BaseTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: BaseTableViewCell.identifier)
                 cell.setData(menus[indexPath.row])
                 
@@ -139,7 +209,6 @@ extension LeftViewController: UITableViewDataSource
         return UITableViewCell()
     }
 }
-
 
 
 

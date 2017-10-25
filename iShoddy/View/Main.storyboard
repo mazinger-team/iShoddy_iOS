@@ -30,34 +30,45 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ioh-83-Noj">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9R-2d-5Yr">
-                                        <rect key="frame" x="125" y="63" width="249" height="33"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="33" id="616-kV-Bva"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <state key="normal" title="Login">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="btnLoginTapped:" destination="kcK-8W-Hw1" eventType="touchUpInside" id="TU7-Kc-bOn"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3a2-5r-hFR">
+                                        <rect key="frame" x="100" y="55" width="294" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9R-2d-5Yr">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="616-kV-Bva"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                <state key="normal" title="Inicia sesión">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnLoginTapped:" destination="kcK-8W-Hw1" eventType="touchUpInside" id="TU7-Kc-bOn"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Demanda solicitada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0F-2u-EIw">
+                                                <rect key="frame" x="0.0" y="33" width="294" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="3YU-ab-ngw" customClass="CircleImage" customModule="iShoddy" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="37.666666666666657" width="85" height="85"/>
+                                        <rect key="frame" x="20" y="48" width="65" height="65"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="85" id="2pG-O2-kdS"/>
-                                            <constraint firstAttribute="height" constant="85" id="u70-cr-LfX"/>
+                                            <constraint firstAttribute="width" constant="65" id="2pG-O2-kdS"/>
+                                            <constraint firstAttribute="height" constant="65" id="u70-cr-LfX"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.41568627450000001" green="0.1960784314" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="3YU-ab-ngw" firstAttribute="leading" secondItem="ioh-83-Noj" secondAttribute="leading" constant="20" id="3kU-1B-3uJ"/>
-                                    <constraint firstItem="y9R-2d-5Yr" firstAttribute="leading" secondItem="3YU-ab-ngw" secondAttribute="trailing" constant="20" id="H7P-h1-ddd"/>
-                                    <constraint firstAttribute="trailing" secondItem="y9R-2d-5Yr" secondAttribute="trailing" constant="40" id="OOb-5Y-yA8"/>
-                                    <constraint firstItem="y9R-2d-5Yr" firstAttribute="centerY" secondItem="ioh-83-Noj" secondAttribute="centerY" id="RBY-Z9-VEw"/>
+                                    <constraint firstItem="3a2-5r-hFR" firstAttribute="leading" secondItem="3YU-ab-ngw" secondAttribute="trailing" constant="15" id="BYF-r5-E8r"/>
+                                    <constraint firstItem="3a2-5r-hFR" firstAttribute="centerY" secondItem="ioh-83-Noj" secondAttribute="centerY" id="PmF-6Q-uJm"/>
                                     <constraint firstItem="3YU-ab-ngw" firstAttribute="centerY" secondItem="ioh-83-Noj" secondAttribute="centerY" id="UeK-Zr-P8h"/>
+                                    <constraint firstAttribute="trailing" secondItem="3a2-5r-hFR" secondAttribute="trailing" constant="20" id="nLo-RG-DCB"/>
                                     <constraint firstAttribute="height" constant="160" id="sES-jf-Vfj"/>
                                 </constraints>
                             </view>
@@ -84,6 +95,7 @@
                     <connections>
                         <outlet property="btnLogin" destination="y9R-2d-5Yr" id="6Pb-qo-Eu1"/>
                         <outlet property="ivProfile" destination="3YU-ab-ngw" id="8eV-EV-eQi"/>
+                        <outlet property="lblDemands" destination="p0F-2u-EIw" id="xhM-7u-msl"/>
                         <outlet property="tableView" destination="1F2-eg-aLd" id="luJ-53-Wx9"/>
                     </connections>
                 </viewController>
@@ -747,13 +759,26 @@
                                     <constraint firstAttribute="height" constant="37" id="AT3-wA-rbL"/>
                                     <constraint firstAttribute="width" constant="37" id="Rec-Gq-hi4"/>
                                 </constraints>
-                                <color key="color" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="color" red="0.41568627450000001" green="0.1960784314" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioB-Ly-LyG">
+                                <rect key="frame" x="82" y="351" width="250" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="Ymr-XO-aSd"/>
+                                    <constraint firstAttribute="width" constant="250" id="eEL-At-rHW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" ¿Olvidaste tu contraseña?">
+                                    <color key="titleColor" red="0.41568627450000001" green="0.1960784314" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mdm-CO-HCl" firstAttribute="centerX" secondItem="EZk-yb-rtq" secondAttribute="centerX" id="C3h-bA-y5e"/>
+                            <constraint firstItem="ioB-Ly-LyG" firstAttribute="centerX" secondItem="EZk-yb-rtq" secondAttribute="centerX" id="C7G-7c-PRK"/>
                             <constraint firstItem="kld-Mi-Sih" firstAttribute="top" secondItem="G6Q-iu-gCv" secondAttribute="bottom" constant="10" id="Hfs-ns-erG"/>
+                            <constraint firstItem="ioB-Ly-LyG" firstAttribute="top" secondItem="kld-Mi-Sih" secondAttribute="bottom" constant="15" id="Ie3-b2-elr"/>
                             <constraint firstItem="EKz-lX-eog" firstAttribute="centerX" secondItem="EZk-yb-rtq" secondAttribute="centerX" id="Kog-h8-77g"/>
                             <constraint firstItem="mdm-CO-HCl" firstAttribute="top" secondItem="OKP-gb-wU1" secondAttribute="bottom" constant="20" id="LKd-8S-LaD"/>
                             <constraint firstItem="kld-Mi-Sih" firstAttribute="centerX" secondItem="EZk-yb-rtq" secondAttribute="centerX" id="bbZ-dt-z68"/>
@@ -773,6 +798,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKc-CQ-zEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1409" y="-704"/>
+        </scene>
+        <!--Cient Profile View Controller-->
+        <scene sceneID="lc1-li-bt1">
+            <objects>
+                <viewController storyboardIdentifier="CientProfileViewController" id="XuY-pP-iZ6" customClass="CientProfileViewController" customModule="iShoddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aff-0L-va2"/>
+                        <viewControllerLayoutGuide type="bottom" id="bhv-cc-lD4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mwc-nF-lXj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ym7-RN-rpU" customClass="RoundedButton" customModule="iShoddy" customModuleProvider="target">
+                                <rect key="frame" x="156" y="354.66666666666669" width="103" height="28"/>
+                                <color key="backgroundColor" red="0.41568627450000001" green="0.1960784314" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="   Cerrar sesión   "/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnLogoutTapped:" destination="XuY-pP-iZ6" eventType="touchUpInside" id="oDq-Ta-l3r"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="K4s-EP-hfv">
+                                <rect key="frame" x="188.66666666666666" y="299.66666666666669" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="KIE-Zs-OSw"/>
+                                    <constraint firstAttribute="height" constant="37" id="VXW-Qb-uvL"/>
+                                </constraints>
+                                <color key="color" red="0.41568627450000001" green="0.1960784314" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ym7-RN-rpU" firstAttribute="centerX" secondItem="mwc-nF-lXj" secondAttribute="centerX" id="3uA-GG-hRe"/>
+                            <constraint firstItem="K4s-EP-hfv" firstAttribute="centerX" secondItem="mwc-nF-lXj" secondAttribute="centerX" id="FyP-Ch-Yfg"/>
+                            <constraint firstItem="K4s-EP-hfv" firstAttribute="centerY" secondItem="mwc-nF-lXj" secondAttribute="centerY" constant="-50" id="VXb-NM-566"/>
+                            <constraint firstItem="Ym7-RN-rpU" firstAttribute="centerY" secondItem="mwc-nF-lXj" secondAttribute="centerY" id="WzE-dZ-Uxx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spinner" destination="K4s-EP-hfv" id="s87-nu-q5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcM-qj-PvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2114" y="-704"/>
         </scene>
     </scenes>
     <resources>

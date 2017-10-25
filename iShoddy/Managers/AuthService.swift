@@ -74,14 +74,11 @@ class AuthService {
             
             if response.response?.statusCode == 200 && response.result.error == nil {
                 
-                //-- Using SwiftyJSON --
                 guard let data = response.data else {
                     return
                 }
                 
-                let json = JSON(data: data)
-                self.userEmail = json["email"].stringValue
-                self.userID = json["_id"].stringValue
+                self.setUserData(data: data)
                 
                 // Get token from Header
                 if let headers = response.response?.allHeaderFields as? [String: String] {
@@ -90,12 +87,13 @@ class AuthService {
                 }
                 
                 self.isLoogedIn = true
-                
                 completion(true)
             
             } else {
+                
                 completion(false)
                 
+                // TODO 1: error handler
                 debugPrint(response.result.error as Any)
                 debugPrint(response.response?.statusCode as Any)
             }
@@ -115,14 +113,11 @@ class AuthService {
             
             if response.response?.statusCode == 200 && response.result.error == nil {
 
-                //-- Using SwiftyJSON --
                 guard let data = response.data else {
                     return
                 }
 
-                let json = JSON(data: data)
-                self.userEmail = json["email"].stringValue
-                self.userID = json["_id"].stringValue
+                self.setUserData(data: data)
                 
                 // Get token from Header
                 if let headers = response.response?.allHeaderFields as? [String: String] {
@@ -137,10 +132,44 @@ class AuthService {
             } else {
                 completion(false)
                 
+                // TODO 1: Error handler
                 debugPrint(response.result.error as Any)
                 debugPrint(response.response?.statusCode as Any)
             }
         }
+    }
+    
+    func logoutUser(token: String, completion: @escaping CompletionHandler)
+    {
+        let tokenHeader = [
+            "x-auth": token
+        ]
+        
+        Alamofire.request(DomainUrl.clientUserLogoutURL, method: .delete, parameters: nil, encoding: JSONEncoding.default, headers: tokenHeader).responseJSON { (response) in
+            
+//            if response.response?.statusCode == 200 && response.result.error == nil {
+            if response.response?.statusCode == 200  {
+                
+                self.isLoogedIn = false
+                
+                completion(true)
+                
+            } else {
+                completion(false)
+                
+                debugPrint(response.result.error as Any)
+                debugPrint(response.response?.statusCode as Any)
+            }
+        }
+    }
+    
+    func setUserData(data: Data)
+    {
+        let json = JSON(data: data)
+        let id = json["_id"].stringValue
+        let email = json["email"].stringValue
+        
+        UserDataService.instance.setUserData(id: id, email: email)
     }
 }
 

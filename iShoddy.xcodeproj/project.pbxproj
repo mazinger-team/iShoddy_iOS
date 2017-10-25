@@ -43,11 +43,13 @@
 		5BFE52651F6D1C6500AD706F /* PersistCategoriesCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE52641F6D1C6500AD706F /* PersistCategoriesCoreData.swift */; };
 		5BFE52671F6D1CDA00AD706F /* SaveCategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE52661F6D1CDA00AD706F /* SaveCategoriesInteractor.swift */; };
 		880CC0391F9FCE2300B2CFB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880CC0381F9FCE2300B2CFB9 /* LoginViewController.swift */; };
+		880CC03B1FA0468600B2CFB9 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880CC03A1FA0468600B2CFB9 /* UserDataService.swift */; };
 		882C33521F9EC68E00A154D3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C33511F9EC68E00A154D3 /* CircleImage.swift */; };
 		882C33541F9ED46700A154D3 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C33531F9ED46600A154D3 /* RoundedButton.swift */; };
 		883960671F81B3EA00E56266 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883960651F81B3E900E56266 /* UIApplication.swift */; };
 		883960681F81B3EA00E56266 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883960661F81B3E900E56266 /* UIViewController.swift */; };
 		883FD7501F7D150C004F259C /* ExSlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD74F1F7D150C004F259C /* ExSlideMenuController.swift */; };
+		88646DCF1FA0E37100E79DF1 /* CientProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88646DCE1FA0E37100E79DF1 /* CientProfileViewController.swift */; };
 		8898FABB1F7C6CCF00E92F16 /* RegisterAsClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898FABA1F7C6CCF00E92F16 /* RegisterAsClientViewController.swift */; };
 		8898FABE1F7C71C200E92F16 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898FABD1F7C71C200E92F16 /* BaseTableViewCell.swift */; };
 		8898FAC11F7C727C00E92F16 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898FAC01F7C727C00E92F16 /* StringExtension.swift */; };
@@ -157,12 +159,14 @@
 		5BFE52641F6D1C6500AD706F /* PersistCategoriesCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistCategoriesCoreData.swift; sourceTree = "<group>"; };
 		5BFE52661F6D1CDA00AD706F /* SaveCategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCategoriesInteractor.swift; sourceTree = "<group>"; };
 		880CC0381F9FCE2300B2CFB9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		880CC03A1FA0468600B2CFB9 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		882C33511F9EC68E00A154D3 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		882C33531F9ED46600A154D3 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		883960651F81B3E900E56266 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		883960661F81B3E900E56266 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		883FD74F1F7D150C004F259C /* ExSlideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExSlideMenuController.swift; sourceTree = "<group>"; };
 		883FD7521F7D222D004F259C /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88646DCE1FA0E37100E79DF1 /* CientProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CientProfileViewController.swift; sourceTree = "<group>"; };
 		8898FABA1F7C6CCF00E92F16 /* RegisterAsClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAsClientViewController.swift; sourceTree = "<group>"; };
 		8898FABD1F7C71C200E92F16 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		8898FAC01F7C727C00E92F16 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -278,6 +282,7 @@
 				5BFE00D61F686FBE00551609 /* GetFileFromServerManager.swift */,
 				5B350AA41F6546FC00B4DBEE /* NetworkManager.swift */,
 				88DE57931F8BF0C800CEA83C /* AuthService.swift */,
+				880CC03A1FA0468600B2CFB9 /* UserDataService.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 		5BB031AC1F6062DF0006257B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				88646DCD1FA0E34000E79DF1 /* Client Profile Controller */,
 				880CC0371F9FCC4000B2CFB9 /* Login Controller */,
 				883FD74E1F7D1384004F259C /* ExSlideMenuController */,
 				8898FAB91F7C6C9500E92F16 /* RegisterAsClientController */,
@@ -403,6 +409,14 @@
 				883FD74F1F7D150C004F259C /* ExSlideMenuController.swift */,
 			);
 			path = ExSlideMenuController;
+			sourceTree = "<group>";
+		};
+		88646DCD1FA0E34000E79DF1 /* Client Profile Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88646DCE1FA0E37100E79DF1 /* CientProfileViewController.swift */,
+			);
+			path = "Client Profile Controller";
 			sourceTree = "<group>";
 		};
 		8898FAB91F7C6C9500E92F16 /* RegisterAsClientController */ = {
@@ -878,6 +892,7 @@
 				8898FAC71F7C8AD600E92F16 /* UIView.swift in Sources */,
 				5BFE52631F6D1A2000AD706F /* PersistCategoriesCoreDataImpl.swift in Sources */,
 				8898FABE1F7C71C200E92F16 /* BaseTableViewCell.swift in Sources */,
+				88646DCF1FA0E37100E79DF1 /* CientProfileViewController.swift in Sources */,
 				DF72FACD1F840C8800715DCB /* ErrorDataResponseType.swift in Sources */,
 				DFAB525A1F756AFE00487699 /* ProfessionalsController.swift in Sources */,
 				DF5C7C291F756713009DA768 /* AsyncData.swift in Sources */,
@@ -937,6 +952,7 @@
 				5BB031B11F606F090006257B /* CategoryCell.swift in Sources */,
 				5BFE52571F6D0E4200AD706F /* ManagedObject.swift in Sources */,
 				5BFE52671F6D1CDA00AD706F /* SaveCategoriesInteractor.swift in Sources */,
+				880CC03B1FA0468600B2CFB9 /* UserDataService.swift in Sources */,
 				5B16BAD81F684E50004ACB7F /* GetImageFilesInteractor.swift in Sources */,
 				DFAB52661F756B9700487699 /* GetProfessionalInteractorImpl.swift in Sources */,
 				5B85EF5E1F6D8B5B0044AE89 /* CheckCacheFakeInteractorImpl.swift in Sources */,
