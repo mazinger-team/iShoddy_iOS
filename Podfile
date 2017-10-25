@@ -10,6 +10,7 @@ target 'iShoddy' do
     pod 'Cosmos', :git => 'https://github.com/evgenyneu/Cosmos.git', :branch => 'swift-4.0'   
     pod 'SlideMenuControllerSwift', :git => 'https://github.com/dekatotoro/SlideMenuControllerSwift.git', :branch => 'swift4'
     pod 'Alamofire'
+    pod 'SwiftyJSON'
     
     target 'iShoddyTests' do
         inherit! :search_paths

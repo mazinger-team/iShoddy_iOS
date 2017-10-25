@@ -13,7 +13,10 @@ public typealias errorBlock = (ErrorData) -> Void
 
 public class DomainUrl {
     
+    // Para trabajar con servidor en AWS:
     fileprivate static let BASE = "http://ec2-54-202-209-58.us-west-2.compute.amazonaws.com"
+    
+    // Para trabajar en local (pruebas en simulador):
     //    fileprivate static let BASE = "http://localhost:3000"
     
     public static var listCategories : String {
@@ -24,7 +27,6 @@ public class DomainUrl {
         return DomainUrl.BASE + "/v2/59badac50f00005104622a16"
     }
     
-    // Añadir los siguientes endpoint's aqui.
     public static var listProfessionals: String {
         return DomainUrl.BASE + "/api/v1/professionals"
     }
@@ -32,4 +34,43 @@ public class DomainUrl {
     public static var registerAsClientURL: String {
         return DomainUrl.BASE + "/api/v1/user"
     }
+    
+    public static var clientUserLoginURL: String {
+        return DomainUrl.BASE + "/api/v1/user/login"
+    }
+    
+    public static var HEADER = [
+        "Content-Type": "application/json; charset=utf-8"
+    ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

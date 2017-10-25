@@ -1,22 +1,23 @@
 //
-//  RegisterAsClientViewController.swift
+//  LoginViewController.swift
 //  iShoddy
 //
-//  Created by JJLZ on 9/27/17.
+//  Created by JJLZ on 10/24/17.
 //  Copyright © 2017 ESoft. All rights reserved.
 //
 
 import UIKit
 
-class RegisterAsClientViewController: UIViewController {
-    
-    weak var delegate: LeftMenuProtocol?
+// TODO 3: Meter todo en un scrollview
+
+class LoginViewController: UIViewController {
     
     // MARK: IBOutlet's
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
-    @IBOutlet weak var btnRegister: UIButton!
-    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
+    weak var delegate: LeftMenuProtocol?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -27,14 +28,14 @@ class RegisterAsClientViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupViews()
     }
     
     func setupViews()
     {
         self.setNavigationBarItem()
-        self.title = "¡Regístrate ahora!"
+        self.title = "Iniciar sesión"
         
         controlColorsSetup()
         
@@ -44,11 +45,10 @@ class RegisterAsClientViewController: UIViewController {
         // Close button with image
         let image = UIImage(named: "close")?.withRenderingMode(.alwaysOriginal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(closeViewController))
-
         
         spinner.isHidden = true
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(RegisterAsClientViewController.handleTap))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.handleTap))
         view.addGestureRecognizer(tap)
     }
     
@@ -79,10 +79,19 @@ class RegisterAsClientViewController: UIViewController {
         })
     }
     
+    @objc func closeViewController()
+    {
+        delegate?.changeViewController(LeftMenu.categories)
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
+    }
+    
     // MARK: Actions
     
     // TODO 1: Use interactors
-    @IBAction func btnRegisterTapped(_ sender: Any) {
+    @IBAction func btnLoginTapped(_ sender: Any) {
         
         // TODO: 1 we need validations here
         // https://stackoverflow.com/questions/30913917/focusing-a-text-field-in-swift
@@ -96,9 +105,10 @@ class RegisterAsClientViewController: UIViewController {
         }
         
         spinner.isHidden = false
+        // TODO 3: igual no es necesario:
         spinner.startAnimating()
         
-        AuthService.instance.registerUser(email: email, password: password) { (success) in
+        AuthService.instance.loginUser(email: email, password: password) { (success) in
             
             if success {
                 self.closeViewController()
@@ -110,32 +120,30 @@ class RegisterAsClientViewController: UIViewController {
             self.spinner.isHidden = true
             self.spinner.stopAnimating()
         }
+
     }
-    
-    @objc func closeViewController()
-    {
-        delegate?.changeViewController(LeftMenu.categories)
-    }
-    
-    @objc func handleTap() {
-        view.endEditing(true)
+        
+    @IBAction func btnRegisterTapped(_ sender: Any) {
+        
+        delegate?.changeViewController(LeftMenu.registerAsClient)
     }
 }
 
-extension RegisterAsClientViewController: UITextFieldDelegate {
- 
+extension LoginViewController: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
         if (textField == self.txtEmail) {
             self.txtPassword.becomeFirstResponder()
         } else if (textField == self.txtPassword) {
-            btnRegisterTapped(self)
+            btnLoginTapped(self)
         }
         
         return true
     }
 }
+
 
 
 

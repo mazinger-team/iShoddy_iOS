@@ -11,6 +11,7 @@ import UIKit
 enum LeftMenu: Int {
     case categories = 0
     case registerAsClient
+    case login
 }
 
 protocol LeftMenuProtocol: class
@@ -21,15 +22,14 @@ protocol LeftMenuProtocol: class
 class LeftViewController: UIViewController, LeftMenuProtocol {
     
     // MARK: IBOutlet's
-    // #warning: poner esto como
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var btnLogin: UIButton!
+    @IBOutlet weak var ivProfile: CircleImage!
     
     var menus = ["Categories", "Registration"]
     var categories: UIViewController!
     var registerAsClient: UIViewController!
-    
-    // TODO: temporal
-//    var imageHeaderView: ImageHeaderView!
+    var login: UIViewController!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -43,7 +43,7 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
     {
         super.viewDidLoad()
         
-        self.tableView.separatorColor = constants.appPrimaryColor
+        self.tableView.separatorColor = constants.backgroundColor
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -54,28 +54,19 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
         self.registerAsClient = UINavigationController(rootViewController: registerAsClientController)
         registerAsClientController.delegate = self
         
+        let loginController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.login = UINavigationController(rootViewController: loginController)
+        loginController.delegate = self
+        
         self.tableView.registerCellClass(BaseTableViewCell.self)
-        
-        // TODO: temporal
-//        self.imageHeaderView = ImageHeaderView.loadNib()
-//        self.view.addSubview(self.imageHeaderView)
-        
-        //--newcode now --
-//        imageHeaderView.profileImage.image = UIImage(named: "profileDefault")
-        //--
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        // TODO: temporal
-//        self.imageHeaderView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 160)
-//        self.view.layoutIfNeeded()
     }
     
     func changeViewController(_ menu: LeftMenu)
@@ -86,7 +77,14 @@ class LeftViewController: UIViewController, LeftMenuProtocol {
             self.slideMenuController()?.changeMainViewController(self.categories, close: true)
         case .registerAsClient:
             self.slideMenuController()?.changeMainViewController(self.registerAsClient, close: true)
+        case .login:
+            self.slideMenuController()?.changeMainViewController(self.login, close: true)
         }
+    }
+    
+    // MARK: Actions
+    @IBAction func btnLoginTapped(_ sender: Any) {
+        self.changeViewController(.login)
     }
 }
 
@@ -97,7 +95,7 @@ extension LeftViewController: UITableViewDelegate {
         if let menu = LeftMenu(rawValue: indexPath.row) {
             switch menu
             {
-            case .categories, .registerAsClient:
+            case .categories, .registerAsClient, .login:
                 return BaseTableViewCell.height()
             }
         }
@@ -130,7 +128,7 @@ extension LeftViewController: UITableViewDataSource
         if let menu = LeftMenu(rawValue: indexPath.row) {
             switch menu
             {
-            case .categories, .registerAsClient:
+            case .categories, .registerAsClient, .login:
                 let cell = BaseTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: BaseTableViewCell.identifier)
                 cell.setData(menus[indexPath.row])
                 
