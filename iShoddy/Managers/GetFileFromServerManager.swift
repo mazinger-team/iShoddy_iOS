@@ -30,10 +30,17 @@ public class GetFileFromServerManager{
     }
     
     private func getImage(url: URL) -> UIImage {
-         do{
+        do{
             let dataImage:Data = try Data(contentsOf: url)
-            return UIImage(data: dataImage)!
-         }catch{
+            //--DOING now --
+            //            return UIImage(data: dataImage)!
+            if let image = UIImage(data: dataImage) {
+                return image
+            } else {
+                return UIImage(named: "profileDefault")!
+            }
+            //--
+        }catch{
             
         }
         return UIImage(named: "empty")!

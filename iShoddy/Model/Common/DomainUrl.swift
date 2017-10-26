@@ -15,17 +15,25 @@ public class DomainUrl {
     
     // Para trabajar con servidor en AWS:
     fileprivate static let BASE = "http://ec2-54-202-209-58.us-west-2.compute.amazonaws.com"
+    fileprivate static let BASE_mock = "http://www.mocky.io"
     
     // Para trabajar en local (pruebas en simulador):
     //    fileprivate static let BASE = "http://localhost:3000"
     
+//    public static var listCategories : String {
+//        return DomainUrl.BASE + "/api/v1/categories"
+//    }
+//
+//    public static var oneCategories : String {
+//        return DomainUrl.BASE + "/v2/59badac50f00005104622a16"
+//    }
+    
     public static var listCategories : String {
-//        return DomainUrl.BASE + "/v2/59b2d63b120000de05892490"
-        return DomainUrl.BASE + "/api/v1/categories"
+        return DomainUrl.BASE_mock + "/v2/59b2d63b120000de05892490"
     }
     
     public static var oneCategories : String {
-        return DomainUrl.BASE + "/v2/59badac50f00005104622a16"
+        return DomainUrl.BASE_mock + "/v2/59badac50f00005104622a16"
     }
     
     public static var listProfessionals: String {
