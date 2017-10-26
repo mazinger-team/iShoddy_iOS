@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Cosmos (11.0.3)
+  - SlideMenuControllerSwift (3.0.2)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cosmos (from `https://github.com/evgenyneu/Cosmos.git`, branch `swift-4.0`)
+  - SlideMenuControllerSwift (from `https://github.com/dekatotoro/SlideMenuControllerSwift.git`, branch `swift4`)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Cosmos:
+    :branch: swift-4.0
+    :git: https://github.com/evgenyneu/Cosmos.git
+  SlideMenuControllerSwift:
+    :branch: swift4
+    :git: https://github.com/dekatotoro/SlideMenuControllerSwift.git
+
+CHECKOUT OPTIONS:
+  Cosmos:
+    :commit: a2d864e02f94fa439387eaeb648cc17a7e5452c4
+    :git: https://github.com/evgenyneu/Cosmos.git
+  SlideMenuControllerSwift:
+    :commit: 88ed3c28b17fdbb194dfa8b2c8e37c742c0b78a7
+    :git: https://github.com/dekatotoro/SlideMenuControllerSwift.git
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Cosmos: c7f103e2ddbd32d2959c00a39a97c696e688d00e
+  SlideMenuControllerSwift: 9e8d2bba8ea9201c6207acb76e95a2841453ec9c
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: aad224ce8557c690f2c5dfb927590855a0cc5aab
+
+COCOAPODS: 1.3.1
